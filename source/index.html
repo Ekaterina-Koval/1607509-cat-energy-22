@@ -1,12 +1,79 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Cat energy - интернет-магазин подбора и заказа систем функционального питания для кошек</title>
 
-  </body>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <div class="container">
+      <a class="page-header__logo-image">
+        <img src="image/logo-image.svg" width="33" height="38" alt="Логотип Кэт энерджи графический">
+      </a>
+      <a class="page-header__logo-text">
+        <img src="image/logo-text.svg" width="101" height="18" alt="Логотип Кэт энерджи текстовый">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item main-navigation__item--current">
+            <a class="main-navigation__link">
+              Главная
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">
+      Cat energy - интернет-магазин подбора и заказа систем функционального питания для котов
+      и кошек
+    </h1>
+
+    <section class="promo transparent-color-image">
+      <div class="container">
+        <h2 class="promo__title">Функциональное питание для котов</h2>
+        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <img src="image/promo-product.png" width="280" height="270"
+          alt="Изображение - упаковка корма Cat energy с курицей на фоне трёх желтых кругов">
+        <p>
+          <a class="promo__link button" href="form.html">
+            Подобрать программу
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <section class="weight-filter">
+    </section>
+
+    <section class="features">
+    </section>
+
+    <section class="stat">
+    </section>
+
+
+  </main>
+  <footer>
+  </footer>
+</body>
+
 </html>
