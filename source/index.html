@@ -9,12 +9,12 @@
 <body class="page__body">
   <header class="page-header">
     <div class="container">
-      <div class="page-header__logo">
-        <a class="page-header__logo-link logo">
+      <div class="page-header__logo logo">
+        <a class="page-header__logo-link logo__link--hover logo__link--active">
           <img class="logo__image" src="img/logo-image.svg" width="33" height="38"
             alt="Логотип Кэт энерджи графический">
         </a>
-        <a class="page-header__logo-link logo">
+        <a class="page-header__logo-link logo__link--hover logo__link--active">
           <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Логотип Кэт энерджи текстовый">
         </a>
       </div>
@@ -24,17 +24,20 @@
         </button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item main-navigation__item--current">
-            <a class="main-navigation__link">
+            <a
+              class="main-navigation__link main-navigation__link--hover main-navigation__link--active main-navigation__link--current">
               Главная
             </a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="catalog.html">
+            <a class="main-navigation__link main-navigation__link--hover main-navigation__link--active main-navigation__link--current"
+              href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="form.html">
+            <a class="main-navigation__link main-navigation__link--hover main-navigation__link--active main-navigation__link--current"
+              href="form.html">
               Подбор программы
             </a>
           </li>
@@ -73,7 +76,7 @@
           Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
           поможет вашему питомцу сбросить лишний вес.
         </p>
-        <a class="pro-or-slim__link" href="catalog-slim.html">
+        <a class="pro-or-slim__link pro-or-slim__link--hover pro-or-slim__link--active" href="catalog-slim.html">
           Каталог Slim
         </a>
       </div>
@@ -185,6 +188,8 @@
           <div class="slider__bar">
           </div>
         </div>
+        <div class="slider__toggle slider__toggle--hover slider__toggle--active">
+        </div>
         <p class="slider-control__value">
           Стало
         </p>
@@ -195,9 +200,9 @@
   <footer class="page-footer">
     <section class="map">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <div class="map__contacts container">
-        <h3 class="map-contacts__subtitle">Приглашаем к сотрудничеству дилеров!</h3>
-        <address class="contact__adress">
+      <div class="map__info container">
+        <h3 class="map__subtitle">Приглашаем к сотрудничеству дилеров!</h3>
+        <address class="map__adress">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </address>
       </div>
@@ -210,34 +215,36 @@
     </section>
 
     <section class="contacts container">
-      <div class="footer__logo">
-        <a class="footer__logo-link logo">
+      <h2 class="visually-hidden">Наши контакты в интернет</h2>
+      <div class="footer__logo logo">
+        <a class="footer__logo-link logo__link--hover logo__link--active">
           <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Логотип Кэт энерджи текстовый">
         </a>
       </div>
       <div class="social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social-icon" href="#">
+            <a class="social__link social__link--hover social__link--active" href="#">
               <img src="img/index/icon_vkontakte.svg" width="23" height="16" alt="ВКонтакте" />
             </a>
           </li>
           <li class="social__item">
-            <a class="social-icon" href="#">
+            <a class="social__link--hover social__link--active" href="#">
               <img src="img/index/icon_instagram.svg" width="16" height="16" alt="Инстаграм" />
             </a>
           </li>
           <li class="social__item">
-            <a class="social-icon" href="#">
+            <a class="social__link--hover social__link--active" href="#">
               <img src="img/index/icon_facebook.svg" width="22" height="22" alt="Фейсбук" />
             </a>
           </li>
         </ul>
       </div>
       <div class="copyright">
-        <a class="copyright__link logo">
+        <a class="copyright__link copyright__link--hover copyright__link--active">
           HTML Academy
-          <img src="img/index/logo_html-academy.svg" width="27" height="34" alt="Логотип HTML-academy">
+          <img class="copyright__logo" src="img/index/logo_html-academy.svg" width="27" height="34"
+            alt="Логотип HTML-academy">
         </a>
       </div>
     </section>
