@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Екатерина Коваль](https://up.htmlacademy.ru/adaptive/22/user/1607509).
-* Наставник: [Михаил Кислый] (https://htmlacademy.ru/profile/smart-grizzly).
+* Наставник: [Михаил Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
