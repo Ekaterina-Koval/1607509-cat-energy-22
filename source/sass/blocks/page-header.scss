@@ -1,0 +1,16 @@
+.page-header__logo {
+  width: 280px;
+  min-height: 38px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__toggle {
+  width: 24px;
+  height: 16px;
+  border-top: 2px solid $basic-black;
+  border-bottom: 2px solid $basic-black;
+}
+

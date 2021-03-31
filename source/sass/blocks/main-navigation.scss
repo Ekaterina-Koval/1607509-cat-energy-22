@@ -1,0 +1,29 @@
+//основное меню
+.main-navigation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-navigation__item {
+  min-height: 66px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid $header-element-color;
+  position: relative;
+}
+
+.main-navigation__link {
+  max-width: 320px;
+  padding: 20px;
+  text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: $basic-black;
+}
