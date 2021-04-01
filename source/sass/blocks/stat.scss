@@ -1,0 +1,76 @@
+.stat {
+  background-color: $slider-background;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.stat__title {
+  padding-top: 27px;
+  margin: 0;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic-black;
+}
+
+.stat__text {
+  padding-top: 33px;
+  padding-bottom: 25px;
+  margin: 0;
+}
+
+.stat__list {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stat__item {
+  width: 124px;
+  min-height: 64px;
+}
+
+.stat__number {
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 15px 0 10px;
+  color: $basic-black;
+}
+
+.stat__discription {
+  width: 60px;
+  min-height: 13px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.stat__item-total {
+  margin: 25px auto;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $basic-black;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stat__sum {
+  margin: 0;
+  order: 1;
+}
+
+.stat__total {
+  margin: 0;
+}
+
