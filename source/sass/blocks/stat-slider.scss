@@ -12,7 +12,6 @@
   width: 311px;
   height: 232px;
   object-fit: contain;
-  width: 100%;
 }
 
 .slider__control {
@@ -23,34 +22,4 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-
-.slider-control__value {
-  min-width: 70px;
-  min-height: 40px;
-  font-family: "Oswald";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $basic-black;
-}
-
-.slider-control__range {
-  width: 84px;
-  height: 14px;
-  border: 1px solid $slider-border;
-  border-radius: 6px;
-  background-color: $basic-white;
-}
-
-.slider-control__bar {
-  width: 35px;
-  height: 6px;
-  background-color: $accent-color;
-  border-radius: 6px;
-  margin: 4px 6px;
 }
