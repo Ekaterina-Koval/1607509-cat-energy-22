@@ -14,8 +14,7 @@
 }
 
 .promo__block {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
+  @include second-font;
   text-align: center;
   color: $basic-white;
   display: flex;
@@ -52,8 +51,7 @@
 }
 
 .promo__link {
-  font-family: inherit;
-  font-weight: 400;
+  @include second-font;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;

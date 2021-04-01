@@ -6,13 +6,12 @@
 }
 
 .stat__title {
-  padding-top: 27px;
-  margin: 0;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
+  @include second-font;
   font-size: 36px;
   line-height: 40px;
   color: $basic-black;
+  padding-top: 27px;
+  margin: 0;
 }
 
 .stat__text {
@@ -33,7 +32,7 @@
 }
 
 .stat__number {
-  font-family: "Oswald", "Arial", sans-serif;
+  @include second-font;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -53,12 +52,11 @@
 }
 
 .stat__item-total {
-  margin: 25px auto;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
+  @include second-font;
   font-size: 14px;
   line-height: 20px;
   color: $basic-black;
+  margin: 25px auto;
   text-transform: uppercase;
   display: flex;
   flex-wrap: wrap;
