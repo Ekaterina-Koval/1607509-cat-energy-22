@@ -1,0 +1,23 @@
+.for-dealers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.for-dealers__subtitle {
+  @include second-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $footer-title;
+  margin: 28px 0;
+  width: 50%;
+  min-height: 58px;
+}
+
+.for-dealers__adress {
+  margin: 28px 0;
+  width: 50%;
+  min-height: 58px;
+  font-style: normal;
+  line-height: 20px;
+}

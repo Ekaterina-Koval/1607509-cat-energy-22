@@ -1,0 +1,28 @@
+.slider-control__value {
+  @include second-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $basic-black;
+  min-width: 70px;
+  min-height: 40px;
+}
+
+.slider-control__range {
+  width: 84px;
+  height: 14px;
+  border: 1px solid $slider-border;
+  border-radius: 6px;
+  background-color: $basic-white;
+}
+
+.slider-control__bar {
+  width: 35px;
+  height: 6px;
+  background-color: $accent-color;
+  border-radius: 6px;
+  margin: 4px 6px;
+}

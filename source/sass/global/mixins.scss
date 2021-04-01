@@ -1,0 +1,9 @@
+@mixin main-font {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+}
+
+@mixin second-font {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+}

@@ -1,0 +1,14 @@
+.assortment {
+  padding-top: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.assortment__pro-or-slim {
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 266px;
+  display: flex;
+  flex-wrap: wrap;
+}

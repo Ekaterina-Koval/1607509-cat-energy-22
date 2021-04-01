@@ -1,0 +1,23 @@
+.inet-contacts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inet-contacts__item:first-child {
+  min-height: 95px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid $main-element-color;
+}
+
+.inet-contacts__item:nth-child(2) {
+  min-height: 63px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid $main-element-color;
+}

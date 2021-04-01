@@ -1,0 +1,25 @@
+.slider__list {
+  list-style: none;
+  padding: 0;
+}
+
+.slider__item {
+  width: 100%;
+  height: 232px;
+}
+
+.slider__image {
+  width: 311px;
+  height: 232px;
+  object-fit: contain;
+}
+
+.slider__control {
+  margin: 25px 25px 0;
+  min-width: 228px;
+  min-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
