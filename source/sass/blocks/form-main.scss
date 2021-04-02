@@ -1,0 +1,15 @@
+.form-main__title {
+  @include second-font;
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-black;
+  margin: 27px 0;
+}
+
+.form-main__description {
+  @include second-font;
+  text-transform: uppercase;
+  width: 226px;
+  min-height: 36px;
+  margin: 10px 0;
+}

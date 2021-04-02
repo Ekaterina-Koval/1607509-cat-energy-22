@@ -1,0 +1,17 @@
+.basic-button {
+  width: 280px;
+  height: 40px;
+  background-color: $accent-color;
+  border: none;
+  display: flex;
+}
+
+.basic-button__link {
+  @include second-font;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-white;
+  text-decoration: none;
+  margin: auto;
+}

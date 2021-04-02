@@ -1,0 +1,75 @@
+.form-main {
+  border-top: 1px solid $header-element-color;
+}
+
+.form__fieldset {
+  @include second-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+  padding: 0;
+}
+
+.form__fieldset-border {
+  border-top: 1px solid $main-element-color;
+  border-bottom: 1px solid $main-element-color;
+}
+
+.form__list {
+  list-style: none;
+  padding: 0;
+}
+
+.form__item {
+  width: 100%;
+  min-height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.form__legend {
+  max-width: 187px;
+  padding: 15px 0;
+  text-align: left;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+}
+
+.form__text {
+  width: 100%;
+  min-height: 150px;
+  margin-top: 10px;
+  padding: 10px 12px 10px 15px;
+  border: 1px solid $input-border-light;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.form__text::placeholder {
+  @include second-font;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $main-content;
+}
+
+.form__submit {
+  @include second-font;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-white;
+  display: flex;
+  justify-content: center;
+}
+
+.form__note {
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+  color: $basic-black;
+}

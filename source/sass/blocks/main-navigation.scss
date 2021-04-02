@@ -14,6 +14,10 @@
   position: relative;
 }
 
+.main-navigation__item:last-child {
+  border-bottom: 1px solid $header-element-color;
+}
+
 .main-navigation__link {
   max-width: 320px;
   padding: 20px;
