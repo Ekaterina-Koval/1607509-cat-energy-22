@@ -1,6 +1,5 @@
 .slider__list {
-  list-style: none;
-  padding: 0;
+  @include reset-list;
 }
 
 .slider__item {
