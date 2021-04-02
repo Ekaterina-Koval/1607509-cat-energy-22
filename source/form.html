@@ -4,36 +4,37 @@
 <head>
   <meta charset="utf-8">
   <title>Cat energy - интернет-магазин подбора и заказа систем функционального питания для кошек</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <div class="container">
-      <div class="page-header__logo logo">
+    <div class="page-header__nav">
+      <div class="page-header__logo logo container">
         <a class="logo__link logo__link--hover logo__link--active" href="index.html">
-          <img class="logo__image" src="img/logo-image.svg" width="33" height="38"
+          <img class="logo__image" src="img/logo-image.svg" width="34" height="38"
             alt="Логотип Кэт энерджи графический">
         </a>
         <a class="logo__link logo__link--hover logo__link--active" href="index.html">
           <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Логотип Кэт энерджи текстовый">
         </a>
+        <div class="page-header__toggle page-header__toggle--state">
+          <span class="visually-hidden">Открыть меню</span>
+        </div>
       </div>
       <nav class="main-navigation">
-        <button class="main-navigation__toggle main-navigation__toggle--state" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item main-navigation__item--current">
             <a class="main-navigation__link main-navigation__link--hover main-navigation__link--active main-navigation__link--current"
-              href="index.html>
+              href="index.html">
               Главная
             </a>
           </li>
-          <li class=" main-navigation__item">
-              <a class="main-navigation__link main-navigation__link--hover main-navigation__link--active main-navigation__link--current"
-                href="catalog.html">
-                Каталог продукции
-              </a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link main-navigation__link--hover main-navigation__link--active main-navigation__link--current"
+              href="catalog.html">
+              Каталог продукции
+            </a>
           </li>
           <li class="main-navigation__item">
             <a class="main-navigation__link main-navigation__link--hover main-navigation__link--active main-navigation__link--current"
@@ -47,158 +48,183 @@
   </header>
 
   <main class="form-main">
-    <h1 class="form-main__title">Подбор программы</h1>
-    <section class="form-main__progrаm container">
-      <h2 class="visually-hidden">Анкета</h2>
-      <p class="form-main__description">
-        Заполните анкету, и мы подберем программу питания для вашего кота
-      </p>
+    <section class="form-main__progrаm">
+      <div class="container">
+        <h1 class="form-main__title">Подбор программы</h1>
+        <h2 class="visually-hidden">Анкета</h2>
+        <p class="form-main__description">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
+      </div>
+
       <form class="form-main__form form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__info info">
-          <ul class="info__list">
-            <li class="info__item">
-              <label class="info__label" for="nickname">Имя:*</label>
-              <input class="info__input info__input--hover info__input--focus info__input--error" type="text"
-                name="nickname" placeholder="Барсик" required id="nickname" />
+
+        <fieldset class="form__fieldset">
+          <ul class="form__list container">
+            <li class="form__item form-info">
+              <label class="form-info__label" for="nickname">Имя:*</label>
+              <input class="form-info__input form-info__input--hover form-info__input--focus form-info__input--error"
+                type="text" name="nickname" placeholder="Барсик" required id="nickname" />
             </li>
-            <li class="info__item">
-              <label class="info__label" for="weight">Вес (кг):*</label>
-              <input class="info__input info__input--hover info__input--focus info__input--error" type="text"
-                name="weight" placeholder="7" required id="weight" />
+            <li class="form__item form-info">
+              <label class="form-info__label" for="weight">Вес&nbsp;(кг):*</label>
+              <input class="form-info__input form-info__input--hover form-info__input--focus form-info__input--error"
+                type="text" name="weight" placeholder="7" required id="weight" />
             </li>
-            <li class="info__item">
-              <label class="info__label" for="years">Возраст (лет):*</label>
-              <input class="info__input info__input--hover info__input--focus info__input--error" type="text"
-                name="years" placeholder="7" id="years" />
+            <li class="form__item form-info">
+              <label class="form-info__label" for="years">Возраст&nbsp;(лет):</label>
+              <input class="form-info__input form-info__input--hover form-info__input--focus form-info__input--error"
+                type="text" name="years" placeholder="7" id="years" />
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="form__selection selection">
-          <ul class="selection__list">
-            <li class="selection__item">
-              <input class="selection__input selection__input--hover selection__input--active" type="radio"
-                name="choice" value="slim" checked id="slim" />
-              <label class="selection__label" for="slim">Похудение</label>
+        <fieldset class="form__fieldset form__fieldset-border">
+          <ul class="form__list container">
+            <li class="form__item form-select">
+              <input
+                class="form-select__radio form-select__input form-select__input--hover form-select__input--active visually-hidden"
+                type="radio" name="choice" value="slim" checked id="slim" />
+              <label class="form-select__label" for="slim">Похудение</label>
             </li>
-            <li class="selection__item">
-              <input class="selection__input selection__input--hover selection__input--active" type="radio"
-                name="choice" value="pro" id="pro" />
-              <label class="selection__label" for="pro">Набор мыссы</label>
+            <li class="form__item form-select">
+              <input
+                class="form-select__radio form-select__input form-select__input--hover form-select__input--active visually-hidden"
+                type="radio" name="choice" value="pro" id="pro" />
+              <label class="form-select__label" for="pro">Набор мыссы</label>
             </li>
-            <li class="selection__item">
-              <input class="selection__input selection__input--hover selection__input--active" type="radio"
-                name="choice" value="advice" id="advice" />
-              <label class="selection__label" for="advice">Не знаю (нужен совет)</label>
+            <li class="form__item form-select">
+              <input
+                class="form-select__radio form-select__input form-select__input--hover form-select__input--active visually-hidden"
+                type="radio" name="choice" value="advice" id="advice" />
+              <label class="form-select__label" for="advice">Не знаю (нужен совет)</label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="form__info info">
-          <legend class="info__legend">Контактные данные
-            (владельца кота)</legend>
-          <ul class="info-list">
-            <li class="info__item">
-              <label class="info__label" for="email">E-mail:*</label>
-              <input class="info__input info__input--hover info__input--focus info__input--error" type="email"
-                name="email" placeholder="kuklachev@gmail.com" required id="email" />
-            </li>
-            <li class="info__item">
-              <label class="info__label" for="tel">Телефон:*</label>
-              <input class="info__input info__input--hover info__input--focus info__input--error" type="tel" name="tel"
-                placeholder="8 (960) 900-60-90" required id="tel" />
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__comment comment">
-          <legend class="comment__legend">
-            Комментарий
-          </legend>
-          <textarea class="comment__text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
+        <div class="container">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Контактные данные
+              (владельца кота)</legend>
+            <ul class="form__list">
+              <li class="form__item form-info">
+                <label class="form-info__label" for="email">E-mail:*</label>
+                <input class="form-info__input form-info__input--hover form-info__input--focus form-info__input--error"
+                  type="email" name="email" placeholder="kuklachev@gmail.com" required id="email" />
+              </li>
+              <li class="form__item form-info">
+                <label class="form-info__label" for="tel">Телефон:*</label>
+                <input class="form-info__input form-info__input--hover form-info__input--focus form-info__input--error"
+                  type="tel" name="tel" placeholder="8 (960) 900-60-90" required id="tel" />
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset class="form__option option">
-          <ul class="option__list">
-            <li class="option__item">
-              <input class="option__input option__input--hover option__input--active" type="checkbox" name="sugarless"
-                checked id="sugar" />
-              <label class="option__label" for="sugar">Сахарозаменитель</label>
-            </li>
-            <li class="option__item">
-              <input class="option__input option__input--hover option__input--active" type="checkbox" name="water"
-                id="water" />
-              <label class="option__label" for="water">Питьевая вода</label>
-            </li>
-            <li class="option__item">
-              <input class="option__input option__input--hover option__input--active" type="checkbox" name="milk"
-                id="milk" />
-              <label class="option__label" for="milk">Питьевая вода</label>
-            </li>
-            <li class="option__item">
-              <input class="option__input option__input--hover option__input--active" type="checkbox" name="vitamins"
-                id="vitamins" />
-              <label class="option__label" for="vitamins">Витамины</label>
-            </li>
-          </ul>
-        </fieldset>
-        <input class="form__button default-button default-button--hover default-button--active" type="submit"
-          value="Отправить заявку">
-        <p class="form__note">* — Обязательные поля</p>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">
+              Комментарий
+            </legend>
+            <textarea class="form__text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">
+              Дополнительно
+            </legend>
+            <ul class="form__list">
+              <li class="form__item form-select">
+                <input
+                  class="form-select__checkbox form-select__input form-select__input--hover form-select__input--active visually-hidden"
+                  type="checkbox" name="sugarless" checked id="sugar" />
+                <label class="form-select__label" for="sugar">Сахарозаменитель</label>
+              </li>
+              <li class="form__item form-select">
+                <input
+                  class="form-select__checkbox form-select__input form-select__input--hover form-select__input--active visually-hidden"
+                  type="checkbox" name="water" id="water" />
+                <label class="form-select__label" for="water">Питьевая вода</label>
+              </li>
+              <li class="form__item form-select">
+                <input
+                  class="form-select__checkbox form-select__input form-select__input--hover form-select__input--active visually-hidden"
+                  type="checkbox" name="milk" id="milk" />
+                <label class="form-select__label" for="milk">Молоко</label>
+              </li>
+              <li class="form__item form-select">
+                <input
+                  class="form-select__checkbox form-select__input form-select__input--hover form-select__input--active visually-hidden"
+                  type="checkbox" name="vitamins" id="vitamins" />
+                <label class="form-select__label" for="vitamins">Витамины</label>
+              </li>
+            </ul>
+            <input class="form__submit basic-button basic-button--hover basic-button--active" type="submit"
+              value="Отправить заявку">
+            <p class="form__note">* — Обязательные поля</p>
+          </fieldset>
+        </div>
       </form>
     </section>
   </main>
 
   <footer class="page-footer">
-    <section class="map">
+    <section class="for-dealers container">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <div class="map__info container">
-        <h3 class="map__subtitle">Приглашаем к сотрудничеству дилеров!</h3>
-        <address class="map__adress">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </address>
-      </div>
+      <h3 class="for-dealers__subtitle">Приглашаем к сотрудничеству дилеров!</h3>
+      <address class="for-dealers__adress">
+        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+      </address>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
       <div class="map__image map__wrapper">
         <iframe class="map__goole-map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003217!2d30.320858716208942!3d59.93871916905398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614729702586!5m2!1sru!2sru"
-          width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy">
+          width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy">
         </iframe>
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="inet-contacts">
       <div class="container">
         <h2 class="visually-hidden">Наши контакты в интернет</h2>
-        <div class="page-footer__logo logo">
-          <a class="logo__link logo__link--hover logo__link--active">
-            <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Логотип Кэт энерджи текстовый">
-          </a>
-        </div>
-        <div class="social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--hover social__link--active" href="#">
-                <img src="img/icon_vkontakte.svg" width="23" height="16" alt="ВКонтакте" />
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--hover social__link--active" href="#">
-                <img src="img/icon_instagram.svg" width="16" height="16" alt="Инстаграм" />
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--hover social__link--active" href="#">
-                <img src="img/icon_facebook.svg" width="22" height="22" alt="Фейсбук" />
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="copyright">
-          <a class="copyright__link copyright__link--hover copyright__link--active"
-            href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="copyright__text">HTML Academy</p>
-            <img class="copyright__logo" src="img/copyright_logo.svg" width="27" height="34" alt="Логотип HTML-academy">
-          </a>
-        </div>
+        <ul class="inet-contacts__list">
+          <li class="inet-contacts__item page-footer__logo logo">
+            <a class="logo__link logo__link--hover logo__link--active">
+              <img class="logo__text" src="img/logo-text.svg" width="101" height="18"
+                alt="Логотип Кэт энерджи текстовый">
+            </a>
+          </li>
+          <li class="inet-contacts__item social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--hover social__link--active" href="#">
+                  <img src="img/icon_vkontakte.svg" width="23" height="16" alt="ВКонтакте" />
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--hover social__link--active" href="#">
+                  <img src="img/icon_instagram.svg" width="16" height="16" alt="Инстаграм" />
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--hover social__link--active" href="#">
+                  <img src="img/icon_facebook.svg" width="22" height="22" alt="Фейсбук" />
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="inet-contacts__item copyright">
+            <a class="copyright__link-text copyright__link copyright__link--hover copyright__link--active"
+              href="https://htmlacademy.ru/intensive/adaptive">
+              HTML Academy
+            </a>
+            <a class="copyright__link-logo copyright__link copyright__link--hover copyright__link--active"
+              href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__logo" src="img/copyright_logo.svg" width="27" height="34"
+                alt="Логотип HTML-academy">
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
   </footer>

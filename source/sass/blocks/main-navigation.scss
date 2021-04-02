@@ -1,6 +1,5 @@
 .main-navigation__list {
-  list-style: none;
-  padding: 0;
+  @include reset-list;
   margin: 0;
 }
 
@@ -12,6 +11,10 @@
   align-items: center;
   border-top: 1px solid $header-element-color;
   position: relative;
+}
+
+.main-navigation__item:last-child {
+  border-bottom: 1px solid $header-element-color;
 }
 
 .main-navigation__link {

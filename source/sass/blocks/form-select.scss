@@ -1,0 +1,42 @@
+.form-select__label {
+  margin-left: 45px;
+  position: relative;
+}
+
+.form-select__input + label::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $slider-border;
+  box-sizing: border-box;
+  position: absolute;
+  left: -45px;
+  top: -6px;
+}
+
+.form-select__radio + label::before {
+  border-radius: 50%;
+}
+
+.form-select__input:checked + label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -37px;
+  top: 2px;
+}
+
+.form-select__radio:checked + label::after {
+  width: 14px;
+  height: 14px;
+  background-color: $accent-color;
+  border-radius: 50%;
+}
+
+.form-select__checkbox:checked + label::after {
+  width: 26px;
+  height: 26px;
+  background-image: url("../../img/form_img/checkbox-checked.svg");
+  background-repeat: no-repeat;
+}

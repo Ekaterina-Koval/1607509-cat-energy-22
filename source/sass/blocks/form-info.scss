@@ -1,0 +1,19 @@
+.form-info__label {
+  margin-right: 10px;
+}
+
+.form-info__input {
+  height: 45px;
+  flex-grow: 1;
+  border: 1px solid $input-border-light;
+  box-sizing: border-box;
+
+  &::placeholder {
+    @include second-font;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: inherit;
+    padding: 14px;
+  }
+}
