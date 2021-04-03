@@ -1,0 +1,58 @@
+.catalog__title {
+  @include second-font;
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-black;
+  margin: 27px 0 41px;
+}
+
+.catalog__list {
+  @include second-font;
+  @include reset-list;
+  margin: 0;
+}
+
+.catalog__item {
+  padding: 18px 0 11px;
+  border-top: 1px solid $catalog-border;
+}
+
+.catalog__item:last-child {
+  border-bottom: 1px solid $catalog-border;
+}
+
+.catalog__subtitle {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 60px;
+  margin: 0;
+  position: relative;
+}
+
+.catalog__subtitle::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../img/catalog_img/all-products_cross.png");
+  position: absolute;
+  top: 10px;
+  left: 124px;
+}
+
+.catalog__slogan {
+  @include main-font;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400px;
+  text-align: center;
+  color: $main-content;
+  margin: 8px 0 21px;
+}
+
+.catalog__button {
+  margin-bottom: 15px;
+}

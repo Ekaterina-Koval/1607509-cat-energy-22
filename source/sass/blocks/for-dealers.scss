@@ -1,4 +1,4 @@
-.for-dealers {
+.for-dealers__block {
   display: flex;
   flex-wrap: wrap;
 }
@@ -8,7 +8,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $footer-title;
+  color: $subtitle-color;
   margin: 28px 0;
   width: 50%;
   min-height: 58px;

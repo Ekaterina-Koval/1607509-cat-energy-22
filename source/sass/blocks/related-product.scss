@@ -1,0 +1,41 @@
+.related-product {
+  @include second-font;
+}
+
+.related-product__title {
+  max-width: 230px;
+  margin: 0;
+  padding: 25px 0 36px;
+  text-align: left;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: none;
+  color: $basic-black;
+  position: relative;
+}
+
+.related-product__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 13px 0 19px;
+  border-top: 1px solid $catalog-border;
+  border-bottom: 1px solid $catalog-border;
+}
+
+.related-product__name {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $catalog-title;
+  width: 100%;
+}
+
+.related-product__propety {
+  @include main-font;
+  font-size: 14px;
+  line-height: 14px;
+  color: $main-content;
+  padding: 13px 0 15px;
+}
