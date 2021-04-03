@@ -1,0 +1,10 @@
+.title-greenline::after {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 2px;
+  background-color: $accent-color;
+  position: absolute;
+  left: 250px;
+  top: 40px;
+}

@@ -1,30 +1,32 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru" class="page">
 
 <head>
   <meta charset="utf-8">
   <title>Cat energy - интернет-магазин подбора и заказа систем функционального питания для кошек</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <div class="container">
-      <div class="page-header__logo logo">
+    <div class="page-header__nav">
+      <div class="page-header__logo logo container">
         <a class="logo__link logo__link--hover logo__link--active" href="index.html">
-          <img class="logo__image" src="img/logo-image.svg" width="33" height="38"
+          <img class="logo__image" src="img/logo-image.svg" width="34" height="38"
             alt="Логотип Кэт энерджи графический">
         </a>
         <a class="logo__link logo__link--hover logo__link--active" href="index.html">
           <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Логотип Кэт энерджи текстовый">
         </a>
-      </div>
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle main-navigation__toggle--state" type="button">
+        <div class="page-header__toggle page-header__toggle--state">
           <span class="visually-hidden">Открыть меню</span>
-        </button>
+        </div>
+      </div>
+      <nav class="main-navigation ">
         <ul class="main-navigation__list">
           <li class="main-navigation__item main-navigation__item--current">
-            <a class="main-navigation__link main-navigation__link--hover main-navigation__link--active main-navigation__link--current" href="index.html">
+            <a class="main-navigation__link main-navigation__link--hover main-navigation__link--active main-navigation__link--current"
+              href="index.html">
               Главная
             </a>
           </li>
@@ -51,14 +53,16 @@
         <h1 class="catalog__title">
           Каталог продукции
         </h1>
-        <ul class="catalog__list assortment-pro">
-          <li class="catalog__item product">
-            <!--ТЗ п."6.1. Изображение и название товара — ссылки на страницу с описанием товара. Страницу с описанием товара реализовывать не
-            нужно." Не нашла описание поведения в стайлгайд?-->
-            <a class="product__link-image" href="product.html">
-              <img class="product__image" src="img/catalog_img/product1_pro-chiсken500.png" width=68 height="86"
-                alt="Упаковка корма Cat energy pro 500 грамм с курицей">
-            </a>
+      </div>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <div class="product container">
+            <div class="product__image-block">
+              <a class="product__link-image" href="product.html">
+                <img class="product__image" src="img/catalog_img/product1_pro-chiсken500.png" width=68 height="86"
+                  alt="Упаковка корма Cat energy pro 500 грамм с курицей">
+              </a>
+            </div>
             <div class="product__info">
               <a class="product__link-text" href="product.html">
                 <h2 class="product__title">
@@ -76,22 +80,25 @@
                 </tr>
                 <tr class="product__item">
                   <td class="product__propety">Цена</td>
-                  <td class="product__propety-value">700&nbsp;р.</td>
+                  <td class="product__propety-value">700&nbsp;<span class="product__propety-value-upp">р.</span></td>
                 </tr>
               </table>
             </div>
-            <!--ТЗ п.6.2. Кнопка «Заказать» открывает страницу оформления заказа.-->
-            <div class="product__order order-button basic-button basic-button--hover basic-button--active">
-              <a class="order-button__link order-button__link--hover order-button__link--active" href="form.html">
+            <div class="product__button accent-button accent-button--hover accent-button--active">
+              <a class="accent-button__link accent-button__link--hover accent-button__link--active" href="form.html">
                 Заказать
               </a>
             </div>
-          </li>
-          <li class="catalog__item product">
-            <a class="product__link-image" href="product.html">
-              <img class="product__image" src="img/catalog_img/product2_pro-chiсken1000.png" width=84 height="101"
-                alt="Упаковка корма Cat energy pro 1000 грамм с курицей">
-            </a>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="product container">
+            <div class="product__image-block">
+              <a class="product__link-image" href="product.html">
+                <img class="product__image" src="img/catalog_img/product2_pro-chiсken1000.png" width=84 height="101"
+                  alt="Упаковка корма Cat energy pro 1000 грамм с курицей">
+              </a>
+            </div>
             <div class="product__info">
               <a class="product__link-text" href="product.html">
                 <h2 class="product__title">
@@ -109,21 +116,25 @@
                 </tr>
                 <tr class="product__item">
                   <td class="product__propety">Цена</td>
-                  <td class="product__propety-value">1000&nbsp;р.</td>
+                  <td class="product__propety-value">1000&nbsp;<span class="product__propety-value-upp">р.</span></td>
                 </tr>
               </table>
             </div>
-            <div class="product__order order-button basic-button basic-button--hover basic-button--active">
-              <a class="order-button__link order-button__link--hover order-button__link--active" href="form.html">
+            <div class="product__button accent-button accent-button--hover accent-button--active">
+              <a class="accent-button__link accent-button__link--hover accent-button__link--active" href="form.html">
                 Заказать
               </a>
             </div>
-          </li>
-          <li class="catalog__item product">
-            <a class="product__link-image" href="product.html">
-              <img class="product__image" src="img/catalog_img/product3_pro-fish500.png" width=84 height="101"
-                alt="Упаковка корма Cat energy pro 500 грамм с рыбой">
-            </a>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="product container">
+            <div class="product__image-block">
+              <a class="product__link-image" href="product.html">
+                <img class="product__image" src="img/catalog_img/product3_pro-fish500.png" width=84 height="101"
+                  alt="Упаковка корма Cat energy pro 500 грамм с рыбой">
+              </a>
+            </div>
             <div class="product__info">
               <a class="product__link-text" href="product.html">
                 <h2 class="product__title">
@@ -141,21 +152,25 @@
                 </tr>
                 <tr class="product__item">
                   <td class="product__propety">Цена</td>
-                  <td class="product__propety-value">700&nbsp;р.</td>
+                  <td class="product__propety-value">700&nbsp;<span class="product__propety-value-upp">р.</span></td>
                 </tr>
               </table>
             </div>
-            <div class="product__order order-button basic-button basic-button--hover basic-button--active">
-              <a class="order-button__link order-button__link--hover order-button__link--active" href="form.html">
+            <div class="product__button accent-button accent-button--hover accent-button--active">
+              <a class="accent-button__link accent-button__link--hover accent-button__link--active" href="form.html">
                 Заказать
               </a>
             </div>
-          </li>
-          <li class="catalog__item product">
-            <a class="product__link-image" href="product.html">
-              <img class="product__image" src="img/catalog_img/product4_pro-fish1000.png" width=84 height="101"
-                alt="Упаковка корма Cat energy pro 1000 грамм с рыбой">
-            </a>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="product container">
+            <div class="product__image-block">
+              <a class="product__link-image" href="product.html">
+                <img class="product__image" src="img/catalog_img/product4_pro-fish1000.png" width=84 height="101"
+                  alt="Упаковка корма Cat energy pro 1000 грамм с рыбой">
+              </a>
+            </div>
             <div class="product__info">
               <a class="product__link-text" href="product.html">
                 <h2 class="product__title">
@@ -173,23 +188,27 @@
                 </tr>
                 <tr class="product__item">
                   <td class="product__propety">Цена</td>
-                  <td class="product__propety-value">1000&nbsp;р.</td>
+                  <td class="product__propety-value">1000&nbsp;<span class="product__propety-value-upp">р.</span></td>
                 </tr>
               </table>
             </div>
-            <div class="product__order order-button basic-button basic-button--hover basic-button--active">
-              <a class="order-button__link order-button__link--hover order-button__link--active" href="form.html">
+            <div class="product__button accent-button accent-button--hover accent-button--active">
+              <a class="accent-button__link accent-button__link--hover accent-button__link--active" href="form.html">
                 Заказать
               </a>
             </div>
-          </li>
-        </ul>
-        <ul class="catalog__list assortment-slim">
-          <li class="catalog__item product">
-            <a class="product__link-image" href="product.html">
-              <img class="product__image" src="img/catalog_img/product5_slim-buckwheat500.png" width=68 height="86"
-                alt="Упаковка корма Cat energy slim 500 грамм с гречкой">
-            </a>
+          </div>
+        </li>
+      </ul>
+      <ul class="catalog__list assortment-slim">
+        <li class="catalog__item">
+          <div class="product container">
+            <div class="product__image-block">
+              <a class="product__link-image" href="product.html">
+                <img class="product__image" src="img/catalog_img/product5_slim-buckwheat500.png" width=68 height="86"
+                  alt="Упаковка корма Cat energy slim 500 грамм с гречкой">
+              </a>
+            </div>
             <div class="product__info">
               <a class="product__link-text" href="product.html">
                 <h2 class="product__title">
@@ -207,21 +226,25 @@
                 </tr>
                 <tr class="product__item">
                   <td class="product__propety">Цена</td>
-                  <td class="product__propety-value">400&nbsp;р.</td>
+                  <td class="product__propety-value">400&nbsp;<span class="product__propety-value-upp">р.</span></td>
                 </tr>
               </table>
             </div>
-            <div class="product__order order-button basic-button basic-button--hover basic-button--active">
-              <a class="order-button__link order-button__link--hover order-button__link--active" href="form.html">
+            <div class="product__button accent-button accent-button--hover accent-button--active">
+              <a class="accent-button__link accent-button__link--hover accent-button__link--active" href="form.html">
                 Заказать
               </a>
             </div>
-          </li>
-          <li class="catalog__item product">
-            <a class="product__link-image" href="product.html">
-              <img class="product__image" src="img/catalog_img/product6_slim-buckwheat1000.png" width=84 height="101"
-                alt="Упаковка корма Cat energy slim 1000 грамм с гречкой">
-            </a>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="product container">
+            <div class="product__image-block">
+              <a class="product__link-image" href="product.html">
+                <img class="product__image" src="img/catalog_img/product6_slim-buckwheat1000.png" width=84 height="101"
+                  alt="Упаковка корма Cat energy slim 1000 грамм с гречкой">
+              </a>
+            </div>
             <div class="product__info">
               <a class="product__link-text" href="product.html">
                 <h2 class="product__title">
@@ -239,21 +262,25 @@
                 </tr>
                 <tr class="product__item">
                   <td class="product__propety">Цена</td>
-                  <td class="product__propety-value">700&nbsp;р.</td>
+                  <td class="product__propety-value">700&nbsp;<span class="product__propety-value-upp">р.</span></td>
                 </tr>
               </table>
             </div>
-            <div class="product__order order-button basic-button basic-button--hover basic-button--active">
-              <a class="order-button__link order-button__link--hover order-button__link--active" href="form.html">
+            <div class="product__button accent-button accent-button--hover accent-button--active">
+              <a class="accent-button__link accent-button__link--hover accent-button__link--active" href="form.html">
                 Заказать
               </a>
             </div>
-          </li>
-          <li class="catalog__item product">
-            <a class="product__link-image" href="product.html">
-              <img class="product__image" src="img/catalog_img/product7_pro-rice500.png" width=84 height="101"
-                alt="Упаковка корма Cat energy slim 500 грамм с рисом">
-            </a>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="product container">
+            <div class="product__image-block">
+              <a class="product__link-image" href="product.html">
+                <img class="product__image" src="img/catalog_img/product7_pro-rice500.png" width=84 height="101"
+                  alt="Упаковка корма Cat energy slim 500 грамм с рисом">
+              </a>
+            </div>
             <div class="product__info">
               <a class="product__link-text" href="product.html">
                 <h2 class="product__title">
@@ -271,152 +298,189 @@
                 </tr>
                 <tr class="product__item">
                   <td class="product__propety">Цена</td>
-                  <td class="product__propety-value">500&nbsp;р.</td>
+                  <td class="product__propety-value">500&nbsp;<span class="product__propety-value-upp">р.</span></td>
                 </tr>
               </table>
             </div>
-            <div class="product__order order-button basic-button basic-button--hover basic-button--active">
-              <a class="order-button__link order-button__link--hover order-button__link--active" href="form.html">
+            <div class="product__button accent-button accent-button--hover accent-button--active">
+              <a class="accent-button__link accent-button__link--hover accent-button__link--active" href="form.html">
                 Заказать
               </a>
             </div>
-          </li>
-          <li class="catalog__item all-products">
-            <h2 class="all-products__title">
-              Показать еще 100500 товаров
-            </h2>
-            <p class="all-products__slogan">
-              На самом деле вкусов гораздо больше!
-            </p>
-            <!--ТЗ п."6.3. Кнопка «Показать все» показывает новые товары. При отключенном JS должен осуществляться переход на страницу новых товаров. Показ новых товаров и их страницу реализовывать не нужно." -->
-            <div class="all-products__button colorless-button colorless-button--hover colorless-button--active">
-              <a class="all-products__link all-products__link--hover all-products__link--active" href="assortment.html">
-                Показать всё
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </li>
+        <li class="catalog__item container">
+          <h2 class="catalog__subtitle">
+            Показать еще 100500 товаров
+          </h2>
+          <p class="catalog__slogan">
+            На самом деле вкусов гораздо больше!
+          </p>
+          <div class="catalog__button basic-button basic-button--hover basic-button--active">
+            <a class="catalog__link  basic-button__link basic-button__link--hover basic-button__link--active"
+              href="assortment.html">
+              Показать всё
+            </a>
+          </div>
+        </li>
+      </ul>
     </section>
-    <section class="additional-catalog">
-      <h2 class="additional-catalog__title">Дополнительные товары</h2>
-      <div class="additional-catalog__products related-product">
+
+    <section class="related-product container">
+      <h2 class="related-product__title title-greenline">
+        Дополнительные товары
+      </h2>
+      <div class="">
         <table class="related-product__list">
           <tr class="related-product__item">
-            <td class="related-product__name">Сахарозаменитель</td>
-            <td class="related-product__propety-unit">1 упаковка (100 г)</td>
-            <td class="related-product__propety-price">200&nbsp;г.</td>
+            <td class="related-product__name">
+              Сахарозаменитель
+            </td>
+            <td class="related-product__propety">
+              1 упаковка (100 г)
+            </td>
+            <td class="related-product__propety">
+              200&nbsp;<span class="product__propety-value-upp">р.</span>
+            </td>
             <td class="related-product__order ">
-              <div class="related-product__order order-button basic-button basic-button--hover basic-button--active">
-                <a class="order-button__link" href="order.html">
+              <div class="related-product__button accent-button accent-button--hover accent-button--active">
+                <a class="accent-button__link accent-button__link--hover accent-button__link--active" href="order.html">
                   Заказать
                 </a>
               </div>
             </td>
           </tr>
           <tr class="related-product__item">
-            <td class="related-product__name">Питьевая вода</td>
-            <td class="related-product__propety-unit">5 литров</td>
-            <td class="related-product__propety-price">50&nbsp;г.</td>
+            <td class="related-product__name">
+              Питьевая вода
+            </td>
+            <td class="related-product__propety">
+              5 литров
+            </td>
+            <td class="related-product__propety">
+              50&nbsp;<span class="product__propety-value-upp">р.</span>
+            </td>
             <td class="related-product__order ">
-              <div class="related-product__order order-button basic-button basic-button--hover basic-button--active">
-                <a class="order-button__link" href="order.html">
+              <div class="related-product__button accent-button accent-button--hover accent-button--active">
+                <a class="accent-button__link accent-button__link--hover accent-button__link--active" href="order.html">
                   Заказать
                 </a>
               </div>
             </td>
           </tr>
           <tr class="related-product__item">
-            <td class="related-product__name">Молоко</td>
-            <td class="related-product__propety-unit">1 литр</td>
-            <td class="related-product__propety-price">100&nbsp;г.</td>
+            <td class="related-product__name">
+              Молоко
+            </td>
+            <td class="related-product__propety">
+              1 литр
+            </td>
+            <td class="related-product__propety">
+              100&nbsp;<span class="product__propety-value-upp">р.</span>
+            </td>
             <td class="related-product__order ">
-              <div class="related-product__order order-button basic-button basic-button--hover basic-button--active">
-                <a class="order-button__link" href="order.html">
+              <div class="related-product__button accent-button accent-button--hover accent-button--active">
+                <a class="accent-button__link accent-button__link--hover accent-button__link--active" href="order.html">
                   Заказать
                 </a>
               </div>
             </td>
           </tr>
           <tr class="related-product__item">
-            <td class="related-product__name">Витамины</td>
-            <td class="related-product__propety-unit">1 упаковка (30 г)</td>
-            <td class="related-product__propety-price">300&nbsp;г.</td>
+            <td class="related-product__name">
+              Витамины
+            </td>
+            <td class="related-product__propety">
+              1 упаковка (30 г)
+            </td>
+            <td class="related-product__propety">
+              300&nbsp;<span class="product__propety-value-upp">р.</span>
+            </td>
             <td class="related-product__order ">
-              <div class="related-product__order order-button basic-button basic-button--hover basic-button--active">
-                <a class="order-button__link" href="order.html">
+              <div class="related-product__button accent-button accent-button--hover accent-button--active">
+                <a class="accent-button__link accent-button__link--hover accent-button__link--active" href="order.html">
                   Заказать
                 </a>
               </div>
             </td>
           </tr>
         </table>
-      </div>
-      <div class="transparent-color-image">
-        <h3 class="visualli-hidden">Чехол в подарок!</h3>
-        <p class="promo-offer">
-          Закажите все и получите чехол для кота в подарок!
-        </p>
+        <div class="related-product__promo promo-offer">
+          <h3 class="visually-hidden">
+            Чехол в подарок!
+          </h3>
+          <p class="promo-offer__item">
+            Закажите все и получите чехол для кота в подарок!
+          </p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <section class="map">
-      <h2 class="visually-hidden">
-        Как нас найти
-      </h2>
-      <div class="map__info container">
-        <h3 class="map__subtitle">
-          Приглашаем к сотрудничеству дилеров!
-        </h3>
-        <address class="map__adress">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </address>
+    <section class="for-dealers">
+      <div class="container">
+        <div class="for-dealers__block">
+          <h2 class="visually-hidden">Как нас найти</h2>
+          <h3 class="for-dealers__subtitle">Приглашаем к сотрудничеству дилеров!</h3>
+          <address class="for-dealers__adress">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </address>
+        </div>
       </div>
-      <div class="map__image map__wrapper">
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
+      <div class="map__image">
         <iframe class="map__goole-map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003217!2d30.320858716208942!3d59.93871916905398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614729702586!5m2!1sru!2sru"
-          width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy">
+          width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy">
         </iframe>
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="inet-contacts">
       <div class="container">
-        <h2 class="visually-hidden">Наши контакты в интернет</h2>
-        <div class="page-footer__logo logo">
-          <a class="logo__link logo__link--hover logo__link--active">
-            <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Логотип Кэт энерджи текстовый">
-          </a>
-        </div>
-        <div class="social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--hover social__link--active" href="#">
-                <img src="img/icon_vkontakte.svg" width="23" height="16" alt="ВКонтакте" />
+        <div class="inet-contacts__block">
+          <h2 class="visually-hidden">Наши контакты в интернет</h2>
+          <ul class="inet-contacts__list">
+            <li class="inet-contacts__item page-footer__logo logo">
+              <a class="logo__link logo__link--hover logo__link--active">
+                <img class="logo__text" src="img/logo-text.svg" width="101" height="18"
+                  alt="Логотип Кэт энерджи текстовый">
               </a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--hover social__link--active" href="#">
-                <img src="img/icon_instagram.svg" width="16" height="16" alt="Инстаграм" />
-              </a>
+            <li class="inet-contacts__item social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--hover social__link--active" href="#">
+                    <img src="img/icon_vkontakte.svg" width="23" height="16" alt="ВКонтакте" />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--hover social__link--active" href="#">
+                    <img src="img/icon_instagram.svg" width="16" height="16" alt="Инстаграм" />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--hover social__link--active" href="#">
+                    <img src="img/icon_facebook.svg" width="22" height="22" alt="Фейсбук" />
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--hover social__link--active" href="#">
-                <img src="img/icon_facebook.svg" width="22" height="22" alt="Фейсбук" />
+            <li class="inet-contacts__item copyright">
+              <a class="copyright__link-text copyright__link copyright__link--hover copyright__link--active"
+                href="https://htmlacademy.ru/intensive/adaptive">
+                HTML Academy
+              </a>
+              <a class="copyright__link-logo copyright__link copyright__link--hover copyright__link--active"
+                href="https://htmlacademy.ru/intensive/adaptive">
+                <img class="copyright__logo" src="img/copyright_logo.svg" width="27" height="34"
+                  alt="Логотип HTML-academy">
               </a>
             </li>
           </ul>
-        </div>
-        <div class="copyright">
-          <a class="copyright__link copyright__link--hover copyright__link--active"
-            href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="copyright__text">
-              HTML Academy
-            </p>
-            <img class="copyright__logo" src="img/copyright_logo.svg" width="27" height="34" alt="Логотип HTML-academy">
-          </a>
         </div>
       </div>
     </section>

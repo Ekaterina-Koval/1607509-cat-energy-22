@@ -1,17 +1,17 @@
-.basic-button {
+.accent-button {
   width: 280px;
   height: 40px;
-  background-color: $basic-background;
+  background-color: $accent-color;
   border: none;
   display: flex;
 }
 
-.basic-button__link {
+.accent-button__link {
   @include second-font;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
-  color: $main-content;
+  color: $basic-white;
   text-decoration: none;
   margin: auto;
 }
