@@ -1,15 +1,39 @@
-.page-header__logo {
-  width: 280px;
+// @import "blocks/page-header.scss";
+
+.page-header__nav {
   min-height: 38px;
+
+  @media (min-width: $tablet-width) {
+    @include display-flex-wrap;
+    justify-content: space-between;
+  }
+}
+
+.page-header__logo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
 }
 
 .page-header__toggle {
   width: 24px;
   height: 16px;
-  border-top: 2px solid $basic-black;
-  border-bottom: 2px solid $basic-black;
+  background: url("../../img/main-nav-open.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 16px;
+
+  &--state {
+    background: url("../../img/main-nav-close.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

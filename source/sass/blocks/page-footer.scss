@@ -1,7 +1,11 @@
+// @import "blocks/page-footer.scss";
+
 .page-footer {
   background-color: $basic-background;
 }
 
-.page-footer__for-dealers-index {
-  background-color: $basic-white;
+.page-footer__for-dealers--white-background {
+  @media (max-width: $mobile-width-only) {
+    background-color: $basic-white;
+  }
 }

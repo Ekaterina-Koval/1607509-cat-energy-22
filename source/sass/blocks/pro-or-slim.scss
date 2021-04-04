@@ -1,3 +1,5 @@
+// @import "blocks/pro-or-slim.scss";
+
 .pro-or-slim {
   background-color: $basic-background;
   margin-bottom: 20px;
@@ -15,7 +17,12 @@
   position: absolute;
   bottom: 3px;
   left: 7px;
+
+  &--offset-left {
+    left: -7px;
+  }
 }
+
 
 .pro-or-slim__title {
   @include second-font;

@@ -1,15 +1,18 @@
-.promo {
-  position: relative;
-}
+// @import "blocks/promo.scss";
 
-.promo__background-image {
-  background-image: url("../../img/index_img/cat_background.jpg");
+.promo {
+  background-image: url("../../img/index_img/promo-product.png"), linear-gradient($accent-color-background, $accent-color-background), url("../../img/index_img/cat_background.jpg"),;
+  background-position: center 167px, center top, top;
+  background-size: 280px 270px, 100vw 302px, 320px 302px;
   background-repeat: no-repeat;
-  background-position: center top;
-  object-fit: cover;
-  width: 100%;
-  height: 302px;
-  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    min-height: 478px;
+    background: url("../../img/index_img/promo-product.png");
+    background-position: center bottom;
+    background-size: 280px 270px;
+    background-repeat: no-repeat;
+  }
 }
 
 .promo__block {
@@ -19,7 +22,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   min-height: 480px;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+    align-items: flex-start;
+    min-height: initial;
+  }
 }
 
 .promo__title {
@@ -28,16 +38,35 @@
   font-weight: 400;
   padding-top: 27px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 414px;
+    min-height: 120px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin-left: 87px;
+  }
 }
 
 .promo__slogan {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  margin: 0;
-  padding: 25px 0;
+  margin: 25px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 283px;
+    min-height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 87px;
+  }
 }
 
-.promo__image {
-  margin: 2px auto;
+@media (min-width: $tablet-width) {
+  .promo__button {
+    margin-left: 87px;
+  }
 }

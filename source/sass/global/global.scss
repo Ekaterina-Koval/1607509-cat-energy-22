@@ -21,6 +21,11 @@
   padding: 0 20px;
   margin: 0 auto;
   position: relative;
+
+  @media (min-width: 768px) {
+    width: 708px;
+    padding: 0 30px;
+  }
 }
 
 .visually-hidden {
