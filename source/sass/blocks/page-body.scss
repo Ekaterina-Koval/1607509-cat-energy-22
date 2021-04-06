@@ -1,0 +1,13 @@
+// @import "blocks/page-body.scss";
+
+.page__body {
+  min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+  }
+}

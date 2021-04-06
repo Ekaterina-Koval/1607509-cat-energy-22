@@ -1,8 +1,7 @@
 // @import "blocks/for-dealers.scss";
 
 .for-dealers__block {
-  display: flex;
-  flex-wrap: wrap;
+  @include display-flex-wrap;
 }
 
 .for-dealers__subtitle {

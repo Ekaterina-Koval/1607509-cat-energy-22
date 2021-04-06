@@ -16,11 +16,10 @@
 }
 
 .slider__control {
-  margin: 25px 25px 0;
-  min-width: 228px;
-  min-height: 40px;
-  display: flex;
-  flex-wrap: wrap;
+  @include display-flex-wrap;
   justify-content: center;
   align-items: center;
+  min-width: 228px;
+  min-height: 40px;
+  margin: 25px 25px 0;
 }

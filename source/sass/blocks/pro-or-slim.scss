@@ -2,63 +2,118 @@
 
 .pro-or-slim {
   background-color: $basic-background;
+  padding: 20px;
+}
+
+.pro-or-slim:first-of-type {
   margin-bottom: 20px;
-}
+  background-image:
+    url("../img/index_img/cat_slim.svg"),
+    radial-gradient(50px 50px at 50% 50%, $accent-color 50%, transparent 50%);
+  background-position: 29px 21px, 22px 24px;
+  background-size: 36px 50px, 50px 50px;
+  background-repeat: no-repeat;
 
-.pro-or-slim__color-circle {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: $accent-color;
-  position: relative;
-}
+  @media (min-width: $tablet-width) {
+    background-image:
+      url("../img/index_img/cat_slim.svg"),
+      radial-gradient(200px 200px at 50% 50%, $accent-color 50%, transparent 50%);
+    background-position: right 92px top 81px, right 62px top 92px;
+    background-size: 140px 192px, 200px 200px;
+    background-repeat: no-repeat;
+  }
 
-.pro-or-slim__image {
-  position: absolute;
-  bottom: 3px;
-  left: 7px;
-
-  &--offset-left {
-    left: -7px;
+  @media (min-width: $desktop-width) {
+    padding: 52px;
+    background-image:
+      url("../img/index_img/cat_slim.svg"),
+      radial-gradient(100px 100px at 50% 50%, $accent-color 50%, transparent 50%);
+    background-position: 67px 41px, 52px 47px;
+    background-size: 70px 97px, 100px 100px;
+    background-repeat: no-repeat;
   }
 }
 
+.pro-or-slim:last-of-type {
+  margin-bottom: 20px;
+  background-image:
+    url("../img/index_img/cat_pro.svg"),
+    radial-gradient(50px 50px at 50% 50%, $accent-color 50%, transparent 50%);
+  background-position: 12px 35px, 22px 24px;
+  background-size: 67px 28px, 50px 50px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image:
+      url("../img/index_img/cat_pro.svg"),
+      radial-gradient(200px 200px at 50% 50%, $accent-color 50%, transparent 50%);
+    background-position: right 27px top 135px, right 62px top 92px;
+    background-size: 268px 112px, 200px 200px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 52px;
+    background-image:
+      url("../img/index_img/cat_slim.svg"),
+      radial-gradient(100px 100px at 50% 50%, $accent-color 50%, transparent 50%);
+    background-position: 32px 67px, 52px 47px;
+    background-size: 134px 56px, 100px 100px;
+    background-repeat: no-repeat;
+  }
+}
 
 .pro-or-slim__title {
   @include second-font;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  margin: 0;
-  padding: 10px 20px;
+  margin: 10px 0 10px 70px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 20px 0 24px;
+  }
 }
 
 .pro-or-slim__text {
+  margin: 20px 0 15px;
   width: 227px;
   min-height: 90px;
-  padding: 0;
-  margin: 0;
-  position: relative;
-}
+  padding-bottom: 23px;
+  border-bottom: 1px solid $main-element-color;
 
-.pro-or-slim__text::after {
-  content: "";
-  display: block;
-  width: 240px;
-  height: 1px;
-  background-color: $main-element-color;
-  position: absolute;
-  bottom: 0;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 342px;
+    min-height: 96px;
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 48px;
+  }
 }
 
 .pro-or-slim__link {
+  @include display-flex-wrap;
+  justify-content: center;
+  align-items: center;
+
   @include second-font;
   font-size: 16px;
   line-height: 16px;
-  min-width: 134px;
-  display: flex;
-  margin: auto 0;
   text-transform: uppercase;
   text-decoration: none;
   color: $basic-black;
+  min-width: 132px;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    min-height: 38px;
+  }
+}
+
+.pro-or-slim__link-arrow {
+  margin-left: 17px;
 }

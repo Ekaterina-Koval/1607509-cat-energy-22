@@ -1,10 +1,9 @@
 // @import "blocks/stat.scss";
 
 .stat {
-  background-color: $slider-background;
-  display: flex;
-  flex-wrap: wrap;
+  @include display-flex-wrap;
   flex-direction: column;
+  background-color: $slider-background;
 }
 
 .stat__title {
@@ -23,9 +22,8 @@
 }
 
 .stat__list {
+  @include display-flex-wrap;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .stat__item {
@@ -54,15 +52,15 @@
 }
 
 .stat__item-total {
+  @include display-flex-wrap;
+  justify-content: center;
+
   @include second-font;
   font-size: 14px;
   line-height: 20px;
   color: $basic-black;
   margin: 25px auto;
   text-transform: uppercase;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .stat__sum {

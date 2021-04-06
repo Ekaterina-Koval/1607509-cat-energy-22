@@ -1,14 +1,17 @@
 // @import "blocks/promo.scss";
 
 .promo {
-  background-image: url("../../img/index_img/promo-product.png"), linear-gradient($accent-color-background, $accent-color-background), url("../../img/index_img/cat_background.jpg"),;
+  background-image:
+    url("../img/index_img/promo-product.png"),
+    linear-gradient($accent-color-background, $accent-color-background),
+    url("../img/index_img/cat_background.jpg"),;
   background-position: center 167px, center top, top;
   background-size: 280px 270px, 100vw 302px, 320px 302px;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     min-height: 478px;
-    background: url("../../img/index_img/promo-product.png");
+    background-image: url("../img/index_img/promo-product.png");
     background-position: center bottom;
     background-size: 280px 270px;
     background-repeat: no-repeat;

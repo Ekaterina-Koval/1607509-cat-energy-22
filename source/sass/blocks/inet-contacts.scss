@@ -5,27 +5,24 @@
 }
 
 .inet-contacts__item:first-child {
-  min-height: 95px;
-  display: flex;
-  flex-wrap: wrap;
+  @include display-flex-wrap;
   justify-content: center;
   align-items: center;
+  min-height: 95px;
   border-bottom: 1px solid $main-element-color;
 }
 
 .inet-contacts__item:nth-child(2) {
-  min-height: 63px;
-  display: flex;
-  flex-wrap: wrap;
+  @include display-flex-wrap;
   justify-content: center;
   align-items: center;
+  min-height: 63px;
   border-bottom: 1px solid $main-element-color;
 }
 
 .inet-contacts__item:last-child {
-  min-height: 78px;
-  display: flex;
-  flex-wrap: wrap;
+  @include display-flex-wrap;
   justify-content: space-between;
   align-items: center;
+  min-height: 78px;
 }

@@ -2,15 +2,19 @@
 
 .assortment {
   padding-top: 22px;
-  display: flex;
-  flex-direction: column;
 }
 
 .assortment__pro-or-slim {
+  @include display-flex-wrap;
+  flex-direction: column;
   padding: 20px;
   box-sizing: border-box;
   width: 100%;
   min-height: 266px;
-  display: flex;
-  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    padding: 52px;
+    min-height: 372px;
+    box-sizing: border-box;
+  }
 }

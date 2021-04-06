@@ -22,11 +22,10 @@
 }
 
 .main-navigation__item {
-  min-height: 66px;
-  display: flex;
-  flex-wrap: wrap;
+  @include display-flex-wrap;
   justify-content: center;
   align-items: center;
+  min-height: 66px;
   position: relative;
 
   &::before {

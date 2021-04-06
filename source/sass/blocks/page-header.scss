@@ -10,8 +10,7 @@
 }
 
 .page-header__logo {
-  display: flex;
-  flex-wrap: wrap;
+  @include display-flex-wrap;
   justify-content: space-between;
   align-items: center;
 
@@ -23,12 +22,12 @@
 .page-header__toggle {
   width: 24px;
   height: 16px;
-  background: url("../../img/main-nav-open.svg");
+  background: url("../img/main-nav-open.svg");
   background-repeat: no-repeat;
   background-size: 24px 16px;
 
   &--state {
-    background: url("../../img/main-nav-close.svg");
+    background: url("../img/main-nav-close.svg");
     background-repeat: no-repeat;
     background-size: 24px 16px;
   }

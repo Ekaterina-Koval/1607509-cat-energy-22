@@ -2,8 +2,7 @@
 
 .social__list {
   @include reset-list;
-  display: flex;
-  flex-wrap: wrap;
+  @include display-flex-wrap;
   justify-content: center;
   align-items: center;
 }
