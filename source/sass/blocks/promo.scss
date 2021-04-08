@@ -16,7 +16,7 @@
     background-size: 280px 270px;
     background-repeat: no-repeat;
   }
-
+  /*
   @media (min-width: $desktop-width) {
     min-height: 656px;
     background-image:
@@ -26,8 +26,9 @@
     background-position: center, left 720px bottom, right bottom;
     background-size: 552px 500px, 100vw 696px, 720px 694px;
     background-repeat: no-repeat;
-  }
+  }*/
 }
+
 
 .promo__block {
   @include second-font;
