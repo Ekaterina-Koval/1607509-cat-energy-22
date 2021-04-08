@@ -1,6 +1,7 @@
+// @import "blocks/product.scss";
+
 .product {
-  display: flex;
-  flex-wrap: wrap;
+  @include display-flex-wrap;
 }
 
 .product__image-block {
@@ -45,14 +46,14 @@
 }
 
 .product__item {
+  @include display-flex-wrap;
+  justify-content: space-between;
+
   @include main-font;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: $main-content;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .product__propety-value-upp {

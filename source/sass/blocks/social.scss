@@ -1,19 +1,16 @@
+// @import "blocks/social.scss";
+
 .social__list {
   @include reset-list;
-  display: flex;
-  flex-wrap: wrap;
+  @include display-flex-wrap;
   justify-content: center;
   align-items: center;
 }
 
 .social__item:not(:last-child) {
   margin-right: 38px;
-}
 
-.inet-contacts__item:last-child {
-  min-height: 78px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  @media (min-width: $tablet-width) {
+    margin-right: 28px;
+  }
 }

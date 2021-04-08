@@ -1,9 +1,16 @@
+// @import "blocks/accent-button.scss";
+
 .accent-button {
   width: 280px;
   height: 40px;
   background-color: $accent-color;
   border: none;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    height: 54px;
+  }
 }
 
 .accent-button__link {

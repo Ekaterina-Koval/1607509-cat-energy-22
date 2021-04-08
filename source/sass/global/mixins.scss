@@ -12,3 +12,8 @@
   list-style: none;
   padding: 0;
 }
+
+@mixin display-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}

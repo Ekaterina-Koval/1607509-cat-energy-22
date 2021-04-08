@@ -3,15 +3,16 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat energy - интернет-магазин подбора и заказа систем функционального питания для кошек</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__nav">
-      <div class="page-header__logo logo container">
-        <a class="logo__link logo__link--hover logo__link--active">
+    <div class="page-header__nav container">
+      <div class="page-header__logo logo">
+        <a class=" logo__link logo__link--hover logo__link--active">
           <img class="logo__image" src="img/logo-image.svg" width="34" height="38"
             alt="Логотип Кэт энерджи графический">
         </a>
@@ -22,7 +23,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </div>
       </div>
-      <nav class="main-navigation ">
+      <nav class="main-navigation">
         <ul class="main-navigation__list">
           <li class="main-navigation__item main-navigation__item--current">
             <a
@@ -31,13 +32,13 @@
             </a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--hover main-navigation__link--active main-navigation__link--current"
+            <a class="main-navigation__link main-navigation__link--hover main-navigation__link--active"
               href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--hover main-navigation__link--active main-navigation__link--current"
+            <a class="main-navigation__link main-navigation__link--hover main-navigation__link--active"
               href="form.html">
               Подбор программы
             </a>
@@ -53,15 +54,12 @@
       и кошек
     </h1>
 
-    <section class="promo ">
-      <div class="promo__background-image background-image">
-        <div class="background-image__color"></div>
-      </div>
+    <section class="promo">
       <div class="promo__block container">
-        <h2 class="promo__title">Функциональное питание для котов</h2>
-        <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="img/index_img/promo-product.png" width="280" height="270"
-          alt="Упаковка корма Cat energy с курицей на фоне трёх желтых кругов">
+        <div class="promo-content">
+          <h2 class="promo__title">Функциональное питание для котов</h2>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        </div>
         <div class="promo__button accent-button accent-button--hover accent-button--active">
           <a class="accent-button__link accent-button__link--active accent-button__link--hover" href="form.html">
             Подобрать программу
@@ -72,24 +70,23 @@
 
     <section class="assortment container">
       <div class="assortment__pro-or-slim pro-or-slim">
-        <div class="pro-or-slim__color-circle">
-          <img class="pro-or-slim__image" src="img/index_img/cat_slim.svg" width="36" height="50"
-            alt="Похудевшая кошка">
-        </div>
         <h2 class="pro-or-slim__title">Похудение</h2>
         <p class="pro-or-slim__text">
           Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
           поможет вашему питомцу сбросить лишний вес.
         </p>
         <a class="pro-or-slim__link pro-or-slim__link--hover pro-or-slim__link--active" href="catalog-slim.html">
-          Каталог Slim
+          <span class="pro-or-slim__link-text">
+            Каталог Slim
+          </span>
+          <svg class="pro-or-slim__link-arrow" width="32" height="12" viewBox="0 0 32 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
+            <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+          </svg>
         </a>
       </div>
       <div class="assortment__pro-or-slim pro-or-slim">
-        <div class="pro-or-slim__color-circle">
-          <img class="pro-or-slim__image" src="img/index_img/cat_pro.svg" width="67" height="28"
-            alt="Кошка набравшая массу">
-        </div>
         <h2 class="pro-or-slim__title">Набор массы</h2>
         <p class="pro-or-slim__text">
           Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
@@ -97,6 +94,11 @@
         </p>
         <a class="pro-or-slim__link pro-or-slim__link--hover pro-or-slim__link--focus" href="catalog-pro.html">
           Каталог Pro
+          <svg class="pro-or-slim__link-arrow" width="32" height="12" viewBox="0 0 32 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
+            <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+          </svg>
         </a>
       </div>
     </section>
@@ -129,64 +131,68 @@
       </div>
     </section>
 
-    <section class="stat">
+    <section class="illustrative-example">
       <div class="container">
-        <h2 class="stat__title">Живой пример</h2>
-        <p class="stat__text">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <dl class="stat__list">
-          <div class="stat__item">
-            <dt class="stat__number">
-              5 кг
-            </dt>
-            <dd class="stat__discription">
-              Снижение веса
-            </dd>
-          </div>
-          <div class="stat__item">
-            <dt class="stat__number">
-              60 дней
-            </dt>
-            <dd class="stat__discription">
-              Затрачено времени
-            </dd>
-          </div>
-          <div class="stat__item-total">
-            <dt class="stat__sum">
-              15&nbsp;000 руб.
-            </dt>
-            <dd class="stat__total">
-              Затраты на питание:&nbsp;
-            </dd>
-          </div>
-        </dl>
-      </div>
-      <div class="stat__slider slider">
-        <ul class="slider__list">
-          <li class="slider__item slider__item--before">
-            <img class="slider__image slider__image" src="img/index_img/cat-thick_stat.png" width="311" height="232"
-              alt="Толстый кот">
-          </li>
-          <li class="slider__item slider__item--after visually-hidden">
-            <img class="slider__image" src="img/index_img/cat-thin_stat.png" width="251" height="240" alt="Худой кот">
-          </li>
-        </ul>
-        <div class="container">
-          <div class="slider__control slider-control">
-            <p class="slider-control__value">
-              Было
+        <div class="illustrative-example__wrapper">
+          <div class="illustrative-example__stat stat">
+            <h2 class="stat__title">Живой пример</h2>
+            <p class="stat__text">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат
+              без
+              изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему спит по 16 часов в день.
             </p>
-            <div class="slider-control__range">
-              <div class="slider-control__bar">
+            <dl class="stat__list">
+              <div class="stat__item">
+                <dt class="stat__number">
+                  5 кг
+                </dt>
+                <dd class="stat__discription">
+                  Снижение веса
+                </dd>
               </div>
+              <div class="stat__item">
+                <dt class="stat__number">
+                  60 дней
+                </dt>
+                <dd class="stat__discription">
+                  Затрачено времени
+                </dd>
+              </div>
+              <div class="stat__item-value-total">
+                <dt class="stat__sum">
+                  15&nbsp;000 руб.
+                </dt>
+                <dd class="stat__total">
+                  Затраты на питание:&nbsp;
+                </dd>
+              </div>
+            </dl>
+          </div>
+          <div class="illustrative-example__slider slider">
+            <ul class="slider__list">
+              <li class="slider__item slider__item--before">
+                <img class="slider__image slider__image" src="img/index_img/cat-thick_stat.png" width="311" height="232"
+                  alt="Толстый кот">
+              </li>
+              <li class="slider__item slider__item--after invisible">
+                <img class="slider__image" src="img/index_img/cat-thin_stat.png" width="251" height="240"
+                  alt="Худой кот">
+              </li>
+            </ul>
+            <div class="slider__control slider-control">
+              <p class="slider-control__value">
+                Было
+              </p>
+              <div class="slider-control__range">
+                <div class="slider-control__bar">
+                </div>
+              </div>
+              <div class="slider-control__toggle slider-control__toggle--hover slider-control__toggle--active">
+              </div>
+              <p class="slider-control__value">
+                Стало
+              </p>
             </div>
-            <div class="slider-control__toggle slider-control__toggle--hover slider-control__toggle--active">
-            </div>
-            <p class="slider-control__value">
-              Стало
-            </p>
           </div>
         </div>
       </div>
@@ -194,24 +200,25 @@
   </main>
 
   <footer class="page-footer">
-    <section class="page-footer__for-dealers-index for-dealers">
+    <section class="page-footer__for-dealers page-footer__for-dealers--white-background for-dealers">
       <div class="container">
         <div class="for-dealers__block">
           <h2 class="visually-hidden">Как нас найти</h2>
           <h3 class="for-dealers__subtitle">Приглашаем к сотрудничеству дилеров!</h3>
           <address class="for-dealers__adress">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            <span>ул. Большая Конюшенная, д. 19/8</span> <span>Санкт-Петербург</span>
           </address>
         </div>
       </div>
-    </section>
-    <section class="map">
-      <h2 class="visually-hidden">Карта</h2>
-      <div class="map__image">
-        <iframe class="map__goole-map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003217!2d30.320858716208942!3d59.93871916905398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614729702586!5m2!1sru!2sru"
-          width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy">
-        </iframe>
+
+      <div class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <div class="map__image">
+          <iframe class="map__goole-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003217!2d30.320858716208942!3d59.93871916905398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614729702586!5m2!1sru!2sru"
+            width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
       </div>
     </section>
 
@@ -220,9 +227,9 @@
         <div class="inet-contacts__block">
           <h2 class="visually-hidden">Наши контакты в интернет</h2>
           <ul class="inet-contacts__list">
-            <li class="inet-contacts__item page-footer__logo logo">
-              <a class="logo__link logo__link--hover logo__link--active">
-                <img class="logo__text" src="img/logo-text.svg" width="101" height="18"
+            <li class="inet-contacts__item logo">
+              <a class="logo__footer logo__link logo__link--hover logo__link--active">
+                <img class="logo__text" src="img/logo-text.svg" width="128" height="24"
                   alt="Логотип Кэт энерджи текстовый">
               </a>
             </li>

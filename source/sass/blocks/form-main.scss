@@ -1,3 +1,9 @@
+// @import "blocks/form-main.scss";
+
+.form-main {
+  border-top: 1px solid $header-element-color;
+}
+
 .form-main__title {
   @include second-font;
   font-size: 36px;
