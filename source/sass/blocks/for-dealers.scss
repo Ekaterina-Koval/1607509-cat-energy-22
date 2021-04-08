@@ -2,6 +2,22 @@
 
 .for-dealers__block {
   @include display-flex-wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-around;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 201px;
+    position: absolute;
+    z-index: 1;
+    background-color: $basic-white;
+    top: 95px;
+    padding: 38px 76px 22px;
+    box-sizing: border-box;
+  }
 }
 
 .for-dealers__subtitle {
@@ -13,12 +29,34 @@
   margin: 28px 0;
   width: 50%;
   min-height: 58px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+    width: 171px;
+    min-height: 84px;
+  }
 }
 
 .for-dealers__adress {
+  font-style: normal;
+  line-height: 20px;
   margin: 28px 0;
   width: 50%;
   min-height: 58px;
-  font-style: normal;
-  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include display-flex-wrap;
+    justify-content: flex-end;
+    vertical-align: space-between;
+    font-size: 16px;
+    width: 159px;
+    min-height: 80px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    text-align: left;
+  }
 }

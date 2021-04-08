@@ -1,7 +1,7 @@
 // @import "blocks/page-header.scss";
 
 .page-header__nav {
-  min-height: 38px;
+  min-height: 40px;
 
   @media (min-width: $tablet-width) {
     @include display-flex-wrap;
@@ -13,9 +13,18 @@
   @include display-flex-wrap;
   justify-content: space-between;
   align-items: center;
+  width: 280px;
+  min-height: 38px;
+
 
   @media (min-width: $tablet-width) {
     width: 174px;
+    min-height: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    min-height: 59px;
   }
 }
 

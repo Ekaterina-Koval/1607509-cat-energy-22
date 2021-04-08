@@ -2,27 +2,29 @@
 
 .inet-contacts__list {
   @include reset-list;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 95px 63px 78px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px;
+  }
 }
 
-.inet-contacts__item:first-child {
+.inet-contacts__item {
   @include display-flex-wrap;
   justify-content: center;
   align-items: center;
-  min-height: 95px;
+  width: 100%;
   border-bottom: 1px solid $main-element-color;
-}
 
-.inet-contacts__item:nth-child(2) {
-  @include display-flex-wrap;
-  justify-content: center;
-  align-items: center;
-  min-height: 63px;
-  border-bottom: 1px solid $main-element-color;
-}
+  &:last-child {
+    justify-content: space-between;
+    border-bottom: none;
+  }
 
-.inet-contacts__item:last-child {
-  @include display-flex-wrap;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 78px;
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }

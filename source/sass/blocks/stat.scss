@@ -1,34 +1,59 @@
 // @import "blocks/stat.scss";
 
-.stat {
-  @include display-flex-wrap;
-  flex-direction: column;
-  background-color: $slider-background;
-}
-
 .stat__title {
   @include second-font;
   font-size: 36px;
   line-height: 40px;
   color: $basic-black;
-  padding-top: 27px;
-  margin: 0;
+  margin: 2px 0 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 43px 0 63px;
+  }
 }
 
 .stat__text {
-  padding-top: 33px;
-  padding-bottom: 25px;
-  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    min-height: 96px;
+  }
 }
 
 .stat__list {
-  @include display-flex-wrap;
-  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 64px auto;
+  gap: 25px 31px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 162px 162px auto;
+    gap: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 64px auto;
+    gap: 25px 31px;
+  }
 }
 
 .stat__item {
-  width: 124px;
-  min-height: 64px;
+  background: url("../img/broken-frame.png") no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    min-height: 77px;
+    background: url("../img/broken-frame.png") no-repeat;
+  }
 }
 
 .stat__number {
@@ -49,22 +74,40 @@
   line-height: 12px;
   text-transform: lowercase;
   text-align: center;
+  color: $main-content;
 }
 
-.stat__item-total {
+.stat__item-value-total {
+  grid-column: 1/-1;
+  margin: auto;
+
   @include display-flex-wrap;
   justify-content: center;
+  min-width: 188px;
+  min-height: 20px;
 
   @include second-font;
   font-size: 14px;
   line-height: 20px;
   color: $basic-black;
-  margin: 25px auto;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3/-1;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 174px;
+    min-height: 77px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+    margin: auto;
+  }
 }
 
 .stat__sum {
-  margin: 0;
   order: 1;
 }
 

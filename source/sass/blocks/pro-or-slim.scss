@@ -3,6 +3,10 @@
 .pro-or-slim {
   background-color: $basic-background;
   padding: 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .pro-or-slim:first-of-type {
@@ -55,7 +59,7 @@
   @media (min-width: $desktop-width) {
     padding: 52px;
     background-image:
-      url("../img/index_img/cat_slim.svg"),
+      url("../img/index_img/cat_pro.svg"),
       radial-gradient(100px 100px at 50% 50%, $accent-color 50%, transparent 50%);
     background-position: 32px 67px, 52px 47px;
     background-size: 134px 56px, 100px 100px;
@@ -75,6 +79,10 @@
     line-height: 36px;
     margin: 20px 0 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 20px auto 24px;
+  }
 }
 
 .pro-or-slim__text {
@@ -92,6 +100,11 @@
     padding-bottom: 0;
     border-bottom: none;
     margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 467px;
+    min-height: 72px;
   }
 }
 

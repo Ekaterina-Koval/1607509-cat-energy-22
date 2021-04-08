@@ -9,4 +9,8 @@
 
 .social__item:not(:last-child) {
   margin-right: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 28px;
+  }
 }

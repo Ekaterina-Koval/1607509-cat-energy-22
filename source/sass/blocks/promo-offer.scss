@@ -6,7 +6,7 @@
   height: 289px;
   background-image: url("../img/catalog_img/cat-green-background.jpg");
   background-repeat: no-repeat;
-  background-color: $accent-color-background;
+  background-color: rgba($accent-color, 0.85);
 }
 
 .promo-offer__item {

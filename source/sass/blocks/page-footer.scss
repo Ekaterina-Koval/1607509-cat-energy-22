@@ -5,7 +5,5 @@
 }
 
 .page-footer__for-dealers--white-background {
-  @media (max-width: $mobile-width-only) {
-    background-color: $basic-white;
-  }
+  background-color: $basic-white;
 }
