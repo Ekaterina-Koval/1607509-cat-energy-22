@@ -34,20 +34,6 @@
   min-height: 66px;
   position: relative;
 
-  &::before {
-    content: "";
-    display: block;
-    width: 100vw;
-    height: 1px;
-    background-color: $header-element-color;
-    position: absolute;
-    top: 0;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     min-height: 24px;
   }

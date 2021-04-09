@@ -1,0 +1,15 @@
+// @import "blocks/element-border-top.scss";
+
+.element-border-top {
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 1px;
+      background-color: $header-element-color;
+      position: absolute;
+      top: 0;
+    }
+  }
+}
