@@ -1,12 +1,29 @@
 // @import "blocks/title-greenline.scss";
 
-.title-greenline::after {
-  content: "";
-  display: block;
-  width: 100vw;
-  height: 2px;
-  background-color: $accent-color;
-  position: absolute;
-  left: 250px;
-  top: 40px;
+.title-greenline {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 2px;
+      background-color: $accent-color;
+      position: absolute;
+      right: 110%;
+      top: 15px;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 2px;
+    background-color: $accent-color;
+    position: absolute;
+    left: 110%;
+    top: 15px;
+  }
 }

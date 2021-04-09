@@ -1,7 +1,18 @@
 // @import "blocks/form-main.scss";
 
-.form-main {
+.form-main__wrapper {
+  @include display-flex-wrap;
+  flex-direction: column;
   border-top: 1px solid $header-element-color;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    padding-right: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .form-main__title {
@@ -10,6 +21,10 @@
   line-height: 36px;
   color: $basic-black;
   margin: 27px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 54px 0;
+  }
 }
 
 .form-main__description {

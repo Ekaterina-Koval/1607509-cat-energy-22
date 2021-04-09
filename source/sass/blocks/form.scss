@@ -1,5 +1,11 @@
 // @import "blocks/form.scss";
 
+.form {
+  @include display-flex-wrap;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+
 .form__fieldset {
   @include second-font;
   font-size: 16px;
@@ -7,36 +13,86 @@
   text-transform: uppercase;
   border: none;
   padding: 0;
+  width: 100%;
+  margin: 20px 0;
+
+  &--half {
+    @media (min-width: $desktop-width) {
+      width: 569px;
+      height: 200px;
+      margin: 0;
+    }
+  }
 }
 
 .form__fieldset-border {
-  border-top: 1px solid $main-element-color;
-  border-bottom: 1px solid $main-element-color;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 1px;
+      background-color: $header-element-color;
+      position: absolute;
+      top: 0;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 1px;
+      background-color: $header-element-color;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $input-border-light;
+    box-sizing: border-box;
+    padding-left: 28px;
+  }
 }
 
 .form__list {
   @include reset-list;
 }
 
+.form__list--row {
+  @media (min-width: $desktop-width) {
+    @include display-flex-wrap;
+    justify-content: space-between;
+    margin: 0;
+  }
+}
+
 .form__item {
-  width: 100%;
+  @include display-flex-wrap;
   min-height: 45px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px 0;
+
+  &--half {
+    @media (min-width: $desktop-width) {
+      width: 569px;
+    }
+  }
 }
 
 .form__legend {
-  max-width: 187px;
-  padding: 15px 0;
+  width: fit-content;
+  margin: 15px 0;
   text-align: left;
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
 }
 
-.form__text {
+.form__textarea {
   width: 100%;
   min-height: 150px;
   margin-top: 10px;
@@ -46,7 +102,7 @@
   resize: none;
 }
 
-.form__text::placeholder {
+.form__textarea::placeholder {
   @include second-font;
   font-size: 16px;
   text-transform: uppercase;
@@ -61,6 +117,10 @@
   color: $basic-white;
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
 }
 
 .form__note {
@@ -69,4 +129,9 @@
   line-height: 16px;
   text-transform: none;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-left: 60px;
+  }
 }

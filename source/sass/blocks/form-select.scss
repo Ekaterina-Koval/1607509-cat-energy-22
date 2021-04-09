@@ -42,3 +42,19 @@
   background-image: url("../img/form_img/checkbox-checked.svg");
   background-repeat: no-repeat;
 }
+
+.form-select__add-list {
+  @include display-flex-wrap;
+}
+
+.form-select__add-item {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
+}
