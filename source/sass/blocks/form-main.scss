@@ -3,7 +3,6 @@
 .form-main__wrapper {
   @include display-flex-wrap;
   flex-direction: column;
-  border-top: 1px solid $header-element-color;
 
   @media (min-width: $tablet-width) {
     border-top: none;

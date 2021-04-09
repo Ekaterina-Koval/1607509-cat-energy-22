@@ -1,5 +1,27 @@
 // @import "blocks/catalog.scss";
 
+.catalog__list {
+  @include second-font;
+  @include reset-list;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: 190px;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 324px 324px;
+    grid-row: 430px;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-row: 511px;
+    gap: 60px 80px;
+  }
+}
+
 .catalog__title {
   @include second-font;
   font-size: 36px;
@@ -8,19 +30,8 @@
   margin: 27px 0 41px;
 }
 
-.catalog__list {
-  @include second-font;
-  @include reset-list;
-  margin: 0;
-}
-
 .catalog__item {
   padding: 18px 0 11px;
-  border-top: 1px solid $catalog-border;
-}
-
-.catalog__item:last-child {
-  border-bottom: 1px solid $catalog-border;
 }
 
 .catalog__subtitle {

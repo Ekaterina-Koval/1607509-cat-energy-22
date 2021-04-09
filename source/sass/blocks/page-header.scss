@@ -1,5 +1,11 @@
 // @import "blocks/page-header.scss";
 
+@media (max-width: $mobile-width-only) {
+  .page-header {
+    border-bottom: 1px solid $header-element-color;
+  }
+}
+
 .page-header__nav {
   min-height: 40px;
 

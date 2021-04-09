@@ -2,6 +2,9 @@
 
 .product {
   @include display-flex-wrap;
+  justify-content: center;
+  position: relative;
+  padding-top: 20px;
 }
 
 .product__image-block {

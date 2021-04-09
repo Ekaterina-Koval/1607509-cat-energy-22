@@ -1,17 +1,30 @@
 // @import "blocks/promo-offer.scss";
 
 .promo-offer {
+  @include display-flex-wrap;
   margin: 40px 0 35px;
   width: 280px;
   height: 289px;
   background-image: url("../img/catalog_img/cat-green-background.jpg");
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
   background-color: rgba($accent-color, 0.85);
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
+    margin: auto 0 0;
+  }
 }
 
 .promo-offer__item {
-  width: 161px;
-  min-height: 60px;
+  @include main-font;
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
@@ -19,6 +32,18 @@
   position: relative;
   margin: auto;
   padding-top: 186px;
+  width: 161px;
+  min-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 345px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 186px 0 0;
+    text-align: center;
+  }
 }
 
 .promo-offer__item::before {
@@ -30,4 +55,10 @@
   position: absolute;
   left: 35px;
   top: 60px;
+
+  @media (min-width: $tablet-width)
+    and (max-width: $desktop-width) {
+    left: 0;
+    top: 0;
+  }
 }

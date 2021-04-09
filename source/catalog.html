@@ -10,36 +10,34 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__nav">
-      <div class="page-header__logo logo container">
-        <a class="logo__link logo__link--hover logo__link--active" href="index.html">
+    <div class="page-header__nav container">
+      <div class="page-header__logo logo">
+        <a class="logo__header-image logo__link logo__link--hover logo__link--active">
           <img class="logo__image" src="img/logo-image.svg" width="34" height="38"
             alt="Логотип Кэт энерджи графический">
         </a>
-        <a class="logo__link logo__link--hover logo__link--active" href="index.html">
+        <a class="logo__header-text logo__link logo__link--hover logo__link--active">
           <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Логотип Кэт энерджи текстовый">
         </a>
         <div class="page-header__toggle page-header__toggle--state">
           <span class="visually-hidden">Открыть меню</span>
         </div>
       </div>
-      <nav class="main-navigation ">
+      <nav class="main-navigation">
         <ul class="main-navigation__list">
-          <li class="main-navigation__item main-navigation__item--current">
-            <a class="main-navigation__link main-navigation__link--hover main-navigation__link--active main-navigation__link--current"
-              href="index.html">
+          <li class="main-navigation__item element-border-top main-navigation__item--current">
+            <a href="index.html"
+              class="main-navigation__link main-navigation__link--hover main-navigation__link--active">
               Главная
             </a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--hover main-navigation__link--active main-navigation__link--current"
-              href="catalog.html">
+          <li class="main-navigation__item element-border-top">
+            <a class="main-navigation__link main-navigation__link--hover main-navigation__link--active  main-navigation__link--current">
               Каталог продукции
             </a>
           </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--hover main-navigation__link--active main-navigation__link--current"
-              href="form.html">
+          <li class="main-navigation__item element-border-top">
+            <a class="main-navigation__link main-navigation__link--hover main-navigation__link--active" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -49,15 +47,13 @@
   </header>
 
   <main class="page-main">
-    <section class="catalog">
-      <div class="container">
-        <h1 class="catalog__title">
-          Каталог продукции
-        </h1>
-      </div>
+    <section class="catalog container">
+      <h1 class="catalog__title">
+        Каталог продукции
+      </h1>
       <ul class="catalog__list">
-        <li class="catalog__item">
-          <div class="product container">
+        <li class="catalog__item ">
+          <div class="product element-border-top">
             <div class="product__image-block">
               <a class="product__link-image" href="product.html">
                 <img class="product__image" src="img/catalog_img/product1_pro-chiсken500.png" width=68 height="86"
@@ -93,7 +89,7 @@
           </div>
         </li>
         <li class="catalog__item">
-          <div class="product container">
+          <div class="product element-border-top">
             <div class="product__image-block">
               <a class="product__link-image" href="product.html">
                 <img class="product__image" src="img/catalog_img/product2_pro-chiсken1000.png" width=84 height="101"
@@ -129,7 +125,7 @@
           </div>
         </li>
         <li class="catalog__item">
-          <div class="product container">
+          <div class="product element-border-top">
             <div class="product__image-block">
               <a class="product__link-image" href="product.html">
                 <img class="product__image" src="img/catalog_img/product3_pro-fish500.png" width=84 height="101"
@@ -165,7 +161,7 @@
           </div>
         </li>
         <li class="catalog__item">
-          <div class="product container">
+          <div class="product element-border-top">
             <div class="product__image-block">
               <a class="product__link-image" href="product.html">
                 <img class="product__image" src="img/catalog_img/product4_pro-fish1000.png" width=84 height="101"
@@ -203,7 +199,7 @@
       </ul>
       <ul class="catalog__list assortment-slim">
         <li class="catalog__item">
-          <div class="product container">
+          <div class="product element-border-top">
             <div class="product__image-block">
               <a class="product__link-image" href="product.html">
                 <img class="product__image" src="img/catalog_img/product5_slim-buckwheat500.png" width=68 height="86"
@@ -239,7 +235,7 @@
           </div>
         </li>
         <li class="catalog__item">
-          <div class="product container">
+          <div class="product element-border-top">
             <div class="product__image-block">
               <a class="product__link-image" href="product.html">
                 <img class="product__image" src="img/catalog_img/product6_slim-buckwheat1000.png" width=84 height="101"
@@ -275,7 +271,7 @@
           </div>
         </li>
         <li class="catalog__item">
-          <div class="product container">
+          <div class="product element-border-top">
             <div class="product__image-block">
               <a class="product__link-image" href="product.html">
                 <img class="product__image" src="img/catalog_img/product7_pro-rice500.png" width=84 height="101"
@@ -310,102 +306,112 @@
             </div>
           </div>
         </li>
-        <li class="catalog__item container">
-          <h2 class="catalog__subtitle">
-            Показать еще 100500 товаров
-          </h2>
-          <p class="catalog__slogan">
-            На самом деле вкусов гораздо больше!
-          </p>
-          <div class="catalog__button basic-button basic-button--hover basic-button--active">
-            <a class="catalog__link  basic-button__link basic-button__link--hover basic-button__link--active"
-              href="assortment.html">
-              Показать всё
-            </a>
+        <li class="catalog__item">
+          <div class="product element-border-top">
+            <div class="product__all">
+              <h2 class="catalog__subtitle">
+                Показать еще 100500 товаров
+              </h2>
+              <p class="catalog__slogan">
+                На самом деле вкусов гораздо больше!
+              </p>
+              <div class="catalog__button basic-button basic-button--hover basic-button--active">
+                <a class="catalog__link  basic-button__link basic-button__link--hover basic-button__link--active"
+                  href="assortment.html">
+                  Показать всё
+                </a>
+              </div>
+            </div>
           </div>
         </li>
       </ul>
     </section>
 
-    <section class="related-product container">
-      <h2 class="related-product__title title-greenline">
-        Дополнительные товары
-      </h2>
-      <div class="">
-        <table class="related-product__list">
-          <tr class="related-product__item">
-            <td class="related-product__name">
-              Сахарозаменитель
-            </td>
-            <td class="related-product__propety">
-              1 упаковка (100 г)
-            </td>
-            <td class="related-product__propety">
-              200&nbsp;<span class="product__propety-value-upp">р.</span>
-            </td>
-            <td class="related-product__order ">
-              <div class="related-product__button accent-button accent-button--hover accent-button--active">
-                <a class="accent-button__link accent-button__link--hover accent-button__link--active" href="order.html">
-                  Заказать
-                </a>
-              </div>
-            </td>
-          </tr>
-          <tr class="related-product__item">
-            <td class="related-product__name">
-              Питьевая вода
-            </td>
-            <td class="related-product__propety">
-              5 литров
-            </td>
-            <td class="related-product__propety">
-              50&nbsp;<span class="product__propety-value-upp">р.</span>
-            </td>
-            <td class="related-product__order ">
-              <div class="related-product__button accent-button accent-button--hover accent-button--active">
-                <a class="accent-button__link accent-button__link--hover accent-button__link--active" href="order.html">
-                  Заказать
-                </a>
-              </div>
-            </td>
-          </tr>
-          <tr class="related-product__item">
-            <td class="related-product__name">
-              Молоко
-            </td>
-            <td class="related-product__propety">
-              1 литр
-            </td>
-            <td class="related-product__propety">
-              100&nbsp;<span class="product__propety-value-upp">р.</span>
-            </td>
-            <td class="related-product__order ">
-              <div class="related-product__button accent-button accent-button--hover accent-button--active">
-                <a class="accent-button__link accent-button__link--hover accent-button__link--active" href="order.html">
-                  Заказать
-                </a>
-              </div>
-            </td>
-          </tr>
-          <tr class="related-product__item">
-            <td class="related-product__name">
-              Витамины
-            </td>
-            <td class="related-product__propety">
-              1 упаковка (30 г)
-            </td>
-            <td class="related-product__propety">
-              300&nbsp;<span class="product__propety-value-upp">р.</span>
-            </td>
-            <td class="related-product__order ">
-              <div class="related-product__button accent-button accent-button--hover accent-button--active">
-                <a class="accent-button__link accent-button__link--hover accent-button__link--active" href="order.html">
-                  Заказать
-                </a>
-              </div>
-            </td>
-          </tr>
-        </table>
+    <section class="related-product">
+      <div class="related-product__wrapper container">
+        <div class="related-product__block">
+          <h2 class="related-product__title title-greenline">
+            Дополнительные товары
+          </h2>
+          <table class="related-product__list">
+            <tr class="related-product__item">
+              <td class="related-product__name">
+                Сахарозаменитель
+              </td>
+              <td class="related-product__propety">
+                1 упаковка (100 г)
+              </td>
+              <td class="related-product__propety">
+                200&nbsp;<span class="related-product__propety-value-upp">р.</span>
+              </td>
+              <td class="related-product__order ">
+                <div class="related-product__button accent-button accent-button--hover accent-button--active">
+                  <a class="accent-button__link accent-button__link--hover accent-button__link--active"
+                    href="order.html">
+                    Заказать
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr class="related-product__item">
+              <td class="related-product__name">
+                Питьевая вода
+              </td>
+              <td class="related-product__propety">
+                5 литров
+              </td>
+              <td class="related-product__propety">
+                50&nbsp;<span class="related-product__propety-value-upp">р.</span>
+              </td>
+              <td class="related-product__order ">
+                <div class="related-product__button accent-button accent-button--hover accent-button--active">
+                  <a class="accent-button__link accent-button__link--hover accent-button__link--active"
+                    href="order.html">
+                    Заказать
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr class="related-product__item">
+              <td class="related-product__name">
+                Молоко
+              </td>
+              <td class="related-product__propety">
+                1 литр
+              </td>
+              <td class="related-product__propety">
+                100&nbsp;<span class="related-product__propety-value-upp">р.</span>
+              </td>
+              <td class="related-product__order ">
+                <div class="related-product__button accent-button accent-button--hover accent-button--active">
+                  <a class="accent-button__link accent-button__link--hover accent-button__link--active"
+                    href="order.html">
+                    Заказать
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr class="related-product__item">
+              <td class="related-product__name">
+                Витамины
+              </td>
+              <td class="related-product__propety">
+                1 упаковка (30 г)
+              </td>
+              <td class="related-product__propety">
+                300&nbsp;<span class="related-product__propety-value-upp">р.</span>
+              </td>
+              <td class="related-product__order ">
+                <div class="related-product__button accent-button accent-button--hover accent-button--active">
+                  <a class="accent-button__link accent-button__link--hover accent-button__link--active"
+                    href="order.html">
+                    Заказать
+                  </a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
         <div class="related-product__promo promo-offer">
           <h3 class="visually-hidden">
             Чехол в подарок!
@@ -419,24 +425,25 @@
   </main>
 
   <footer class="page-footer">
-    <section class="for-dealers">
+    <section class="page-footer__for-dealers for-dealers">
       <div class="container">
         <div class="for-dealers__block">
           <h2 class="visually-hidden">Как нас найти</h2>
           <h3 class="for-dealers__subtitle">Приглашаем к сотрудничеству дилеров!</h3>
           <address class="for-dealers__adress">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            <span>ул. Большая Конюшенная, д. 19/8</span> <span>Санкт-Петербург</span>
           </address>
         </div>
       </div>
-    </section>
-    <section class="map">
-      <h2 class="visually-hidden">Карта</h2>
-      <div class="map__image">
-        <iframe class="map__goole-map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003217!2d30.320858716208942!3d59.93871916905398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614729702586!5m2!1sru!2sru"
-          width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy">
-        </iframe>
+
+      <div class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <div class="map__image">
+          <iframe class="map__goole-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003217!2d30.320858716208942!3d59.93871916905398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614729702586!5m2!1sru!2sru"
+            width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
       </div>
     </section>
 
@@ -446,8 +453,8 @@
           <h2 class="visually-hidden">Наши контакты в интернет</h2>
           <ul class="inet-contacts__list">
             <li class="inet-contacts__item page-footer__logo logo">
-              <a class="logo__link logo__link--hover logo__link--active">
-                <img class="logo__text" src="img/logo-text.svg" width="101" height="18"
+              <a class="logo__footer-text logo__link logo__link--hover logo__link--active">
+                <img class="logo__text" src="img/logo-text.svg" width="128" height="24"
                   alt="Логотип Кэт энерджи текстовый">
               </a>
             </li>
