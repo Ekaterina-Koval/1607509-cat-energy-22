@@ -48,6 +48,8 @@
 
 .stat__item {
   background: url("../img/broken-frame.png") no-repeat;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     width: 162px;

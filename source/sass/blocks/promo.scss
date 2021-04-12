@@ -5,30 +5,18 @@
     url("../img/index_img/promo-product.png"),
     linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)),
     url("../img/index_img/cat_background.jpg"),;
-  background-position: center 167px, center top, top;
-  background-size: 280px 270px, 100vw 302px, 320px 302px;
+  background-position: center 167px, top, center top;
+  background-size: 280px 270px, 100vw 302px, auto 302px;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    min-height: 478px;
+    min-height: 872px;
     background-image: url("../img/index_img/promo-product.png");
     background-position: center bottom;
-    background-size: 280px 270px;
+    background-size: 709px 609px;
     background-repeat: no-repeat;
   }
-  /*
-  @media (min-width: $desktop-width) {
-    min-height: 656px;
-    background-image:
-      url("../img/index_img/promo-product.png"),
-      linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)),
-      url("../img/index_img/cat_background-right.jpg"),;
-    background-position: center, left 720px bottom, right bottom;
-    background-size: 552px 500px, 100vw 696px, 720px 694px;
-    background-repeat: no-repeat;
-  }*/
 }
-
 
 .promo__block {
   @include second-font;
@@ -39,17 +27,25 @@
   justify-content: space-between;
   align-items: center;
   min-height: 480px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
+    min-height: 872px;
     color: $basic-black;
     align-items: flex-start;
-    min-height: initial;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 82px;
   }
 }
 
 .promo__title {
+  width: 249px;
+  min-height: 72px;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1em;
   font-weight: 400;
   padding-top: 27px;
   margin: 0;
@@ -58,7 +54,7 @@
     width: 414px;
     min-height: 120px;
     font-size: 60px;
-    line-height: 60px;
+    line-height: 1em;
     text-align: left;
     margin-left: 87px;
   }
@@ -70,7 +66,7 @@
 
 .promo__slogan {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1em;
   text-transform: uppercase;
   margin: 25px 0;
 

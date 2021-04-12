@@ -1,25 +1,20 @@
 // @import "blocks/assortment.scss";
 
 .assortment {
-  padding-top: 22px;
 
-  @media (min-width: $desktop-width) {
-    @include display-flex-wrap;
-    justify-content: space-between;
-  }
-}
-
-.assortment__pro-or-slim {
-  @include display-flex-wrap;
-  flex-direction: column;
-  padding: 20px;
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 266px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    padding: 52px;
-    min-height: 372px;
-    box-sizing: border-box;
+    gap: 30px;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding-bottom: 71px;
   }
 }

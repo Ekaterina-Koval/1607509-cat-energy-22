@@ -3,14 +3,9 @@
 .pro-or-slim {
   background-color: $basic-background;
   padding: 20px;
-
-  @media (min-width: $desktop-width) {
-    width: 570px;
-  }
 }
 
-.pro-or-slim:first-of-type {
-  margin-bottom: 20px;
+.pro-or-slim--slim {
   background-image:
     url("../img/index_img/cat_slim.svg"),
     radial-gradient(50px 50px at 50% 50%, $accent-color 50%, transparent 50%);
@@ -38,8 +33,7 @@
   }
 }
 
-.pro-or-slim:last-of-type {
-  margin-bottom: 20px;
+.pro-or-slim--pro {
   background-image:
     url("../img/index_img/cat_pro.svg"),
     radial-gradient(50px 50px at 50% 50%, $accent-color 50%, transparent 50%);
@@ -87,7 +81,7 @@
 
 .pro-or-slim__text {
   margin: 20px 0 15px;
-  width: 227px;
+  width: 100%;
   min-height: 90px;
   padding-bottom: 23px;
   border-bottom: 1px solid $main-element-color;
@@ -108,25 +102,31 @@
   }
 }
 
-.pro-or-slim__link {
-  @include display-flex-wrap;
-  justify-content: center;
-  align-items: center;
+.pro-or-slim__link-arrow {
+  margin-left: 17px;
+  width: 26px;
+}
 
+.pro-or-slim__link {
   @include second-font;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
   color: $basic-black;
-  min-width: 132px;
+  width: auto;
+  height: auto;
+
+  &:hover .pro-or-slim__link-arrow {
+    width: 32px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     width: 161px;
     min-height: 38px;
   }
-}
-
-.pro-or-slim__link-arrow {
-  margin-left: 17px;
 }

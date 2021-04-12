@@ -1,9 +1,30 @@
 // @import "blocks/logo.scss";
 
 .logo__image {
+  display: block;
   width: 34px;
   height: 38px;
-  background-color: $basic-white;
+}
+
+.logo__header-text {
+  margin: auto;
+}
+
+.logo__text {
+  display: block;
+  width: 101px;
+  height: 18px;
+}
+
+.logo__link {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .logo__footer {

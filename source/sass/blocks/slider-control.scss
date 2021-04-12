@@ -1,21 +1,36 @@
 // @import "blocks/slider-control.scss";
 
 .slider-control__value {
-  @include second-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  display: flex;
+  @include display-flex-wrap;
   justify-content: center;
   align-items: center;
   color: $basic-black;
-  min-width: 70px;
-  min-height: 40px;
+  width: 70px;
+  height: 40px;
+  margin: 0;
+}
+
+.slider-control__value-text {
+  @include second-font;
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+  border-bottom: 1px dotted rgba($basic-black, 0.24);
+
+  &:hover {
+    border-bottom: 1px solid rgba($basic-black, 0.24);
+  }
+
+  &:active {
+    border-bottom: none;
+  }
 }
 
 .slider-control__range {
   width: 84px;
   height: 14px;
+  margin: 0 12px;
   border: 1px solid $slider-border;
   border-radius: 6px;
   background-color: $basic-white;

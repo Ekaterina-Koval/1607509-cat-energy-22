@@ -1,11 +1,19 @@
 // @import "blocks/accent-button.scss";
 
 .accent-button {
-  width: 280px;
+  @include display-flex-wrap;
+
+  width: 100%;
   height: 40px;
   background-color: $accent-color;
   border: none;
   display: flex;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $accent-color-hover;
+  }
 
   @media (min-width: $tablet-width) {
     width: 244px;
@@ -14,11 +22,20 @@
 }
 
 .accent-button__link {
+  @include display-flex-wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
   @include second-font;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   color: $basic-white;
   text-decoration: none;
-  margin: auto;
+
+  &:active {
+    opacity: 0.3;
+  }
 }

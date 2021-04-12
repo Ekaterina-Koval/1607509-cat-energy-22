@@ -1,13 +1,26 @@
 // @import "blocks/copyright.scss";
 
-.copyright {
+.copyright__link {
   @include display-flex-wrap;
   justify-content: space-between;
-  width: 100%;
-}
-
-.copyright__link-text {
+  align-items: center;
   font-size: 16px;
   color: $main-content;
   text-decoration: none;
+  width: 100%;
+  height: 100%;
+
+  &:hover .copyright__logo-path,
+  &:focus .copyright__logo-path {
+    fill: $accent-color;
+  }
+
+  &:active .copyright__logo-text {
+    color: $main-content;
+    opacity: 0.3;
+  }
+
+  &:active .copyright__logo-path {
+    opacity: 0.3;
+  }
 }
