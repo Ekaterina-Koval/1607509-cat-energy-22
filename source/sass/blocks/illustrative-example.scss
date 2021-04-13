@@ -11,6 +11,10 @@
     background-size: 100vw 462px;
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .illustrative-example__wrapper {

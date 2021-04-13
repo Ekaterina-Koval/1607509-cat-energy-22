@@ -3,6 +3,14 @@
 .pro-or-slim {
   background-color: $basic-background;
   padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 52px;
+  }
 }
 
 .pro-or-slim--slim {
@@ -75,7 +83,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 20px auto 24px;
+    margin: 25px auto 73px 162px;
   }
 }
 
@@ -89,7 +97,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    width: 342px;
+    width: 63%;
     min-height: 96px;
     padding-bottom: 0;
     border-bottom: none;
@@ -97,7 +105,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 467px;
+    width: 100%;
     min-height: 72px;
   }
 }

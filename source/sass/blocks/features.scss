@@ -4,8 +4,12 @@
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 0;
+    padding-bottom: 47px;
     border-bottom: 1px solid $header-element-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
   }
 }
 
@@ -67,19 +71,19 @@
       linear-gradient($accent-color, $accent-color);
   }
 
-  background-position: 10px 10px, left top;
+  background-position: 10px 30px, left 20px;
   background-size: 30px 30px, 50px 50px;
   background-repeat: no-repeat;
 }
 
-@media (min-width: $tablet-width) {
-  .features__item::before {
+.features__item::before {
+  @media (min-width: $tablet-width) {
     content: counter(num) "";
     counter-increment: num;
     display: inline-block;
     position: absolute;
-    top: 0;
-    left: 50%;
+    top: -20px;
+    left: 30%;
     width: 112px;
     height: 280px;
 

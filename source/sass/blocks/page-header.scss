@@ -6,6 +6,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .page-header {
+    height: 112px;
+  }
+}
+
 .page-header__nav {
   display: grid;
   grid-template-columns: 1fr;
