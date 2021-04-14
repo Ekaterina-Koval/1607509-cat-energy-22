@@ -26,5 +26,9 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+
+    &:first-of-type {
+      justify-content: flex-start;
+    }
   }
 }

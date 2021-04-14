@@ -1,6 +1,6 @@
 // @import "blocks/slider-control.scss";
 
-.slider-control__value {
+.slider-control__button {
   @include display-flex-wrap;
   justify-content: center;
   align-items: center;
@@ -8,9 +8,10 @@
   width: 70px;
   height: 40px;
   margin: 0;
+  border: none;
 }
 
-.slider-control__value-text {
+.slider-control__button-text {
   @include second-font;
   font-size: 16px;
   line-height: 20px;

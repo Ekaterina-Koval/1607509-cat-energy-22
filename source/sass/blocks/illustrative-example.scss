@@ -20,7 +20,7 @@
 .illustrative-example__wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 650px;
     grid-template-rows: 656px;
   }
 }

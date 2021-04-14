@@ -10,13 +10,13 @@
 .social__icon {
   &:hover .social__icon-path,
   &:focus .social__icon-path {
-    fill: $accent-color;
+    stroke: $accent-color;
   }
 
   &:active {
     opacity: 0.3;
   }
-} /*внести изменения для иконки фейсбук*/
+}
 
 .social__item:not(:last-child) {
   margin-right: 38px;

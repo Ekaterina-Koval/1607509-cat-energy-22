@@ -23,4 +23,12 @@
   &:active .copyright__logo-path {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
+}
+
+.copyright__logo-text:first-child {
+  margin-right: 22px;
 }

@@ -6,7 +6,7 @@
     linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)),
     url("../img/index_img/cat_background.jpg"),;
   background-position: center 167px, top, center top;
-  background-size: 280px 270px, 100vw 302px, auto 302px;
+  background-size: 280px 270px, 100% 302px, auto 302px;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
