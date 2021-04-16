@@ -11,14 +11,14 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/index_img/promo-product-white.png");
-    background-position: left 40px bottom;
+    background-position: center bottom;
     background-size: 709px 609px;
     background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/index_img/promo-product-right.png");
-    background-position: left 558px bottom;
+    background-image: url("../img/index_img/promo-product.png");
+    background-position: left 584px bottom 48px;
     background-size: 552px 499px;
     background-repeat: no-repeat;
 
@@ -58,7 +58,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding-bottom: 0;
-    min-height: 872px;
+    min-height: 842px;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,7 +81,7 @@
     font-size: 60px;
     line-height: 1em;
     text-align: left;
-    margin: 64px 87px 41px;
+    margin: 32px 87px 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -111,7 +111,7 @@
 
 @media (min-width: $tablet-width) {
   .promo__button {
-    margin-left: 87px;
+    margin-left: 82px;
   }
 }
 

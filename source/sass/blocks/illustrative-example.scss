@@ -2,9 +2,10 @@
 
 .illustrative-example {
   background-color: $slider-background;
-  padding: 25px 0;
+  padding: 25px 0 12px;
 
   @media (min-width: $tablet-width) {
+    padding: 25px 0 52px;
     background-color: $basic-white;
     background-image: linear-gradient(rgba($slider-background, 0.85), rgba($slider-background, 0.85));
     background-position: center bottom;

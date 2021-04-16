@@ -4,7 +4,7 @@
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 47px;
+    padding-bottom: 40px;
     border-bottom: 1px solid $header-element-color;
   }
 
@@ -17,7 +17,12 @@
   @include second-font;
   font-size: 36px;
   line-height: 40px;
-  margin: 27px 0 25px;
+  margin: 0 0 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .features__list {
@@ -32,7 +37,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 280px 280px;
-    gap: 60px;
+    gap: 38px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,9 +76,18 @@
       linear-gradient($accent-color, $accent-color);
   }
 
-  background-position: 10px 30px, left 20px;
-  background-size: 30px 30px, 50px 50px;
+  background-position: 15px 15px, left;
+  background-size: 30px 30px, 60px 60px;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 82px;
+    background-position: 25px 60px, left top 35px;
+    background-size: 30px 30px, 80px 80px;
+    background-repeat: no-repeat;
+  }
 }
 
 .features__item::before {
@@ -82,8 +96,8 @@
     counter-increment: num;
     display: inline-block;
     position: absolute;
-    top: -20px;
-    left: 30%;
+    top: -6px;
+    left: 35%;
     width: 112px;
     height: 280px;
 
@@ -101,8 +115,12 @@
   padding-left: 80px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
-    width: 201px;
     margin: 0;
+    padding-left: 0;
+    width: 250px;
+
+    &--shot {
+      width: 201px;
+    }
   }
 }

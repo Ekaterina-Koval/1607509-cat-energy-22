@@ -2,6 +2,7 @@
 
 .slider {
   position: relative;
+  padding: 24px 0 0;
 }
 
 .slider__list {
@@ -11,8 +12,9 @@
 }
 
 .slider__item {
-  width: 100%;
+  width: 280px;
   height: 232px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -30,10 +32,12 @@
   }
 
   .slider__image {
-    width: 100%;
+    width: 311px;
     height: 232px;
     display: block;
-    margin: auto;
+    position: absolute;
+    left: -20px;
+    object-fit: cover;
   }
 }
 
@@ -67,15 +71,14 @@
   }
 }
 
-
 .slider__control {
   @include display-flex-wrap;
   justify-content: center;
   align-items: center;
-  min-width: 228px;
   min-height: 40px;
+  margin-top: 26px;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-around;
+    margin-top: 68px;
   }
 }

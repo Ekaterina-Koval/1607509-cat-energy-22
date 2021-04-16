@@ -3,9 +3,11 @@
 .for-dealers__block {
   @include display-flex-wrap;
   justify-content: space-between;
+  padding: 28px 0;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-around;
+    padding: 66px 41px 51px;
+    min-height: 84px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,29 +23,30 @@
 }
 
 .for-dealers__subtitle {
+  @include display-flex-wrap;
+  justify-content: flex-start;
+  vertical-align: space-between;
+  width: 50%;
+  min-height: 58px;
+  margin: 0;
+
   @include second-font;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $subtitle-color;
-  margin: 28px 0;
-  width: 50%;
-  min-height: 58px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 21px;
     width: 171px;
-    min-height: 84px;
   }
 }
 
 .for-dealers__adress {
   font-style: normal;
   line-height: 20px;
-  margin: 28px 0;
   width: 50%;
-  min-height: 58px;
 
   @media (min-width: $tablet-width) {
     @include display-flex-wrap;

@@ -1,9 +1,18 @@
 // @import "blocks/slider-control.scss";
 
+.slider-control {
+  margin: 14px auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 14px auto;
+  }
+}
+
 .slider-control__button {
   @include display-flex-wrap;
   justify-content: center;
   align-items: center;
+  background-color: $slider-background;
   color: $basic-black;
   width: 70px;
   height: 40px;
@@ -19,7 +28,14 @@
   text-transform: uppercase;
   border-bottom: 1px dotted rgba($basic-black, 0.24);
 
-  &:hover {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 6px;
+  }
+
+  &:hover,
+  &:focus {
     border-bottom: 1px solid rgba($basic-black, 0.24);
   }
 
@@ -29,12 +45,20 @@
 }
 
 .slider-control__range {
-  width: 84px;
+  width: 82px;
   height: 14px;
-  margin: 0 12px;
   border: 1px solid $slider-border;
   border-radius: 6px;
   background-color: $basic-white;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 12px;
+    width: 428px;
+    height: 6px;
+    border: none;
+    background-color: $slider-border;
+  }
 }
 
 .slider-control__bar {
@@ -43,4 +67,29 @@
   background-color: $accent-color;
   border-radius: 6px;
   margin: 4px 6px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 34px;
+    height: 34px;
+    background-color: $basic-white;
+    border: 1px solid $slider-border;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: absolute;
+    left: 191px;
+    top: -16px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: $accent-color;
+      border-radius: 50%;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+    }
+  }
 }

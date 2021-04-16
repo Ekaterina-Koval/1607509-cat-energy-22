@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  padding-bottom: 27px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     gap: 30px;
