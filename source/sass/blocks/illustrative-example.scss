@@ -4,15 +4,10 @@
   background-color: $slider-background;
   padding: 25px 0 12px;
 
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-  }
-
-
   @media (min-width: $tablet-width) {
     padding: 25px 0 52px;
     background-color: $basic-white;
-    background-image: linear-gradient(rgba($slider-background, 0.85), rgba($slider-background, 0.85));
+    background-image: linear-gradient(rgba($basic-background, 0.85), rgba($basic-background, 0.85));
     background-position: center bottom;
     background-size: 100vw 462px;
     background-repeat: no-repeat;
@@ -26,7 +21,7 @@
 .illustrative-example__wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 650px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 656px;
   }
 }

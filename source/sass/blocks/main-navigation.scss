@@ -10,6 +10,10 @@
     width: 100%;
     justify-content: flex-end;
   }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-end;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -79,7 +83,6 @@
 
 .main-navigation__list {
   @include reset-list;
-  margin: 0;
 
   @media (min-width: $tablet-width) {
     @include display-flex-wrap;
@@ -114,6 +117,7 @@
   font-size: 20px;
   line-height: 20px;
   color: $basic-black;
+
   position: relative;
 
   &:hover,

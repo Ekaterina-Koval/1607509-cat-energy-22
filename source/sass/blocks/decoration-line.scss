@@ -25,8 +25,9 @@
       height: 2px;
       background-color: $accent-color;
       position: absolute;
-      right: 110%;
       top: 15px;
+      left: -50vw;
+      z-index: -1;
     }
   }
 

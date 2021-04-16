@@ -9,6 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 4px;
     border-bottom: none;
   }
 }
@@ -28,7 +29,6 @@
 .features__list {
   @include reset-list;
   counter-reset: num;
-  margin: 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 60px 60px 60px 60px;
@@ -107,6 +107,10 @@
     color: $basic-background;
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 47%;
+  }
 }
 
 .features__text {
@@ -117,10 +121,10 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding-left: 0;
-    width: 250px;
+    width: 80%;
+  }
 
-    &--shot {
-      width: 201px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
