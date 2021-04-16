@@ -1,12 +1,48 @@
 // @import "blocks/logo.scss";
 
-.logo__image {
-  width: 34px;
-  height: 38px;
-  background-color: $basic-white;
+.logo {
+  @include display-flex-wrap;
+  background: url("../img/logo-image1.svg");
+  background-position: left top 11px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/logo-image2.svg");
+    background-position: left top 24px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/logo-image3.svg");
+    background-position: left top 52px;
+    background-repeat: no-repeat;
+  }
+
+  &--footer {
+    background: none;
+  }
 }
 
-.logo__footer {
-  width: 128px;
-  height: 24px;
+.logo__catenergy {
+  margin: 22px auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 42px 0 42px 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    margin: 78px 17% 11px;
+  }
+}
+
+.logo__link {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

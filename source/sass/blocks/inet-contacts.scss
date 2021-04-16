@@ -4,7 +4,7 @@
   @include reset-list;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 95px 63px 78px;
+  grid-template-rows: 80px 63px 78px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
@@ -19,6 +19,10 @@
   width: 100%;
   border-bottom: 1px solid $main-element-color;
 
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+  }
+
   &:last-child {
     justify-content: space-between;
     border-bottom: none;
@@ -26,5 +30,9 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+
+    &:first-of-type {
+      justify-content: flex-start;
+    }
   }
 }

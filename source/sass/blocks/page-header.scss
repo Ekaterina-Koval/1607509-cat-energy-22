@@ -2,51 +2,26 @@
 
 @media (max-width: $mobile-width-only) {
   .page-header {
+    min-height: 66px;
     border-bottom: 1px solid $header-element-color;
   }
 }
 
-.page-header__nav {
-  min-height: 40px;
-
-  @media (min-width: $tablet-width) {
-    @include display-flex-wrap;
-    justify-content: space-between;
+@media (min-width: $desktop-width) {
+  .page-header {
+    height: 112px;
   }
 }
 
-.page-header__logo {
-  @include display-flex-wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 280px;
-  min-height: 38px;
+.page-header__nav {
+  display: grid;
+  grid-template-columns: 1fr;
 
   @media (min-width: $tablet-width) {
-    width: 174px;
-    min-height: 51px;
+    grid-template-columns: 1fr 3fr;
   }
 
   @media (min-width: $desktop-width) {
-    width: 202px;
-    min-height: 59px;
-  }
-}
-
-.page-header__toggle {
-  width: 24px;
-  height: 16px;
-  background: url("../img/main-nav-open.svg");
-  background-repeat: no-repeat;
-  background-size: 24px 16px;
-
-  &--state {
-    background: url("../img/main-nav-close.svg");
-    background-repeat: no-repeat;
-    background-size: 24px 16px;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
+    grid-template-columns: 1fr 1fr;
   }
 }

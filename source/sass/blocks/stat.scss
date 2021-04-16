@@ -5,12 +5,16 @@
   font-size: 36px;
   line-height: 40px;
   color: $basic-black;
-  margin: 2px 0 33px;
+  margin: 12px 0 34px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 43px 0 63px;
+    margin: 16px 0 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 22px 0 146px;
   }
 }
 
@@ -20,39 +24,43 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 56px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 436px;
+    width: 72%;
     min-height: 96px;
+    margin-bottom: 70px;
   }
 }
 
 .stat__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 64px auto;
-  gap: 25px 31px;
+  grid-template-rows: 56px auto;
+  gap: 34px 31px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 162px 162px auto;
-    gap: 0;
+    grid-template-rows: 72px auto;
+    gap: 42px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 64px auto;
-    gap: 25px 31px;
+    grid-template-columns: 162px 162px;
+    grid-template-rows: 77px 20px;
+    gap: 55px 42px;
   }
 }
 
 .stat__item {
-  background: url("../img/broken-frame.png") no-repeat;
+  background: url("../img/index_img/broken-frame.png") no-repeat;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    width: 162px;
-    min-height: 77px;
-    background: url("../img/broken-frame.png") no-repeat;
+    background-size: 100% 100%;
   }
 }
 
@@ -64,17 +72,30 @@
   text-align: center;
   margin: 15px 0 10px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 6px;
+  }
 }
 
 .stat__discription {
-  width: 60px;
   min-height: 13px;
   margin: 0 auto;
+
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
   text-align: center;
   color: $main-content;
+
+  @media (min-width: $tablet-width) {
+    padding: 6px;
+    width: max-content;
+    font-size: 14px;
+    background-color: $basic-white;
+  }
 }
 
 .stat__item-value-total {
@@ -83,7 +104,7 @@
 
   @include display-flex-wrap;
   justify-content: center;
-  min-width: 188px;
+  width: 100%;
   min-height: 20px;
 
   @include second-font;
@@ -93,24 +114,41 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
     grid-column: 3/-1;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-end;
     min-width: 174px;
     min-height: 77px;
-    margin: 0;
+    margin: 10px 0;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1/-1;
-    margin: auto;
+    font-size: 20px;
+    margin: 0;
+    justify-content: flex-start;
   }
 }
 
 .stat__sum {
   order: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    text-align: center;
+  }
 }
 
 .stat__total {
+  padding-right: 4px;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }

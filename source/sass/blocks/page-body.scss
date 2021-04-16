@@ -1,10 +1,8 @@
 // @import "blocks/page-body.scss";
 
 .page__body {
-  min-width: 320px;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
     min-width: 768px;

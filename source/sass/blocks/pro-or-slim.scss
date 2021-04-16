@@ -4,13 +4,16 @@
   background-color: $basic-background;
   padding: 20px;
 
+  @media (min-width: $tablet-width) {
+    padding: 78px 52px 56px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 570px;
+    padding: 50px 52px 60px;
   }
 }
 
-.pro-or-slim:first-of-type {
-  margin-bottom: 20px;
+.pro-or-slim--slim {
   background-image:
     url("../img/index_img/cat_slim.svg"),
     radial-gradient(50px 50px at 50% 50%, $accent-color 50%, transparent 50%);
@@ -28,7 +31,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 52px;
     background-image:
       url("../img/index_img/cat_slim.svg"),
       radial-gradient(100px 100px at 50% 50%, $accent-color 50%, transparent 50%);
@@ -38,8 +40,7 @@
   }
 }
 
-.pro-or-slim:last-of-type {
-  margin-bottom: 20px;
+.pro-or-slim--pro {
   background-image:
     url("../img/index_img/cat_pro.svg"),
     radial-gradient(50px 50px at 50% 50%, $accent-color 50%, transparent 50%);
@@ -57,7 +58,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 52px;
     background-image:
       url("../img/index_img/cat_pro.svg"),
       radial-gradient(100px 100px at 50% 50%, $accent-color 50%, transparent 50%);
@@ -72,22 +72,22 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  margin: 10px 0 10px 70px;
+  margin: 10px 0 29px 70px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin: 20px 0 24px;
+    margin: 0 0 24px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 20px auto 24px;
+    margin: 25px auto 73px 162px;
   }
 }
 
 .pro-or-slim__text {
-  margin: 20px 0 15px;
-  width: 227px;
+  margin: 20px 0 18px;
+  width: 100%;
   min-height: 90px;
   padding-bottom: 23px;
   border-bottom: 1px solid $main-element-color;
@@ -95,38 +95,54 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    width: 342px;
+    width: 63%;
     min-height: 96px;
     padding-bottom: 0;
     border-bottom: none;
-    margin-bottom: 48px;
+    margin-bottom: 52px;
+
+    &--pro {
+      width: 57%;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 467px;
+    margin-bottom: 26px;
+    width: 100%;
     min-height: 72px;
   }
 }
 
-.pro-or-slim__link {
-  @include display-flex-wrap;
-  justify-content: center;
-  align-items: center;
+.pro-or-slim__link-arrow {
+  margin-left: 20px;
+  width: 26px;
+}
 
+.pro-or-slim__link {
   @include second-font;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
   color: $basic-black;
-  min-width: 132px;
+  width: auto;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover .pro-or-slim__link-arrow {
+    width: 32px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     width: 161px;
     min-height: 38px;
   }
-}
-
-.pro-or-slim__link-arrow {
-  margin-left: 17px;
 }

@@ -7,10 +7,25 @@
   align-items: center;
 }
 
+.social__icon {
+  &:hover .social__icon-path,
+  &:focus .social__icon-path {
+    stroke: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .social__item:not(:last-child) {
   margin-right: 38px;
 
   @media (min-width: $tablet-width) {
     margin-right: 28px;
   }
+}
+
+.social__link {
+  width: 100%;
 }
