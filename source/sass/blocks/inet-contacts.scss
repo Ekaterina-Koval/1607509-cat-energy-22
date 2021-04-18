@@ -19,10 +19,6 @@
   width: 100%;
   border-bottom: 1px solid $main-element-color;
 
-  @media (min-width: $desktop-width) {
-    align-items: flex-start;
-  }
-
   &:last-child {
     justify-content: space-between;
     border-bottom: none;

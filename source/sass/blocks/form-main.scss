@@ -4,9 +4,10 @@
   @include display-flex-wrap;
   flex-direction: column;
 
+
   @media (min-width: $tablet-width) {
     border-top: none;
-    padding-right: 37px;
+    padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,17 +20,25 @@
   font-size: 36px;
   line-height: 36px;
   color: $basic-black;
-  margin: 27px 0;
+  margin: 26px 0 30px;
 
   @media (min-width: $tablet-width) {
-    margin: 54px 0;
+    margin: 34px 0 54px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
 .form-main__description {
   @include second-font;
   text-transform: uppercase;
-  width: 226px;
+  width: 85%;
   min-height: 36px;
-  margin: 10px 0;
+  margin: 8px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 34px 0 54px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -1,5 +1,9 @@
 // @import "blocks/decoration-line.scss";
 
+.decoration-line {
+  position: relative;
+}
+
 .decoration-line--nav {
   @media (max-width: $mobile-width-only) {
     &::before {
@@ -14,8 +18,18 @@
   }
 }
 
-.title-greenline {
-  position: relative;
+.decoration-line--legend {
+  &::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 2px;
+    background-color: $accent-color;
+    position: absolute;
+    top: 26px + 16px;
+    left: 111%;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
     &::before {
@@ -30,28 +44,4 @@
       z-index: -1;
     }
   }
-
-  &::after {
-    content: "";
-    display: block;
-    width: 100vw;
-    height: 2px;
-    background-color: $accent-color;
-    position: absolute;
-    left: 110%;
-    top: 15px;
-  }
 }
-/*
-.element-border--nav {
-  &::before {
-      content: "";
-      display: block;
-      width: 100vw;
-      height: 1px;
-      background-color: $header-element-color;
-      position: absolute;
-      top: 0;
-    }
-}
-*/

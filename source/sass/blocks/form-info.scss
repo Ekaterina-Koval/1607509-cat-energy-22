@@ -1,14 +1,31 @@
 // @import "blocks/form-info.scss";
 
+.form-info {
+  padding: 24px 0;
+
+  &--contacts {
+    padding-bottom: 0;
+  }
+}
+
 .form-info__label {
-  margin-right: 10px;
+  margin-right: 14px;
 }
 
 .form-info__input {
   height: 45px;
+  width: 50%;
   flex-grow: 1;
   border: 1px solid $input-border-light;
   box-sizing: border-box;
+
+  &--text {
+    padding: 24px 14px 18px;
+  }
+
+  &--number {
+    padding: 24px 18px 18px;
+  }
 
   &::placeholder {
     @include second-font;
@@ -16,6 +33,5 @@
     line-height: 18px;
     text-transform: uppercase;
     color: inherit;
-    padding: 14px;
   }
 }
