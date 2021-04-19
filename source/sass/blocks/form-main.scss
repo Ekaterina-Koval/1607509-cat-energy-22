@@ -1,13 +1,13 @@
 // @import "blocks/form-main.scss";
 
 .form-main__wrapper {
+  padding: 26px 0 32px;
+
   @include display-flex-wrap;
   flex-direction: column;
 
-
   @media (min-width: $tablet-width) {
-    border-top: none;
-    padding: 0 40px;
+    padding: 34px 40px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,12 +20,12 @@
   font-size: 36px;
   line-height: 36px;
   color: $basic-black;
-  margin: 26px 0 30px;
+  margin: 0 0 38px;
 
   @media (min-width: $tablet-width) {
-    margin: 34px 0 54px;
     font-size: 60px;
     line-height: 60px;
+    margin: 0 0 54px;
   }
 }
 
@@ -34,11 +34,12 @@
   text-transform: uppercase;
   width: 85%;
   min-height: 36px;
-  margin: 8px 0 0;
+  margin: 0 0 38px;
 
   @media (min-width: $tablet-width) {
-    margin: 34px 0 54px;
+    width: 60%;
     font-size: 20px;
     line-height: 30px;
+    margin: 0 0 62px;
   }
 }

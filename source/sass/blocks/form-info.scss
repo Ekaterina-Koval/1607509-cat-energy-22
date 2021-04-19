@@ -1,15 +1,7 @@
 // @import "blocks/form-info.scss";
 
-.form-info {
-  padding: 24px 0;
-
-  &--contacts {
-    padding-bottom: 0;
-  }
-}
-
 .form-info__label {
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 .form-info__input {
@@ -20,11 +12,11 @@
   box-sizing: border-box;
 
   &--text {
-    padding: 24px 14px 18px;
+    padding: 24px 12px 18px;
   }
 
   &--number {
-    padding: 24px 18px 18px;
+    padding: 24px 16px 18px;
   }
 
   &::placeholder {
@@ -33,5 +25,22 @@
     line-height: 18px;
     text-transform: uppercase;
     color: inherit;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+
+    &--text {
+      padding: 26px 18px 18px;
+    }
+
+    &--number {
+      padding: 28px 22px 18px;
+    }
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: auto;
+    }
   }
 }
