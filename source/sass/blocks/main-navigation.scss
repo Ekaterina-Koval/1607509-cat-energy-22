@@ -88,28 +88,25 @@
     @include display-flex-wrap;
     justify-content: flex-end;
     width: 100%;
-    margin: 32px 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 50vw;
-    margin: 62px 0 0 auto;
   }
 }
 
 .main-navigation__item {
   @include display-flex-wrap;
   justify-content: center;
-  align-items: center;
-  min-height: 66px;
   position: relative;
+  padding: 22px 0 24px;
 
   @media (min-width: $tablet-width) {
-    min-height: 36px;
-  }
+    padding: 0;
 
-  @media (min-width: $desktop-width) {
-    min-height: 40px;
+    &:not(:last-child) {
+      margin-right: 36px;
+    }
   }
 }
 
@@ -122,7 +119,6 @@
   font-size: 20px;
   line-height: 20px;
   color: $basic-black;
-
   position: relative;
 
   &:hover,
@@ -135,6 +131,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+
     &[aria-current]::before {
       content: "";
       display: block;
@@ -142,21 +142,9 @@
       height: 2px;
       background-color: $accent-color;
       position: absolute;
-      bottom: 0;
+      bottom: -10px;
       left: 0;
-
-      @media (min-width: $desktop-width) {
-        background-color: $basic-white;
-      }
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 10px 0 9px;
-    margin-left: 36px;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
   }
 
   @media (min-width: $desktop-width) {
@@ -164,5 +152,6 @@
     font-size: 20px;
     line-height: auto;
     color: $basic-white;
+    background-color: $basic-white;
   }
 }

@@ -1,19 +1,6 @@
 // @import "blocks/page-header.scss";
 
-@media (max-width: $mobile-width-only) {
-  .page-header {
-    min-height: 67px;
-    border-bottom: 1px solid $header-element-color;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header {
-    height: 112px;
-  }
-}
-
-.page-header__nav {
+.page-header__wrapper {
   display: grid;
   grid-template-columns: 1fr;
 
@@ -23,5 +10,19 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+.page-header__logo {
+  padding: 14px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0 0;
+  }
+}
+
+.page-header__nav {
+  @media (min-width: $tablet-width) {
+    padding: 42px 0 0;
   }
 }

@@ -1,13 +1,12 @@
 // @import "blocks/form-main.scss";
 
 .form-main__wrapper {
-  padding: 26px 0 32px;
-
   @include display-flex-wrap;
   flex-direction: column;
+  padding: 26px 0 32px;
 
   @media (min-width: $tablet-width) {
-    padding: 34px 40px 60px;
+    padding: 76px 40px 70px;
   }
 
   @media (min-width: $desktop-width) {

@@ -10,26 +10,42 @@
 
   &--info {
     margin: 0 0 40px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 86px;
+    }
   }
 
   &--radio {
     margin: 0 0 38px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 92px;
+    }
   }
 
   &--contacts {
     margin: 0 0 24px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 64px;
+    }
   }
 
   &--comments {
     margin: 0 0 20px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 66px;
+    }
   }
 
   &--checkbox {
     margin: 0 0 26px;
-  }
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 70px;
+    @media (min-width: $tablet-width) {
+      margin: 0 0 38px;
+    }
   }
 }
 
@@ -60,6 +76,10 @@
   &--contacts {
     padding-top: 35px;
 
+    @media (min-width: $tablet-width) {
+      padding-top: 72px;
+    }
+
     @media (min-width: $desktop-width) {
       @include display-flex-wrap;
       justify-content: space-between;
@@ -67,7 +87,12 @@
   }
 
   &--checkbox {
+    @include display-flex-wrap;
     padding-top: 28px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 40px;
+    }
   }
 }
 
@@ -76,6 +101,7 @@
   min-height: 43px;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 
   &--info:not(:last-child) {
     margin: 0 0 14px;
@@ -87,11 +113,20 @@
     &--radio {
       min-height: 54px;
     }
+
+    &--checkbox {
+      min-height: 72px;
+      width: 50%;
+    }
   }
 
-  &--half {
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
+    &--half {
       width: 569px;
+    }
+
+    &--checkbox {
+      width: 25%;
     }
   }
 }
@@ -107,7 +142,6 @@
 
   @media (min-width: $tablet-width) {
     width: fit-content;
-    padding-top: 80px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -117,10 +151,16 @@
   width: 100%;
   min-height: 150px;
   margin-top: 38px;
-  padding: 6px 12px 10px 15px;
+  padding: 6px 15px;
   border: 1px solid $input-border-light;
   box-sizing: border-box;
   resize: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 174px;
+    margin-top: 74px;
+    padding: 12px 17px;
+  }
 }
 
 .form__textarea::placeholder {
@@ -128,6 +168,11 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $main-content;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__submit {
@@ -143,6 +188,8 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
+    width: 45%;
+    margin: 0;
   }
 }
 
@@ -157,7 +204,7 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
-    margin-left: 60px;
+    width: 50%;
   }
 }
 

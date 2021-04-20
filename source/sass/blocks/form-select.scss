@@ -5,12 +5,16 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-left: 60px;
+    padding-left: 88px;
+
+    &--checkbox {
+      padding-left: 60px;
+    }
   }
 }
 
 .form-select__input {
-  &--radio {
+  &--radio + label::before {
     border-radius: 50%;
   }
 
@@ -28,7 +32,7 @@
     @media (min-width: $tablet-width) {
       width: 40px;
       height: 40px;
-      left: 0;
+      left: 30px;
       top: -10px;
     }
   }
@@ -48,7 +52,7 @@
   @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
-    left: -49px;
+    left: 40px;
     top: 0;
   }
 }
@@ -63,20 +67,4 @@
   height: 26px;
   background-image: url("../img/form_img/checkbox-checked.svg");
   background-repeat: no-repeat;
-}
-
-.form-select__add-list {
-  @include display-flex-wrap;
-}
-
-.form-select__add-item {
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    width: 50%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 25%;
-  }
 }

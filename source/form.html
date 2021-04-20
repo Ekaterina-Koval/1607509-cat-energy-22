@@ -43,19 +43,20 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__nav container">
+    <div class="page-header__wrapper container">
 
       <div class="page-header__logo logo">
-        <a class="logo__catenergy logo__link" href="index.html" aria-label="Переход на главную страницу">
-          <picture>
-            <!--<img class="logo__image" src="img/logo-image1.svg" width="34" height="38" alt="Логотип Кэт энерджи графический">-->
-            <img class="logo__catenergy-image" src="img/logo101x19.svg" width="101" height="19"
+        <a class="logo__catenergy logo__link">
+          <img class="logo__catenergy-initial" src="img/logo-image1.svg" width="34" height="38"
+            alt="Логотип Кэт энерджи графический">
+          <picture class="logo__catenergy-picture">
+            <img class="logo__catenergy-basic" src="img/logo101x19.svg" width="101" height="19"
               alt="Логотип Кэт энерджи текстовый">
           </picture>
-        </a>
+        </a><!-- на главной страние, логотип "не доступен", отсутсятвуют: href="" aria-label=""-->
       </div>
 
-      <nav class="main-navigation main-navigation--opened main-navigation--nojs">
+      <nav class="page-header__nav main-navigation main-navigation--opened main-navigation--nojs">
         <button class="main-navigation__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -70,7 +71,7 @@
               Каталог продукции
             </a>
           </li>
-          <li class="main-navigation__item main-navigation__item--current decoration-line decoration-line--nav">
+          <li class="main-navigation__item decoration-line decoration-line--nav">
             <a class="main-navigation__link" aria-current="page">
               Подбор программы
             </a>
@@ -122,8 +123,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__fieldset form__wrapper form__wrapper--radio form-select">
-            <!--form__fieldset--half form__fieldset-border-->
+          <fieldset class="form__fieldset form__wrapper form__wrapper--radio form-select form__fieldset--half form__fieldset-border">
             <ul class="form__list form__list--radio">
               <li class="form__item form__item--radio">
                 <input class="form-select__input form-select__input--radio visually-hidden" type="radio" name="choice"
@@ -182,32 +182,32 @@
             <legend class="form__legend form__legend--radio decoration-line decoration-line--legend">
               Дополнительно
             </legend>
-            <ul class="form__list form__list--checkbox form-select__add-list">
-              <li class="form__item form-select__add-item">
+            <ul class="form__list form__list--checkbox">
+              <li class="form__item form__item--checkbox">
                 <input class="form-select__input form-select__input--checkbox visually-hidden" type="checkbox"
                   name="sugarless" checked id="sugar" />
-                <label class="form-select__label" for="sugar">
+                <label class="form-select__label form-select__label--checkbox" for="sugar">
                   Сахарозаменитель
                 </label>
               </li>
-              <li class="form__item form-select__add-item">
+              <li class="form__item form__item--checkbox">
                 <input class="form-select__input form-select__input--checkbox visually-hidden" type="checkbox"
                   name="water" id="water" />
-                <label class="form-select__label" for="water">
+                <label class="form-select__label form-select__label--checkbox" for="water">
                   Питьевая вода
                 </label>
               </li>
-              <li class="form__item form-select__add-item">
+              <li class="form__item form__item--checkbox">
                 <input class="form-select__input form-select__input--checkbox visually-hidden" type="checkbox"
                   name="milk" id="milk" />
-                <label class="form-select__label" for="milk">
+                <label class="form-select__label form-select__label--checkbox" for="milk">
                   Молоко
                 </label>
               </li>
-              <li class="form__item form-select__add-item">
+              <li class="form__item form__item--checkbox">
                 <input class="form-select__input form-select__input--checkbox visually-hidden" type="checkbox"
                   name="vitamins" id="vitamins" />
-                <label class="form-select__label" for="vitamins">
+                <label class="form-select__label form-select__label--checkbox" for="vitamins">
                   Витамины
                 </label>
               </li>

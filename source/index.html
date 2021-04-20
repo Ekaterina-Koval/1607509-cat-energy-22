@@ -43,25 +43,25 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__nav container">
+    <div class="page-header__wrapper container">
 
       <div class="page-header__logo logo">
         <a class="logo__catenergy logo__link">
-          <picture>
-            <!--<img class="logo__image" src="img/logo-image1.svg" width="34" height="38" alt="Логотип Кэт энерджи графический">-->
-            <img class="logo__catenergy-image" src="img/logo101x19.svg" width="101" height="19"
+            <img class="logo__catenergy-initial" src="img/logo-image1.svg" width="34" height="38" alt="Логотип Кэт энерджи графический">
+            <picture class="logo__catenergy-picture">
+            <img class="logo__catenergy-basic" src="img/logo101x19.svg" width="101" height="19"
               alt="Логотип Кэт энерджи текстовый">
           </picture>
         </a><!-- на главной страние, логотип "не доступен", отсутсятвуют: href="" aria-label=""-->
       </div>
 
-      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+      <nav class="page-header__nav main-navigation main-navigation--opened main-navigation--nojs">
         <button class="main-navigation__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item decoration-line decoration-line--nav">
-            <a class="main-navigation__link main-navigation__link--current" aria-current="page">
+            <a class="main-navigation__link" aria-current="page">
               Главная
             </a>
           </li>
