@@ -2,19 +2,25 @@
 
 .illustrative-example {
   background-color: $slider-background;
-  padding: 25px 0 12px;
+  padding-top: 27px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 0 52px;
+    border-top: 1px solid $header-element-color;
+    padding-top: 43px;
     background-color: $basic-white;
     background-image: linear-gradient(rgba($basic-background, 0.85), rgba($basic-background, 0.85));
     background-position: center bottom;
     background-size: 100vw 462px;
     background-repeat: no-repeat;
+    padding-bottom: 68px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    border-top: none;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -22,6 +28,6 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 656px;
+    grid-template-rows: 630px;
   }
 }

@@ -1,11 +1,7 @@
 // @import "blocks/slider-control.scss";
 
 .slider-control {
-  margin: 12px auto;
-
-  @media (min-width: $tablet-width) {
-    margin: 14px auto;
-  }
+  margin: 0 auto;
 }
 
 .slider-control__button {

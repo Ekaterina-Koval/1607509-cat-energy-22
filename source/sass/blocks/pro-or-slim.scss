@@ -2,14 +2,14 @@
 
 .pro-or-slim {
   background-color: $basic-background;
-  padding: 20px;
+  padding: 30px 20px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 78px 52px 56px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 50px 52px 60px;
+    padding: 75px 52px 60px;
   }
 }
 
@@ -72,7 +72,7 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  margin: 10px 0 29px 70px;
+  margin: 0 0 29px 70px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -81,16 +81,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 25px auto 73px 162px;
+    margin: 0 0 73px 162px;
   }
 }
 
 .pro-or-slim__text {
-  margin: 20px 0 18px;
   width: 100%;
   min-height: 90px;
   padding-bottom: 23px;
   border-bottom: 1px solid $main-element-color;
+  margin: 0 0 18px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -113,8 +113,19 @@
   }
 }
 
+.pro-or-slim__link-text {
+  margin-right: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 22px;
+  }
+}
+
 .pro-or-slim__link-arrow {
-  margin-left: 20px;
   width: 26px;
 }
 

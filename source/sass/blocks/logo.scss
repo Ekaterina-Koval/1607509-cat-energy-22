@@ -1,20 +1,5 @@
 // @import "blocks/logo.scss";
 
-.logo__catenergy {
-  @include display-flex-wrap;
-  justify-content: center;
-  align-items: center;
-
-  @media (min-width: $tablet-width) {
-    justify-content: flex-start;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    align-items: flex-end;
-  }
-}
-
 .logo__link {
   &:hover,
   &:focus {

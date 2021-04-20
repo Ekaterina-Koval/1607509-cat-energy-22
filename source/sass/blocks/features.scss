@@ -1,16 +1,14 @@
 // @import "blocks/features.scss";
 
 .features {
-  padding-bottom: 30px;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 40px;
-    border-bottom: 1px solid $header-element-color;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 4px;
-    border-bottom: none;
+    margin-bottom: 0;
   }
 }
 
@@ -42,7 +40,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 280px;
+    grid-template-rows: 284px;
     gap: 80px;
   }
 }

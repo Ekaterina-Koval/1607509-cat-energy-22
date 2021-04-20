@@ -2,7 +2,6 @@
 
 .slider {
   position: relative;
-  padding: 40px 0 0;
 
   @media (min-width: $desktop-width) {
     padding: 0;
@@ -23,16 +22,18 @@
   width: 280px;
   height: 232px;
   position: relative;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     width: 354px;
-    height: 462px;
+    height: 532px;
     display: block;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 305px;
-    height: 484px;
+    height: 552px;
   }
 }
 
@@ -77,11 +78,6 @@
   justify-content: center;
   align-items: center;
   min-height: 40px;
-  margin-top: 26px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 68px;
-  }
 
   @media (min-width: $desktop-width) {
     justify-content: flex-end;

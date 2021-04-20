@@ -1,6 +1,6 @@
-// @import "blocks/main-navigation.scss";
+// @import "blocks/navigation.scss";
 
-.main-navigation {
+.navigation {
   @include display-flex-wrap;
   align-items: center;
   justify-content: center;
@@ -17,7 +17,7 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-navigation__toggle {
+  .navigation__toggle {
     width: 48px;
     height: 32px;
     cursor: pointer;
@@ -28,7 +28,7 @@
     background-color: transparent;
   }
 
-  .main-navigation--closed .main-navigation__toggle::before {
+  .navigation--closed .navigation__toggle::before {
     content: "";
     display: block;
     width: 24px;
@@ -40,7 +40,7 @@
     box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
   }
 
-  .main-navigation--opened .main-navigation__toggle {
+  .navigation--opened .navigation__toggle {
     &::before,
     &::after {
       content: "";
@@ -62,40 +62,35 @@
     }
   }
 
-  .main-navigation--closed .main-navigation__item {
+  .navigation--closed .navigation__item {
     display: none;
   }
 
-  .main-navigation--nojs .main-navigation__toggle {
+  .navigation--nojs .navigation__toggle {
     display: none;
   }
 
-  .main-navigation--nojs .main-navigation__item {
+  .navigation--nojs .navigation__item {
     display: flex;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .main-navigation__toggle {
+  .navigation__toggle {
     display: none;
   }
 }
 
-.main-navigation__list {
+.navigation__list {
   @include reset-list;
 
   @media (min-width: $tablet-width) {
     @include display-flex-wrap;
     justify-content: flex-end;
-    width: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 50vw;
   }
 }
 
-.main-navigation__item {
+.navigation__item {
   @include display-flex-wrap;
   justify-content: center;
   position: relative;
@@ -110,7 +105,7 @@
   }
 }
 
-.main-navigation__link {
+.navigation__link {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
   text-align: center;
@@ -148,10 +143,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 35px;
     font-size: 20px;
     line-height: auto;
     color: $basic-white;
-    background-color: $basic-white;
   }
 }

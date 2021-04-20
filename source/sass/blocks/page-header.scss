@@ -14,15 +14,23 @@
 }
 
 .page-header__logo {
-  padding: 14px 0;
+  padding: 12px 0;
 
   @media (min-width: $tablet-width) {
     padding: 25px 0 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 54px 0 0;
+  }
 }
 
-.page-header__nav {
+.page-header__navigation {
   @media (min-width: $tablet-width) {
     padding: 42px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 0 0;
   }
 }

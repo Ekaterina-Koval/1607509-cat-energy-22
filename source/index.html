@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="img/favicons/manifest.webmanifest">
 
-  <!-- Pixel Glass -->
+  <!-- Pixel Glass
   <style>
     HTML {
       background-repeat: no-repeat;
@@ -37,7 +37,7 @@
   </style>
   <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
   <script src="../node_modules/pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
+   // Pixel Glass -->
 
 </head>
 
@@ -47,31 +47,32 @@
 
       <div class="page-header__logo logo">
         <a class="logo__catenergy logo__link">
-            <img class="logo__catenergy-initial" src="img/logo-image1.svg" width="34" height="38" alt="Логотип Кэт энерджи графический">
-            <picture class="logo__catenergy-picture">
+          <img class="logo__catenergy-initial" src="img/logo-image1.svg" width="34" height="38"
+            alt="Логотип Кэт энерджи графический">
+          <picture class="logo__catenergy-picture">
             <img class="logo__catenergy-basic" src="img/logo101x19.svg" width="101" height="19"
               alt="Логотип Кэт энерджи текстовый">
           </picture>
         </a><!-- на главной страние, логотип "не доступен", отсутсятвуют: href="" aria-label=""-->
       </div>
 
-      <nav class="page-header__nav main-navigation main-navigation--opened main-navigation--nojs">
-        <button class="main-navigation__toggle">
+      <nav class="page-header__navigation navigation navigation--opened navigation--nojs">
+        <button class="navigation__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item decoration-line decoration-line--nav">
-            <a class="main-navigation__link" aria-current="page">
+        <ul class="navigation__list">
+          <li class="navigation__item decoration-line decoration-line--nav">
+            <a class="navigation__link" aria-current="page">
               Главная
             </a>
           </li>
-          <li class="main-navigation__item decoration-line decoration-line--nav">
-            <a class="main-navigation__link" href="catalog.html">
+          <li class="navigation__item decoration-line decoration-line--nav">
+            <a class="navigation__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="main-navigation__item decoration-line decoration-line--nav">
-            <a class="main-navigation__link" href="form.html">
+          <li class="navigation__item decoration-line decoration-line--nav">
+            <a class="navigation__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -87,8 +88,8 @@
     </h1>
 
     <section class="promo">
-      <div class="promo__block container">
-        <div class="promo-content">
+      <div class="promo__wrapper container">
+        <div class="promo__content ">
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
         </div>
@@ -97,42 +98,48 @@
             Подобрать программу
           </a>
         </div>
+        <img class="promo__image" src="img/index_img/promo-product.png" width="280" height="270"
+          alt="Упаковка корма Cat energy с курицей на фоне трёх желтых кругов">
       </div>
     </section>
 
     <section class="assortment container">
-      <div class="assortment__pro-or-slim pro-or-slim pro-or-slim--slim">
-        <h2 class="pro-or-slim__title">Похудение</h2>
-        <p class="pro-or-slim__text">
-          Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
-          поможет вашему питомцу сбросить лишний вес.
-        </p>
-        <a class="pro-or-slim__link" href="catalog-slim.html">
-          <span class="pro-or-slim__link-text">
-            Каталог Slim
-          </span>
-          <svg class="pro-or-slim__link-arrow" width="32" height="12" viewBox="0 0 32 12" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
-            <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
-          </svg>
-        </a>
-      </div>
-      <div class="assortment__pro-or-slim pro-or-slim pro-or-slim--pro">
-        <h2 class="pro-or-slim__title">Набор массы</h2>
-        <p class="pro-or-slim__text pro-or-slim__text--pro">
-          Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту
-          нарастить
-          необходимые мышцы!
-        </p>
-        <a class="pro-or-slim__link pro-or-slim__link--hover pro-or-slim__link--focus" href="catalog-pro.html">
-          Каталог Pro
-          <svg class="pro-or-slim__link-arrow" width="32" height="12" viewBox="0 0 32 12" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
-            <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
-          </svg>
-        </a>
+      <div class="assortment__wrapper">
+        <div class="assortment__pro-or-slim pro-or-slim pro-or-slim--slim">
+          <h2 class="pro-or-slim__title">Похудение</h2>
+          <p class="pro-or-slim__text">
+            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
+            поможет вашему питомцу сбросить лишний вес.
+          </p>
+          <a class="pro-or-slim__link" href="catalog-slim.html">
+            <span class="pro-or-slim__link-text">
+              Каталог Slim
+            </span>
+            <svg class="pro-or-slim__link-arrow" width="32" height="12" viewBox="0 0 32 12" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
+              <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+            </svg>
+          </a>
+        </div>
+        <div class="assortment__pro-or-slim pro-or-slim pro-or-slim--pro">
+          <h2 class="pro-or-slim__title">Набор массы</h2>
+          <p class="pro-or-slim__text pro-or-slim__text--pro">
+            Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту
+            нарастить
+            необходимые мышцы!
+          </p>
+          <a class="pro-or-slim__link pro-or-slim__link--hover pro-or-slim__link--focus" href="catalog-pro.html">
+            <span class="pro-or-slim__link-text">
+              Каталог Pro
+            </span>
+            <svg class="pro-or-slim__link-arrow" width="32" height="12" viewBox="0 0 32 12" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
+              <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -329,7 +336,7 @@
     </section>
   </footer>
 
-  <script src="js/main-navigation.js"></script>
+  <script src="js/navigation.js"></script>
 
 </body>
 
