@@ -14,7 +14,13 @@
   }
 }
 
+.map__image-png {
+  width: 100%;
+  object-fit: cover;
+}
+
 .map__goole-map {
   width: inherit;
   height: inherit;
+  position: absolute;
 }

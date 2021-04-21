@@ -1,15 +1,14 @@
 // @import "blocks/features.scss";
 
 .features {
-  padding-bottom: 30px;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 40px;
-    border-bottom: 1px solid $header-element-color;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    border-bottom: none;
+    margin-bottom: 0;
   }
 }
 
@@ -28,7 +27,6 @@
 .features__list {
   @include reset-list;
   counter-reset: num;
-  margin: 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 60px 60px 60px 60px;
@@ -42,7 +40,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 280px;
+    grid-template-rows: 284px;
     gap: 80px;
   }
 }
@@ -107,6 +105,10 @@
     color: $basic-background;
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 47%;
+  }
 }
 
 .features__text {
@@ -117,10 +119,10 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding-left: 0;
-    width: 250px;
+    width: 80%;
+  }
 
-    &--shot {
-      width: 201px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }

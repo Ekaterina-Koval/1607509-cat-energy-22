@@ -1,19 +1,19 @@
 // @import "blocks/assortment.scss";
 
-.assortment {
+.assortment__wrapper {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     gap: 30px;
-    padding-bottom: 45px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    padding-bottom: 71px;
+    margin-bottom: 70px;
   }
 }

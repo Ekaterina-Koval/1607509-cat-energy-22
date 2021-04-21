@@ -3,14 +3,14 @@
 .form-main__wrapper {
   @include display-flex-wrap;
   flex-direction: column;
+  padding: 26px 0 32px;
 
   @media (min-width: $tablet-width) {
-    border-top: none;
-    padding-right: 37px;
+    padding: 76px 40px 70px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 0;
+    padding: 90px 0 80px;
   }
 }
 
@@ -19,17 +19,34 @@
   font-size: 36px;
   line-height: 36px;
   color: $basic-black;
-  margin: 27px 0;
+  margin: 0 0 38px;
 
   @media (min-width: $tablet-width) {
-    margin: 54px 0;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
   }
 }
 
 .form-main__description {
   @include second-font;
   text-transform: uppercase;
-  width: 226px;
+  width: 85%;
   min-height: 36px;
-  margin: 10px 0;
+  margin: 0 0 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 60%;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+  }
 }

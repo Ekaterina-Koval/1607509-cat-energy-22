@@ -10,35 +10,69 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="img/favicons/manifest.webmanifest">
+
+  <!-- Pixel Glass
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-image: url("img/PP/index/Mobile.png");
+    }
+
+    @media (min-width: 768px) {
+      HTML {
+        background-image: url("img/PP/index/Tablet.png");
+      }
+    }
+
+    @media (min-width: 1440px) {
+      HTML {
+        background-image: url("img/PP/index/Desktop.png");
+      }
+    }
+
+    BODY {
+      opacity: .5;
+    }
+  </style>
+  <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+   // Pixel Glass -->
+
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__nav container">
+    <div class="page-header__wrapper container">
 
       <div class="page-header__logo logo">
         <a class="logo__catenergy logo__link">
-          <svg class="logo__catenergy-svg" width="101" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)" fill="#111"><path d="M1.264 17.36A6.905 6.905 0 010 13.036V6.63a6.991 6.991 0 011.185-4.4C2.055 1.227 3.398.764 5.374.764s3.24.463 4.03 1.312a5.454 5.454 0 011.186 3.782v1.544H6.718V5.627a3.717 3.717 0 00-.238-1.544c-.1-.2-.259-.364-.456-.474a1.16 1.16 0 00-.65-.144c-.553 0-.948.155-1.106.54a4.878 4.878 0 00-.237 1.699v8.259a3.131 3.131 0 00.316 1.62c.158.387.553.541 1.106.541s.87-.154 1.027-.54a4.41 4.41 0 00.238-1.621v-1.852h3.872v1.543a5.808 5.808 0 01-1.185 3.86c-.79.926-2.134 1.389-4.031 1.389-1.897-.077-3.32-.54-4.11-1.544zM15.253.996h4.504l3.32 17.599H19.44l-.632-3.705h-2.608l-.632 3.704h-3.715L15.253.997zm3.24 11.578l-.948-6.87-.949 6.87h1.897zM25.843 3.929h-2.687V.996h9.404v2.856h-2.687v14.742h-4.03V3.93zM39.752.996h6.955v1.852h-4.505v5.79h3.635v1.775h-3.635v6.483h4.505v1.776h-7.034V.996h.079zM48.761.996H50.5l5.137 11.655V.996h2.055v17.599h-1.58L50.894 6.553v12.041h-2.134V.997zM60.063.996h6.954v1.852h-4.504v5.79h3.635v1.775h-3.635v6.483h4.504v1.776h-6.954V.996zM69.072.996h3.635a6.435 6.435 0 014.03 1.08c.87.695 1.265 1.93 1.265 3.551 0 2.238-.71 3.628-2.212 4.09l2.528 8.8h-2.45l-2.37-8.259h-1.976v8.26h-2.529V.995h.079zm3.477 7.564a3.515 3.515 0 002.292-.617c.474-.386.711-1.158.711-2.316a4.88 4.88 0 00-.237-1.698 1.979 1.979 0 00-.869-.926 3.679 3.679 0 00-1.739-.31h-1.106v5.79h.948v.077zM81.163 17.282a7.66 7.66 0 01-1.106-4.477V6.938c-.02-1.118.114-2.234.395-3.319a3.929 3.929 0 011.502-2.007c.882-.51 1.9-.752 2.924-.694 1.66 0 2.845.386 3.556 1.235a5.805 5.805 0 011.107 3.86v.617H87.17v-.54c.003-.647-.05-1.293-.158-1.93a1.539 1.539 0 00-.633-1.004 2.487 2.487 0 00-1.501-.386 2.41 2.41 0 00-1.58.463 1.75 1.75 0 00-.447.554 1.712 1.712 0 00-.186.681c-.104.69-.157 1.387-.158 2.084v6.561c-.058 1 .103 2 .474 2.934.316.617.949.849 1.897.849.374.045.754-.018 1.092-.183.337-.165.617-.424.805-.744a6.954 6.954 0 00.553-3.087v-1.235h-2.292V9.872h4.584v8.722h-1.58l-.238-2.007a3.154 3.154 0 01-1.226 1.664 3.28 3.28 0 01-2.014.574 4.034 4.034 0 01-1.899-.353 3.935 3.935 0 01-1.5-1.19zM94.678 12.42L90.805 1.072h2.371l2.766 8.49 2.687-8.49H101l-3.873 11.346v6.175h-2.37V12.42h-.08z"/></g><defs><clipPath id="clip0"><path fill="#fff" transform="translate(0 .764)" d="M0 0h101v18.062H0z"/></clipPath></defs></svg>
+          <img class="logo__catenergy-initial" src="img/logo-image1.svg" width="34" height="38"
+            alt="Логотип Кэт энерджи графический">
+          <picture class="logo__catenergy-picture">
+            <img class="logo__catenergy-basic" src="img/logo101x19.svg" width="101" height="19"
+              alt="Логотип Кэт энерджи текстовый">
+          </picture>
         </a><!-- на главной страние, логотип "не доступен", отсутсятвуют: href="" aria-label=""-->
       </div>
 
-      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
-        <button class="main-navigation__toggle">
+      <nav class="page-header__navigation navigation navigation--opened navigation--nojs">
+        <button class="navigation__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item main-navigation__item--current decoration-line decoration-line--nav">
-            <a class="main-navigation__link main-navigation__link--current">
+        <ul class="navigation__list">
+          <li class="navigation__item decoration-line decoration-line--nav">
+            <a class="navigation__link" aria-current="page">
               Главная
             </a>
           </li>
-          <li class="main-navigation__item decoration-line decoration-line--nav">
-            <a class="main-navigation__link" href="catalog.html">
+          <li class="navigation__item decoration-line decoration-line--nav">
+            <a class="navigation__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="main-navigation__item decoration-line decoration-line--nav">
-            <a class="main-navigation__link" href="form.html">
+          <li class="navigation__item decoration-line decoration-line--nav">
+            <a class="navigation__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -54,8 +88,8 @@
     </h1>
 
     <section class="promo">
-      <div class="promo__block container">
-        <div class="promo-content">
+      <div class="promo__wrapper container">
+        <div class="promo__content ">
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
         </div>
@@ -64,41 +98,48 @@
             Подобрать программу
           </a>
         </div>
+        <img class="promo__image" src="img/index_img/promo-product.png" width="280" height="270"
+          alt="Упаковка корма Cat energy с курицей на фоне трёх желтых кругов">
       </div>
     </section>
 
     <section class="assortment container">
-      <div class="assortment__pro-or-slim pro-or-slim pro-or-slim--slim">
-        <h2 class="pro-or-slim__title">Похудение</h2>
-        <p class="pro-or-slim__text">
-          Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
-          поможет вашему питомцу сбросить лишний вес.
-        </p>
-        <a class="pro-or-slim__link" href="catalog-slim.html">
-          <span class="pro-or-slim__link-text">
-            Каталог Slim
-          </span>
-          <svg class="pro-or-slim__link-arrow" width="32" height="12" viewBox="0 0 32 12" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
-            <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
-          </svg>
-        </a>
-      </div>
-      <div class="assortment__pro-or-slim pro-or-slim pro-or-slim--pro">
-        <h2 class="pro-or-slim__title">Набор массы</h2>
-        <p class="pro-or-slim__text pro-or-slim__text--pro">
-          Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
-          необходимые мышцы!
-        </p>
-        <a class="pro-or-slim__link pro-or-slim__link--hover pro-or-slim__link--focus" href="catalog-pro.html">
-          Каталог Pro
-          <svg class="pro-or-slim__link-arrow" width="32" height="12" viewBox="0 0 32 12" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
-            <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
-          </svg>
-        </a>
+      <div class="assortment__wrapper">
+        <div class="assortment__pro-or-slim pro-or-slim pro-or-slim--slim">
+          <h2 class="pro-or-slim__title">Похудение</h2>
+          <p class="pro-or-slim__text">
+            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
+            поможет вашему питомцу сбросить лишний вес.
+          </p>
+          <a class="pro-or-slim__link" href="catalog-slim.html">
+            <span class="pro-or-slim__link-text">
+              Каталог Slim
+            </span>
+            <svg class="pro-or-slim__link-arrow" width="32" height="12" viewBox="0 0 32 12" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
+              <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+            </svg>
+          </a>
+        </div>
+        <div class="assortment__pro-or-slim pro-or-slim pro-or-slim--pro">
+          <h2 class="pro-or-slim__title">Набор массы</h2>
+          <p class="pro-or-slim__text pro-or-slim__text--pro">
+            Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту
+            нарастить
+            необходимые мышцы!
+          </p>
+          <a class="pro-or-slim__link pro-or-slim__link--hover pro-or-slim__link--focus" href="catalog-pro.html">
+            <span class="pro-or-slim__link-text">
+              Каталог Pro
+            </span>
+            <svg class="pro-or-slim__link-arrow" width="32" height="12" viewBox="0 0 32 12" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
+              <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -107,7 +148,7 @@
         <h2 class="features__title">Как это работает</h2>
         <ol class="features__list">
           <li class="features__item features__item--leaf">
-            <p class="features__text features__text--shot">
+            <p class="features__text">
               Функциональное питание содержит только полезные питательные вещества.
             </p>
           </li>
@@ -219,6 +260,8 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003217!2d30.320858716208942!3d59.93871916905398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614729702586!5m2!1sru!2sru"
             width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy">
           </iframe>
+          <img class="map__image-png" src="img/index_img/map.png" width="1440" height="400"
+            alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </div>
       </div>
     </section>
@@ -230,17 +273,10 @@
           <ul class="inet-contacts__list">
             <li class="inet-contacts__item page-footer__logo logo logo--footer">
               <a class="logo__footer-text logo__link">
-                <!--<svg class="logo__catenergy-svg" width="101" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0)" fill="#111">
-                    <path
-                      d="M1.264 17.36A6.905 6.905 0 010 13.036V6.63a6.991 6.991 0 011.185-4.4C2.055 1.227 3.398.764 5.374.764s3.24.463 4.03 1.312a5.454 5.454 0 011.186 3.782v1.544H6.718V5.627a3.717 3.717 0 00-.238-1.544c-.1-.2-.259-.364-.456-.474a1.16 1.16 0 00-.65-.144c-.553 0-.948.155-1.106.54a4.878 4.878 0 00-.237 1.699v8.259a3.131 3.131 0 00.316 1.62c.158.387.553.541 1.106.541s.87-.154 1.027-.54a4.41 4.41 0 00.238-1.621v-1.852h3.872v1.543a5.808 5.808 0 01-1.185 3.86c-.79.926-2.134 1.389-4.031 1.389-1.897-.077-3.32-.54-4.11-1.544zM15.253.996h4.504l3.32 17.599H19.44l-.632-3.705h-2.608l-.632 3.704h-3.715L15.253.997zm3.24 11.578l-.948-6.87-.949 6.87h1.897zM25.843 3.929h-2.687V.996h9.404v2.856h-2.687v14.742h-4.03V3.93zM39.752.996h6.955v1.852h-4.505v5.79h3.635v1.775h-3.635v6.483h4.505v1.776h-7.034V.996h.079zM48.761.996H50.5l5.137 11.655V.996h2.055v17.599h-1.58L50.894 6.553v12.041h-2.134V.997zM60.063.996h6.954v1.852h-4.504v5.79h3.635v1.775h-3.635v6.483h4.504v1.776h-6.954V.996zM69.072.996h3.635a6.435 6.435 0 014.03 1.08c.87.695 1.265 1.93 1.265 3.551 0 2.238-.71 3.628-2.212 4.09l2.528 8.8h-2.45l-2.37-8.259h-1.976v8.26h-2.529V.995h.079zm3.477 7.564a3.515 3.515 0 002.292-.617c.474-.386.711-1.158.711-2.316a4.88 4.88 0 00-.237-1.698 1.979 1.979 0 00-.869-.926 3.679 3.679 0 00-1.739-.31h-1.106v5.79h.948v.077zM81.163 17.282a7.66 7.66 0 01-1.106-4.477V6.938c-.02-1.118.114-2.234.395-3.319a3.929 3.929 0 011.502-2.007c.882-.51 1.9-.752 2.924-.694 1.66 0 2.845.386 3.556 1.235a5.805 5.805 0 011.107 3.86v.617H87.17v-.54c.003-.647-.05-1.293-.158-1.93a1.539 1.539 0 00-.633-1.004 2.487 2.487 0 00-1.501-.386 2.41 2.41 0 00-1.58.463 1.75 1.75 0 00-.447.554 1.712 1.712 0 00-.186.681c-.104.69-.157 1.387-.158 2.084v6.561c-.058 1 .103 2 .474 2.934.316.617.949.849 1.897.849.374.045.754-.018 1.092-.183.337-.165.617-.424.805-.744a6.954 6.954 0 00.553-3.087v-1.235h-2.292V9.872h4.584v8.722h-1.58l-.238-2.007a3.154 3.154 0 01-1.226 1.664 3.28 3.28 0 01-2.014.574 4.034 4.034 0 01-1.899-.353 3.935 3.935 0 01-1.5-1.19zM94.678 12.42L90.805 1.072h2.371l2.766 8.49 2.687-8.49H101l-3.873 11.346v6.175h-2.37V12.42h-.08z" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0">
-                      <path fill="#fff" transform="translate(0 .764)" d="M0 0h101v18.062H0z" />
-                    </clipPath>
-                  </defs>
-                </svg>-->
+                <picture>
+                  <img class="logo__catenergy" src="img/logo128x24.svg" width="101" height="19"
+                    alt="Логотип Кэт энерджи текстовый">
+                </picture>
               </a><!-- на главной страние, логотип "не доступен", отсутсятвуют: href="" aria-label=""-->
             </li>
             <li class="inet-contacts__item social">
@@ -300,7 +336,7 @@
     </section>
   </footer>
 
-  <script src="js/main-navigation.js"></script>
+  <script src="js/navigation.js"></script>
 
 </body>
 

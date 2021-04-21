@@ -1,60 +1,83 @@
 // @import "blocks/form-select.scss";
 
 .form-select__label {
-  margin-left: 45px;
+  padding-left: 45px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 88px;
+
+    &--checkbox {
+      padding-left: 60px;
+    }
+  }
 }
 
-.form-select__input + label::before {
+.form-select__input {
+  &--radio + label::before {
+    border-radius: 50%;
+  }
+
+  & + .form-select__label::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $slider-border;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: -7px;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      left: 30px;
+      top: -10px;
+    }
+  }
+
+  &:not(:disabled):hover + label::before,
+  &:not(:disabled):focus + label::before {
+    border-color: $form-hover-color;
+  }
+
+  &:disabled + label::before {
+    border-color: $form-hover-color;
+  }
+
+  &:disabled + label {
+    opacity: 0.3;
+  }
+}
+
+.form-select__input--radio:checked + label::after {
   content: "";
   display: block;
-  width: 30px;
-  height: 30px;
-  border: 1px solid $slider-border;
-  box-sizing: border-box;
   position: absolute;
-  left: -45px;
-  top: -6px;
-}
-
-.form-select__radio + label::before {
-  border-radius: 50%;
-}
-
-.form-select__input:checked + label::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: -37px;
+  left: 8px;
   top: 2px;
-}
-
-.form-select__radio:checked + label::after {
   width: 14px;
   height: 14px;
   background-color: $accent-color;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    left: 40px;
+    top: 0;
+  }
 }
 
-.form-select__checkbox:checked + label::after {
+.form-select__input--checkbox:checked + label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 8px;
+  top: 2px;
   width: 26px;
   height: 26px;
   background-image: url("../img/form_img/checkbox-checked.svg");
   background-repeat: no-repeat;
-}
-
-.form-select__add-list {
-  @include display-flex-wrap;
-}
-
-.form-select__add-item {
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    width: 50%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 25%;
-  }
 }

@@ -3,7 +3,6 @@
 .catalog__list {
   @include second-font;
   @include reset-list;
-  margin: 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-row: 190px;
