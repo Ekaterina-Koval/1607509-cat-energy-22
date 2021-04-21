@@ -26,11 +26,15 @@
     height: 2px;
     background-color: $accent-color;
     position: absolute;
-    top: 22px;
+    top: 16px;
     left: 104%;
   }
 
   @media (min-width: $tablet-width) {
+    &::after {
+      top: 22px;
+    }
+
     &::before {
       content: "";
       display: block;

@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="img/favicons/manifest.webmanifest">
 
-  <!-- Pixel Glass -->
+  <!-- Pixel Glass
   <style>
     HTML {
       background-repeat: no-repeat;
@@ -37,7 +37,7 @@
   </style>
   <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
   <script src="../node_modules/pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
+   // Pixel Glass -->
 
 </head>
 
@@ -46,17 +46,17 @@
     <div class="page-header__wrapper container">
 
       <div class="page-header__logo logo">
-        <a class="logo__catenergy logo__link">
+        <a class="logo__catenergy logo__link" href="index.html">
           <img class="logo__catenergy-initial" src="img/logo-image1.svg" width="34" height="38"
             alt="Логотип Кэт энерджи графический">
           <picture class="logo__catenergy-picture">
             <img class="logo__catenergy-basic" src="img/logo101x19.svg" width="101" height="19"
               alt="Логотип Кэт энерджи текстовый">
           </picture>
-        </a><!-- на главной страние, логотип "не доступен", отсутсятвуют: href="" aria-label=""-->
+        </a>
       </div>
 
-      <nav class="page-header__nav navigation navigation--opened navigation--nojs">
+      <nav class="page-header__navigation navigation navigation--opened navigation--nojs">
         <button class="navigation__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -72,16 +72,16 @@
             </a>
           </li>
           <li class="navigation__item decoration-line decoration-line--nav">
-            <a class="navigation__link" aria-current="page">
+            <a class="navigation__link"  aria-current="page">
               Подбор программы
             </a>
           </li>
         </ul>
       </nav>
-    </div>
+      </div>
   </header>
 
-  <main class="form-main">
+  <main class="form-main decoration-line decoration-line--nav">
     <section class="form-main__progrаm container">
       <div class="form-main__wrapper">
         <h1 class="form-main__title">
@@ -124,7 +124,7 @@
           </fieldset>
 
           <fieldset
-            class="form__fieldset form__wrapper form__wrapper--radio form-select form__fieldset--half form__fieldset-border">
+            class="form__fieldset form__wrapper form__wrapper--radio form-select form__fieldset--half decoration-line decoration-line--nav">
             <ul class="form__list form__list--radio">
               <li class="form__item form__item--radio">
                 <input class="form-select__input form-select__input--radio visually-hidden" type="radio" name="choice"
@@ -151,7 +151,7 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__wrapper form__wrapper--contacts form-info">
-            <legend class="form__legend decoration-line decoration-line--legend">
+            <legend class="form__legend decoration-line decoration-line--legend decoration-line decoration-line--nav">
               Контактные&nbsp;данные (владельца кота)
             </legend>
             <ul class="form__list form__list--contacts">

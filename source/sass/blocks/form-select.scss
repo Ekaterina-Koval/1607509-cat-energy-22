@@ -36,6 +36,19 @@
       top: -10px;
     }
   }
+
+  &:not(:disabled):hover + label::before,
+  &:not(:disabled):focus + label::before {
+    border-color: $form-hover-color;
+  }
+
+  &:disabled + label::before {
+    border-color: $form-hover-color;
+  }
+
+  &:disabled + label {
+    opacity: 0.3;
+  }
 }
 
 .form-select__input--radio:checked + label::after {

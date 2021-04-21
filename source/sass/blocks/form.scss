@@ -20,7 +20,11 @@
     margin: 0 0 38px;
 
     @media (min-width: $tablet-width) {
-      margin: 0 0 92px;
+      margin-bottom: 92px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 22px;
     }
   }
 
@@ -28,7 +32,11 @@
     margin: 0 0 24px;
 
     @media (min-width: $tablet-width) {
-      margin: 0 0 64px;
+      margin-bottom: 64px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 52px;
     }
   }
 
@@ -45,6 +53,10 @@
 
     @media (min-width: $tablet-width) {
       margin: 0 0 38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 46px;
     }
   }
 }
@@ -66,6 +78,7 @@
     @media (min-width: $desktop-width) {
       width: 569px;
       height: 200px;
+      margin-bottom: 48px;
     }
   }
 }
@@ -151,7 +164,7 @@
   width: 100%;
   min-height: 150px;
   margin-top: 38px;
-  padding: 6px 15px;
+  padding: 6px 10px 6px 15px;
   border: 1px solid $input-border-light;
   box-sizing: border-box;
   resize: none;
@@ -178,8 +191,8 @@
 .form__submit {
   @include second-font;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 0;
   color: $basic-white;
   display: flex;
   justify-content: center;
@@ -190,6 +203,12 @@
     display: inline-block;
     width: 45%;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 0;
+    width: 47%;
   }
 }
 
@@ -205,6 +224,14 @@
   @media (min-width: $tablet-width) {
     display: inline-block;
     width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+    padding: 18px;
+    text-indent: 58px;
   }
 }
 

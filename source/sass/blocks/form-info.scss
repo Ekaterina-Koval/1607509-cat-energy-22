@@ -43,4 +43,16 @@
       line-height: auto;
     }
   }
+
+  &:hover {
+    border-color: $slider-border;
+  }
+
+  &:focus {
+    border: 2px solid $main-content;
+  }
+
+  &:not(:focus):invalid {
+    border: 2px solid $error-color;
+  }
 }
