@@ -1,17 +1,37 @@
 // @import "blocks/catalog.scss";
 
+.catalog__wrapper {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 74px;
+    margin-bottom: 66px;
+  }
+}
+
 .catalog__list {
   @include second-font;
   @include reset-list;
   display: grid;
   grid-template-columns: 1fr;
-  grid-row: 190px;
-  gap: 20px;
+  gap: 25px;
+
+  &--pro {
+    margin-bottom: 25px;
+  }
+
+  &--slim {
+    margin-bottom: 25px;
+  }
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 324px 324px;
-    grid-row: 430px;
-    gap: 60px;
+    grid-row: 230px;
+    gap: 140px 60px;
+
+    &--pro {
+      margin-bottom: 140px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -26,11 +46,32 @@
   font-size: 36px;
   line-height: 36px;
   color: $basic-black;
-  margin: 27px 0 41px;
+  margin: 0 0 41px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 164px;
+  }
 }
 
-.catalog__item {
-  padding: 18px 0 11px;
+.catalog__all-products {
+  padding-top: 78px;
+
+  @media (min-width: $tablet-width) {
+    padding: 161px 37px 38px;
+
+    @include display-flex-wrap;
+    justify-content: center;
+  }
+}
+
+.catalog__all-link {
+  text-decoration: none;
+  display: block;
+  width: 70%;
+  color: $basic-black;
+  border-bottom: 2px solid $basic-background;
 }
 
 .catalog__subtitle {
@@ -39,9 +80,14 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 60px;
-  margin: 0;
+  margin: 0 0 8px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 24px;
+  }
 }
 
 .catalog__subtitle::before {
@@ -49,10 +95,18 @@
   display: block;
   width: 30px;
   height: 30px;
-  background-image: url("../img/catalog_img/all-products_cross.png");
+  background: url("../img/catalog_img/all-products_cross.svg") no-repeat;
   position: absolute;
-  top: 10px;
+  top: -54px;
   left: 124px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    top: -110px;
+    left: 56px;
+    background-size: 100%;
+  }
 }
 
 .catalog__slogan {
@@ -62,9 +116,12 @@
   font-weight: 400px;
   text-align: center;
   color: $main-content;
-  margin: 8px 0 21px;
-}
+  margin: 0 0 21px;
 
-.catalog__button {
-  margin-bottom: 15px;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    width: 70%;
+    margin-bottom: 86px;
+  }
 }

@@ -4,14 +4,47 @@
   @include display-flex-wrap;
   justify-content: center;
   position: relative;
-  padding-top: 20px;
+  padding-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 161px 37px 40px 39px;
+    min-height: 230px;
+    background-color: $basic-background;
+    position: relative;
+  }
 }
 
-.product__image-block {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.product__wrapper {
+  min-height: 112px;
+  margin-bottom: 11px;
+
+  &--image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--info {
+    width: 50%;
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+
+    @include display-flex-wrap;
+    justify-content: center;
+
+    &--image {
+      position: absolute;
+      display: none; //Добавить абсолютно спозиционированное контентное изображение
+    }
+
+    &--info {
+      margin-bottom: 36px;
+    }
+  }
 }
 
 .product__image {
@@ -21,14 +54,10 @@
   background-color: $basic-white;
 }
 
-.product__info {
-  width: 50%;
-  margin: 0;
-}
-
 .product__link-text {
   text-decoration: none;
-  margin: 0;
+  display: block;
+  margin: 0 0 18px;
 }
 
 .product__title {
@@ -39,24 +68,41 @@
   text-transform: uppercase;
   color: $catalog-title;
   width: 76px;
-  min-height: 41px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 150px;
+    text-align: center;
+  }
 }
 
 .product__list {
-  margin-top: 18px;
   width: 100%;
-  min-height: 44px;
+  border-spacing: 0;
+
+  @include main-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px; /*по макету 16px, что не соответствует по PP*/
+  color: $main-content;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .product__item {
   @include display-flex-wrap;
   justify-content: space-between;
 
-  @include main-font;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  color: $main-content;
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 13px;
+      border-bottom: 1px solid $basic-background;
+    }
+  }
 }
 
 .product__propety-value-upp {
@@ -64,5 +110,7 @@
 }
 
 .product__button {
-  margin-top: 22px;
+  @media (min-width: $tablet-width) {
+    height: 39px;
+  }
 }

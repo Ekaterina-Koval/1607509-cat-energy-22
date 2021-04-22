@@ -2,7 +2,6 @@
 
 .promo-offer {
   @include display-flex-wrap;
-  margin: 40px 0 35px;
   width: 280px;
   height: 289px;
   background-image: url("../img/catalog_img/cat-green-background.jpg");
@@ -10,6 +9,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-color: rgba($accent-color, 0.85);
+  margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -30,9 +30,8 @@
   color: $basic-white;
   text-align: center;
   position: relative;
-  margin: auto;
-  padding-top: 186px;
-  width: 161px;
+  margin: 188px auto;
+  width: 60%;
   min-height: 60px;
 
   @media (min-width: $tablet-width) {
@@ -53,8 +52,8 @@
   height: 80px;
   background-image: url("../img/catalog_img/icon-gift.svg");
   position: absolute;
-  left: 35px;
-  top: 60px;
+  left: 44px;
+  top: -128px;
 
   @media (min-width: $tablet-width)
     and (max-width: $desktop-width) {
