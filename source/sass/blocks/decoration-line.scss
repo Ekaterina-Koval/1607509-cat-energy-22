@@ -1,9 +1,9 @@
 // @import "blocks/decoration-line.scss";
 
-.decoration-line--nav > .navigation__item {
-  position: relative;
+@media (max-width: $mobile-width-only) {
+  .decoration-line--nav > .navigation__item {
+    position: relative;
 
-  @media (max-width: $mobile-width-only) {
     &::before {
       content: "";
       display: block;
@@ -24,12 +24,10 @@
       bottom: 0;
     }
   }
-}
 
-.decoration-line--catalog > .catalog__item {
-  position: relative;
+  .decoration-line--catalog > .catalog__item {
+    position: relative;
 
-  @media (max-width: $mobile-width-only) {
     &::before {
       content: "";
       display: block;
@@ -52,13 +50,11 @@
       left: -20px;
     }
   }
-}
 
-.decoration-line {
-  position: relative;
+  .decoration-line--fildset {
+    position: relative;
 
-  @media (max-width: $mobile-width-only) {
-    &--fildset::before {
+    &::before {
       content: "";
       display: block;
       width: 100vw;
@@ -69,34 +65,47 @@
       left: -20px;
     }
 
-    &--legend {
-      &::after {
-        content: "";
-        display: block;
-        width: 100vw;
-        height: 2px;
-        background-color: $accent-color;
-        position: absolute;
-        top: 16px;
-        left: 104%;
-      }
+    &::after {
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 1px;
+      background-color: $header-element-color;
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+    }
+  }
+}
 
-      @media (min-width: $tablet-width) {
-        &::after {
-          top: 22px;
-        }
+.decoration-line--legend {
+  position: relative;
 
-        &::before {
-          content: "";
-          display: block;
-          width: 100vw;
-          height: 2px;
-          background-color: $accent-color;
-          position: absolute;
-          top: 22px;
-          right: 107%;
-        }
-      }
+  &::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 2px;
+    background-color: $accent-color;
+    position: absolute;
+    top: 16px;
+    right: 107%;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 2px;
+    background-color: $accent-color;
+    position: absolute;
+    top: 16px;
+    left: 104%;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      top: 22px;
     }
   }
 }

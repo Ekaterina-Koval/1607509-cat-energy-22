@@ -9,7 +9,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-color: rgba($accent-color, 0.85);
-  margin-bottom: 36px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -29,14 +29,16 @@
   line-height: 20px;
   color: $basic-white;
   text-align: center;
-  position: relative;
-  margin: 188px auto;
+  margin: 190px auto auto;
+  margin-top: 190px;
   width: 60%;
   min-height: 60px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 0 345px;
     text-align: left;
+    margin-top: 74px;
+    margin-right: 15%;
+    width: 25%;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,19 +47,19 @@
   }
 }
 
-.promo-offer__item::before {
+.promo-offer::before {
   content: "";
   display: block;
   width: 78px;
   height: 80px;
   background-image: url("../img/catalog_img/icon-gift.svg");
   position: absolute;
-  left: 44px;
-  top: -128px;
+  left: 36%;
+  top: 20%;
 
   @media (min-width: $tablet-width)
     and (max-width: $desktop-width) {
-    left: 0;
-    top: 0;
+    left: 11%;
+    top: 30%;
   }
 }

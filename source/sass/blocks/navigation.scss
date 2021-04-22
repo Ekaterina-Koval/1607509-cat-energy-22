@@ -145,6 +145,13 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: auto;
-    color: $basic-white;
+
+    &--white {
+      color: $basic-white;
+    }
+
+    &[aria-current]::before {
+      background-color: $basic-white;
+    }
   }
 }
