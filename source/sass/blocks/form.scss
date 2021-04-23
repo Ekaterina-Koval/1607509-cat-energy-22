@@ -3,6 +3,7 @@
 .form {
   @include display-flex-wrap;
   justify-content: space-between;
+  outline: none;
 }
 
 .form__wrapper {
@@ -41,7 +42,7 @@
   }
 
   &--comments {
-    margin: 0 0 20px;
+    margin: 0 0 22px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 66px;
@@ -87,7 +88,7 @@
   @include reset-list;
 
   &--contacts {
-    padding-top: 35px;
+    padding-top: 32px;
 
     @media (min-width: $tablet-width) {
       padding-top: 72px;
@@ -101,7 +102,7 @@
 
   &--checkbox {
     @include display-flex-wrap;
-    padding-top: 28px;
+    padding-top: 26px;
 
     @media (min-width: $tablet-width) {
       padding-top: 40px;
@@ -163,7 +164,7 @@
 .form__textarea {
   width: 100%;
   min-height: 150px;
-  margin-top: 38px;
+  margin-top: 37px;
   padding: 6px 10px 6px 15px;
   border: 1px solid $input-border-light;
   box-sizing: border-box;
