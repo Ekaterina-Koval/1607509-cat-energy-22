@@ -3,8 +3,15 @@
 .promo {
   background-image:
     linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)),
-    url("../img/index_img/cat_background.jpg"),;
-  background-position: top, 63% top;
+    url("../img/index_img/cat-background320.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)),
+      url("../img/index_img/cat-background320@2x.jpg");
+  }
+
+  background-position: top, top;
   background-size: 100vw 302px, auto 302px;
   background-repeat: no-repeat;
 
@@ -24,7 +31,14 @@
 
       background-image:
         linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)),
-        url("../img/index_img/cat_background-right.jpg");
+        url("../img/index_img/cat-background1440.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image:
+          linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)),
+          url("../img/index_img/cat-background1440@2x.jpg");
+      }
+
       background-position: left bottom, left bottom;
       background-size: 100vw 696px, auto 696px;
       background-repeat: no-repeat;
@@ -120,15 +134,16 @@
 }
 
 .promo__image {
-  position: absolute;
-  top: 168px;
+  left: 1%;
   width: 100%;
   height: 270px;
   object-fit: contain;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     top: 274px;
     height: 609px;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {

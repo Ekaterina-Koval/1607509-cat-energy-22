@@ -54,22 +54,31 @@
 
 @media (min-width: $tablet-width) {
   .slider__image {
-    width: 100%;
+    width: 354px;
+    height: 100%;
     object-fit: cover;
   }
 
   .slider__image--fat {
-    object-position: 15px 0;
+    object-position: 10px 0;
   }
 
   .slider__image--skinny {
-    object-position: -250px 0;
+    object-position: -255px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .slider__image {
+    width: 334px;
+  }
+
   .slider__image--fat {
-    object-position: -40px 0;
+    object-position: -70px 0;
+  }
+
+  .slider__image--skinny {
+    object-position: -280px 0;
   }
 }
 
