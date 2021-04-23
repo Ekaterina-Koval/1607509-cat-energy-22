@@ -12,9 +12,9 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  color: var(--main-content);
+  color: $main-content;
   min-height: 100%;
-  background-color: var(--basic-white);
+  background-color: $basic-white;
   display: grid;
   align-content: start;
 }
