@@ -10,3 +10,9 @@
     opacity: 0.6;
   }
 }
+
+.logo__cat-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
