@@ -62,8 +62,8 @@
 }
 
 .catalog__all-products {
-  box-sizing: border-box;
   padding-top: 78px;
+  box-sizing: border-box;
   position: relative;
 
   &::before {
@@ -78,7 +78,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 161px 37px 38px;
+    padding: 161px 37px 40px 39px;
     border: 2px solid $basic-background;
 
     @include display-flex-wrap;
@@ -102,8 +102,8 @@
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
-    min-height: 230px;
     width: 70%;
+    min-height: 44px;
   }
 
   @media (min-width: $desktop-width) {
