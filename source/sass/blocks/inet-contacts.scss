@@ -4,7 +4,7 @@
   @include reset-list;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 80px 63px 78px;
+  grid-template-rows: 76px 63px 78px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;

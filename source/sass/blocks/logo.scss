@@ -1,5 +1,21 @@
 // @import "blocks/logo.scss";
 
+.logo__catenergy {
+  display: block;
+  position: relative;
+
+  @include display-flex-wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: center;
+  }
+}
+
 .logo__link {
   &:hover,
   &:focus {
@@ -8,5 +24,32 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+.logo__cat {
+  position: absolute;
+  left: 0;
+  top: 12px;
+
+  @media (min-width: $tablet-width) {
+    position: initial;
+  }
+}
+
+.logo__text--footer {
+  width: 128px;
+  height: 24px;
+}
+
+.logo__image {
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
   }
 }
