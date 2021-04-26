@@ -11,7 +11,6 @@
   background-color: $slider-background;
   color: $basic-black;
   width: min-content;
-  height: 40px;
   margin: 0;
   padding: 0;
   border: none;
@@ -47,12 +46,12 @@
 
 .slider-control__range {
   width: 82px;
-  height: 14px;
+  height: 12px;
   border: 1px solid $slider-border;
   border-radius: 6px;
   background-color: $basic-white;
   position: relative;
-  margin: 0 16px;
+  margin: 0 17px;
 
   @media (min-width: $tablet-width) {
     margin: 0 12px;

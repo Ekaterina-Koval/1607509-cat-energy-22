@@ -8,15 +8,31 @@
 }
 
 .social__icon {
-  &:hover .social__icon-path,
-  &:focus .social__icon-path {
-    stroke: $accent-color;
+  &--vk,
+  &--insta {
+    fill: $icon-basic-color;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
   }
 
-  &:active {
-    opacity: 0.3;
+  &--fb {
+    fill: none;
+    stroke: $icon-basic-color;
+
+    &:hover,
+    &:focus {
+      stroke: $accent-color;
+    }
   }
 }
+
+.social__icon:active {
+    opacity: 0.3;
+  }
+
 
 .social__item:not(:last-child) {
   margin-right: 38px;

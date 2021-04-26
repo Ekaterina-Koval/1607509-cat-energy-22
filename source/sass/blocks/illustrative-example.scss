@@ -3,7 +3,6 @@
 .illustrative-example {
   background-color: $slider-background;
   padding-top: 27px;
-  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     border-top: 1px solid $header-element-color;
@@ -14,7 +13,6 @@
     background-size: 100vw 462px;
     background-repeat: no-repeat;
     padding-bottom: 68px;
-    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,6 +23,7 @@
 }
 
 .illustrative-example__wrapper {
+  padding-bottom: 30px;
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
