@@ -10,7 +10,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: flex-end;
     align-items: center;
   }
@@ -33,7 +33,7 @@
   top: 12px;
 
   @media (min-width: $tablet-width) {
-    position: initial;;
+    position: initial;
   }
 }
 
