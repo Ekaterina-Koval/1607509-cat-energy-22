@@ -2,9 +2,17 @@
 
 .promo-offer {
   @include display-flex-wrap;
-  width: 280px;
-  height: 289px;
-  background-image: url("../img/catalog_img/cat-green-background.jpg");
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 189px;
+  padding: 60px 50px 40px;
+  background-image: url("../img/catalog_img/mobile/gift-photo-320.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog_img/mobile/gift-photo-320@2x.jpg");
+  }
+
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -12,54 +20,54 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
-    height: 200px;
+    height: 80px;
+    padding: 60px 118px 60px 80px;
+    flex-direction: row;
+
+    background-image: url("../img/catalog_img/tablet/gift-photo-768.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog_img/tablet/gift-photo-768@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 245px;
-    height: 289px;
-    margin: auto 0 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 189px;
+    padding: 60px 40px 40px;
+    margin-top: 118px;
+    background-image: url("../img/catalog_img/desktop/gift-photo-1440.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog_img/tablet/gift-photo-1440@2x.jpg");
+    }
   }
 }
 
-.promo-offer__item {
+.promo-offer__special {
   @include main-font;
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
   text-align: center;
-  margin: 190px auto auto;
-  margin-top: 190px;
-  width: 60%;
-  min-height: 60px;
+  vertical-align: bottom;
+  width: 100%;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    margin-top: 74px;
-    margin-right: 15%;
-    width: 25%;
+    width: 33%;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 186px 0 0;
+
+    width: 100%;
     text-align: center;
   }
 }
 
-.promo-offer::before {
-  content: "";
+.promo-offer__image {
   display: block;
-  width: 78px;
-  height: 80px;
-  background-image: url("../img/catalog_img/icon-gift.svg");
-  position: absolute;
-  left: 36%;
-  top: 20%;
-
-  @media (min-width: $tablet-width)
-    and (max-width: $desktop-width) {
-    left: 11%;
-    top: 30%;
-  }
 }
