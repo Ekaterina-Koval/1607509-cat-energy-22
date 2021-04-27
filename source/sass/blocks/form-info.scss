@@ -10,6 +10,7 @@
   flex-grow: 1;
   border: 1px solid $input-border-light;
   box-sizing: border-box;
+  position: relative;
 
   &--text {
     padding: 24px 12px 18px;
@@ -54,5 +55,35 @@
 
   &:not(:focus):invalid {
     border: 2px solid $error-color;
+  }
+}
+
+.form-info__icon {
+  position: absolute;
+  right: 35px;
+
+  @media (min-width: $tablet-width) {
+    right: 85px;
+  }
+
+  &--email {
+    fill: none;
+    stroke: $catalog-title;
+  }
+}
+
+.form-info__input:focus + .form-info__icon {
+  stroke: $accent-color;
+
+  &--phone {
+    fill: $accent-color;
+  }
+}
+
+.form-info__input:not(:focus):invalid + .form-info__icon {
+  stroke: $error-color;
+
+  &--phone {
+    fill: $error-color;
   }
 }

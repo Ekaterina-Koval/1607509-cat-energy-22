@@ -2,12 +2,17 @@
 
 .accent-button {
   @include display-flex-wrap;
-
   width: 100%;
   height: 40px;
   background-color: $accent-color;
   border: none;
   display: flex;
+
+  @include second-font;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
 
   &:hover,
   &:focus,
@@ -18,6 +23,8 @@
   @media (min-width: $tablet-width) {
     width: 244px;
     height: 54px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -30,14 +37,14 @@
 
   @include second-font;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
-  color: $basic-white;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: inherit;
+    line-height: inherit;
 
     &--order {
       font-size: 16px;
