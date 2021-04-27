@@ -57,7 +57,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 72px;
+    padding-top: 78px;
     min-height: 788px;
     justify-content: flex-start;
     align-items: flex-start;
@@ -141,13 +141,15 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 274px;
+    top: 278px;
+    left: -2px;
     height: 609px;
     z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    top: 48px;
+    top: 46px;
+    left: 116px;
     height: 499px;
   }
 }

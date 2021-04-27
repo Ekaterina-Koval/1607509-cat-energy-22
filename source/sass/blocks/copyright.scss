@@ -2,8 +2,8 @@
 
 .copyright__link {
   @include display-flex-wrap;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   font-size: 16px;
   color: $main-content;
   fill: $icon-basic-color;

@@ -12,73 +12,66 @@
   @include reset-list;
   @include display-flex-wrap;
   justify-content: center;
-}
-
-.slider__item--invisible {
-  display: none;
-}
-
-.slider__item {
-  width: 280px;
-  height: 232px;
-  position: relative;
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
+}
+
+.slider__item {
+  display: block;
+  width: 280px;
+  height: 232px;
+  overflow: hidden;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    &:last-child {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
     width: 354px;
-    height: 532px;
-    display: block;
-    margin-bottom: 0;
+    height: 520px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 305px;
-    height: 552px;
+    &--fat {
+      width: 335px;
+    }
+
+    &--skinny {
+      width: 285px;
+    }
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .slider__item--fat {
-    display: block;
+.slider__image {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: -20px;
+
+  @media (min-width: $tablet-width) {
+    &--fat {
+      object-position: 16px;
+    }
+
+    &--skinny {
+      object-position: -246px;
+    }
   }
 
-  .slider__image {
-    width: 311px;
-    height: 232px;
-    display: block;
-    position: absolute;
-    left: -20px;
-    object-fit: contain;
-  }
-}
+  @media (min-width: $desktop-width) {
+    &--fat {
+      object-position: -30px;
+    }
 
-@media (min-width: $tablet-width) {
-  .slider__image {
-    width: 354px;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .slider__image--fat {
-    object-position: 10px 0;
-  }
-
-  .slider__image--skinny {
-    object-position: -255px 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .slider__image {
-    width: 334px;
-  }
-
-  .slider__image--fat {
-    object-position: -70px 0;
-  }
-
-  .slider__image--skinny {
-    object-position: -280px 0;
+    &--skinny {
+      object-position: -275px;
+    }
   }
 }
 
@@ -87,7 +80,6 @@
   justify-content: center;
   align-items: center;
   height: 30px;
-
 
   @media (min-width: $desktop-width) {
     justify-content: flex-end;

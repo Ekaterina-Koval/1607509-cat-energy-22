@@ -1,6 +1,10 @@
 <svg class="logo" width="80" height="60" viewBox="0 0 80 60" role="img"
             aria-label="Логотип Catenergy рыжий кот на фоне желтой графики" xmlns="http://www.w3.org/2000/svg">
             <style>
+              .logo__cat--mobile {
+                display: block;
+              }
+
               .logo__cat--tablet {
                     display: none;
                   }

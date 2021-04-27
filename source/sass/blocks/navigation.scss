@@ -132,7 +132,7 @@
       color: $basic-white;
     }
 
-    &[aria-current]::before {
+    &--white[aria-current]::before {
       background-color: $basic-white;
     }
   }
