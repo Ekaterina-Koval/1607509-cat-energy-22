@@ -66,6 +66,16 @@
     right: 85px;
   }
 
+  @media (min-width: $desktop-width) {
+    &--email {
+      right: 54%;
+    }
+
+    &--phone {
+      right: 9%;
+    }
+  }
+
   &--email {
     fill: none;
     stroke: $catalog-title;

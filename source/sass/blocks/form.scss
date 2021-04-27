@@ -47,6 +47,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 66px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 68px;
+    }
   }
 
   &--checkbox {
@@ -77,9 +81,9 @@
 
   &--half {
     @media (min-width: $desktop-width) {
-      width: 569px;
+      width: 47%;
       height: 200px;
-      margin-bottom: 48px;
+      margin-bottom: 46px;
     }
   }
 }
@@ -118,6 +122,12 @@
     grid-template-rows: 72px 72px;
     gap: 0 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 72px;
+    gap: 0 76px;
+  }
 }
 
 .form__item {
@@ -140,8 +150,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    &--info {
+      margin-bottom: 14px;
+    }
+
     &--half {
-      width: 569px;
+      width: 47%;
     }
   }
 }
