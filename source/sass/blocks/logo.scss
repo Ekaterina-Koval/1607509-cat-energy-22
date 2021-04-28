@@ -1,22 +1,26 @@
 // @import "blocks/logo.scss";
 
-.logo__catenergy {
-  display: block;
+.logo__header-wrapper {
+  width: 100%;
   position: relative;
 
   @include display-flex-wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 60%;
-    align-content: flex-end;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 0 0 80px;
     justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.logo__mobile-cat {
+  display: none;
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    position: absolute;
+    left: 0;
   }
 }
 
@@ -30,7 +34,7 @@
     opacity: 0.6;
   }
 }
-
+/*
 .logo__cat {
   position: absolute;
   left: 0;
@@ -72,3 +76,4 @@
     top: 52px;
   }
 }
+*/

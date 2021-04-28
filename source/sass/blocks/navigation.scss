@@ -10,20 +10,16 @@
     width: 100%;
     justify-content: flex-end;
   }
-
-  @media (min-width: $desktop-width) {
-    align-items: flex-end;
-  }
 }
 
 @media (max-width: $mobile-width-only) {
   .navigation__toggle {
     width: 30px;
-    height: 24px;
+    height: 30px;
     cursor: pointer;
     position: absolute;
-    top: -48px;
-    right: -6px;
+    top: -44px;
+    right: -8px;
     border: none;
     background-color: transparent;
   }
@@ -31,7 +27,9 @@
   .navigation {
     &--closed {
       .navigation__toggle {
-        background: url("../img/nav-open.svg") no-repeat 3px 3px;
+        background-image: url("../img/nav-closed.svg");
+        background-repeat: no-repeat;
+        background-size: 28px 18px;
       }
 
       .navigation__item {
@@ -41,7 +39,9 @@
 
     &--opened {
       .navigation__toggle {
-        background: url("../img/nav-close.svg") no-repeat 3px 3px;
+        background-image: url("../img/nav-opened.svg");
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
       }
     }
 
@@ -79,10 +79,25 @@
   padding: 24px 0 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 8px 0;
+    box-sizing: border-box;
+
+    &[aria-current] {
+      border-bottom: 2px solid $accent-color;
+    }
 
     &:not(:last-child) {
       margin-right: 36px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--white[aria-current] {
+      border-bottom: 2px solid $basic-white;
+    }
+
+    &--white > .navigation__link {
+      color: $basic-white;
     }
   }
 }
@@ -111,26 +126,12 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
-
-    &[aria-current]::before {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 2px;
-      background-color: $accent-color;
-      position: absolute;
-      bottom: -10px;
-      left: 0;
-    }
   }
+
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: auto;
-
-    &--white {
-      color: $basic-white;
-    }
 
     &--white[aria-current]::before {
       background-color: $basic-white;

@@ -16,20 +16,24 @@
   <header class="page-header">
     <div class="page-header__wrapper container">
       <div class="page-header__logo logo">
-        <a class="logo__catenergy logo__link">
-          <img class="logo__image" src="img/logo-adaptive.svg" width="80" height="60" alt="">
-          <svg class="logo__text" width="101" height="19" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#logo-text"></use>
-          </svg>
+        <a class="logo__header-wrapper logo__link">
+          <img class="logo__mobile-cat" src="img/logo-mobile-cat.svg" width="34" height="38"
+            alt="Логотип Кэт энерджи текстовый">
+          <picture class="logo__catenergy-picture">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="60">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+            <img class="logo__text logo__text--header" src="img/logo-text.svg" width="101" height="19"
+              alt="Логотип Кэт энерджи текстовый">
+          </picture>
         </a>
       </div>
 
-      <nav class="page-header__navigation navigation navigation--opened navigation--nojs">
+      <nav class="page-header__navigation navigation navigation--closed navigation--nojs">
         <button class="navigation__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="navigation__list decoration-line decoration-line--nav">
-          <li class="navigation__item ">
+          <li class="navigation__item">
             <a class="navigation__link" href="index.html">
               Главная
             </a>
@@ -39,8 +43,8 @@
               Каталог продукции
             </a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" aria-current="page">
+          <li class="navigation__item" aria-current="page">
+            <a class="navigation__link">
               Подбор программы
             </a>
           </li>
