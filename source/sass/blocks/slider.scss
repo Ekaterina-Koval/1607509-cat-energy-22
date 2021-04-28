@@ -15,6 +15,10 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 34px;
   }
 }
@@ -51,7 +55,7 @@
 .slider__image {
   display: block;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: -20px;
 
   @media (min-width: $tablet-width) {
