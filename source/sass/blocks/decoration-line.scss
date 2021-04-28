@@ -86,12 +86,22 @@
     display: block;
     width: 100vw;
     height: 2px;
+    z-index: -1;
     background-color: $accent-color;
     position: absolute;
     top: 16px;
-    right: 107%;
-  }
 
+    @media (min-width: $tablet-width) {
+      top: 22px;
+      left: -30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -70px;
+    }
+  }
+}
+/*
   &::after {
     content: "";
     display: block;
@@ -107,5 +117,4 @@
     &::after {
       top: 22px;
     }
-  }
-}
+  }*/

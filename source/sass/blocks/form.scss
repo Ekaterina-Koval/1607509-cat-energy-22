@@ -47,6 +47,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 66px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 68px;
+    }
   }
 
   &--checkbox {
@@ -77,9 +81,9 @@
 
   &--half {
     @media (min-width: $desktop-width) {
-      width: 569px;
+      width: 47%;
       height: 200px;
-      margin-bottom: 48px;
+      margin-bottom: 46px;
     }
   }
 }
@@ -101,12 +105,28 @@
   }
 
   &--checkbox {
-    @include display-flex-wrap;
     padding-top: 26px;
 
     @media (min-width: $tablet-width) {
       padding-top: 40px;
     }
+  }
+}
+
+.form__list--add {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 72px 72px;
+    gap: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 72px;
+    gap: 0 76px;
   }
 }
 
@@ -127,20 +147,15 @@
     &--radio {
       min-height: 54px;
     }
-
-    &--checkbox {
-      min-height: 72px;
-      width: 50%;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    &--half {
-      width: 569px;
+    &--info {
+      margin-bottom: 14px;
     }
 
-    &--checkbox {
-      width: 25%;
+    &--half {
+      width: 47%;
     }
   }
 }
@@ -155,6 +170,8 @@
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
+    padding: 0 42px 0 40px;
+    margin-left: -40px;
     width: fit-content;
     font-size: 36px;
     line-height: 36px;
@@ -192,8 +209,6 @@
 .form__submit {
   @include second-font;
   text-transform: uppercase;
-  font-size: 16px;
-  line-height: 0;
   color: $basic-white;
   display: flex;
   justify-content: center;
@@ -207,7 +222,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 20px;
     line-height: 0;
     width: 47%;
   }
@@ -224,7 +238,11 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
+    font-size: 16px;
+    text-align: left;
     width: 50%;
+    padding: 18px 0;
+    text-indent: 30px;
   }
 
   @media (min-width: $desktop-width) {
