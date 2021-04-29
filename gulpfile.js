@@ -183,6 +183,7 @@ exports.build = build
 exports.default = gulp.series(
   clean,
   copy,
+  optimizeImages,
   gulp.parallel(
     styles,
     html,
