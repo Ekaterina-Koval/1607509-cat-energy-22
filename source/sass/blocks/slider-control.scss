@@ -8,16 +8,12 @@
   @include display-flex-wrap;
   justify-content: center;
   align-items: center;
-  background-color: $slider-background;
+  background-color: transparent;
   color: $basic-black;
   width: min-content;
   margin: 0;
   padding: 0;
   border: none;
-
-  @media (min-width: $tablet-width) {
-    background-color: $basic-background;
-  }
 }
 
 .slider-control__button-text {
