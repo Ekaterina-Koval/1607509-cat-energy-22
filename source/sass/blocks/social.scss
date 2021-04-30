@@ -8,8 +8,21 @@
 }
 
 .social__icon {
-  &--vk,
+  &--vk {
+    width: 23px;
+    height: 16px;
+    fill: $icon-basic-color;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+  }
+
+
   &--insta {
+    width: 16px;
+    height: 16px;
     fill: $icon-basic-color;
 
     &:hover,
@@ -19,12 +32,31 @@
   }
 
   &--fb {
+    width: 22px;
+    height: 22px;
     fill: none;
     stroke: $icon-basic-color;
 
     &:hover,
     &:focus {
       stroke: $accent-color;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 29px;
+      height: 17px;
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 28px;
+      height: 33px;
     }
   }
 }

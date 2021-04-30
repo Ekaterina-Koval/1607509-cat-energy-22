@@ -483,8 +483,11 @@
           <iframe class="map__goole-map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003217!2d30.320858716208942!3d59.93871916905398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614729702586!5m2!1sru!2sru"
             width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy">
-          </iframe>-->
+          </iframe>
           <picture>
+            <source type="image/webp" srcset="img/location1440.webp 1x, img/location1440@2x.webp 2x" media="(min-width: 1440px)">
+            <source type="image/webp" srcset="img/location768.webp 1x, img/location768@2x.webp 2x" media="(min-width: 768px)">
+            <source type="image/webp" srcset="img/location320.webp 1x, img/location320@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/location1440.png 1x, img/location1440@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/location768.png 1x, img/location768@2x.png 2x">
             <img class="map__image-png" src="img/location320.png" srcset="img/location320@2x.png 2x" width="320"
@@ -501,9 +504,8 @@
           <ul class="inet-contacts__list">
             <li class="inet-contacts__item page-footer__logo logo logo--footer">
               <a class="logo__footer-text logo__link">
-                <svg class="logo__text--footer" width="101" height="19" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#logo-text"></use>
-                </svg>
+                <img class="logo__text logo__text--footer" src="img/logo-text.svg" width="128" height="24"
+                  alt="Логотип Кэт энерджи текстовый">
               </a>
             </li>
             <li class="inet-contacts__item social">
