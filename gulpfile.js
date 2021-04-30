@@ -47,11 +47,11 @@ exports.html = html;
 
 const scripts = () => {
   return gulp.src("source/js/script.js")
-  .pipe(terser())
-  .pipe(rename("script.min.js"))
-  .pipe(gulp.dest("source/js"))
-  .pipe(gulp.dest("build/js"))
-  .pipe(sync.stream());
+    .pipe(terser())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("source/js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
 }
 
 exports.scripts = scripts;
@@ -60,20 +60,20 @@ exports.scripts = scripts;
 
 const optimizeImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
-  .pipe(imagemin([
-    imagemin.gifsicle({ interlaced: true }),
-    imagemin.mozjpeg({ quality: 75, progressive: true }),
-    imagemin.optipng({ optimizationLevel: 3 }),
-    imagemin.svgo()
-  ]))
-  .pipe(gulp.dest("build/img"))
+    .pipe(imagemin([
+      imagemin.gifsicle({ interlaced: true }),
+      imagemin.mozjpeg({ quality: 75, progressive: true }),
+      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.optimizeImages = optimizeImages
 
 const copyImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
-  .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.optimizeImages = copyImages
@@ -82,8 +82,8 @@ exports.optimizeImages = copyImages
 
 const createWebp = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
-  .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("build/img"))
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.createWebp = createWebp;
@@ -92,11 +92,11 @@ exports.createWebp = createWebp;
 
 const sprite = () => {
   return gulp.src("sourse/img/icons/*.svg")
-  .pipe(svgstore({
-    inlineSvg: true
-  }))
-  .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"));
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
 }
 
 exports.sprite = sprite;
@@ -107,12 +107,13 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
+    "source/manifest.webmanifest",
     "source/img/**/*.svg",
     "!source/img/icons/*.svg",
   ], {
     base: "source"
-})
-  .pipe(gulp.dest("build"))
+  })
+    .pipe(gulp.dest("build"))
   done();
 }
 

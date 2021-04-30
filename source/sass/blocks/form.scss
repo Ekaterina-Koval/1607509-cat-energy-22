@@ -1,5 +1,3 @@
-// @import "blocks/form.scss";
-
 .form {
   @include display-flex-wrap;
   justify-content: space-between;
@@ -253,36 +251,3 @@
     text-indent: 58px;
   }
 }
-
-/*
-.form__fieldset-border {
-  position: relative;
-
-  @media (max-width: $mobile-width-only) {
-    &::before {
-      content: "";
-      display: block;
-      width: 100vw;
-      height: 1px;
-      background-color: $header-element-color;
-      position: absolute;
-      top: 0;
-    }
-
-    &::after {
-      content: "";
-      display: block;
-      width: 100vw;
-      height: 1px;
-      background-color: $header-element-color;
-      position: absolute;
-      bottom: 0;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    border: 1px solid $input-border-light;
-    box-sizing: border-box;
-    padding-left: 28px;
-  }
-}*/

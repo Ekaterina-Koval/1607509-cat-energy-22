@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat energy - интернет-магазин подбора и заказа систем функционального питания для кошек</title>
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/script.min.css" as="script">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
@@ -17,7 +21,7 @@
   <header class="page-header">
     <div class="page-header__wrapper container">
       <div class="page-header__logo logo">
-        <a class="logo__header-wrapper logo__link">
+        <a class="logo__header-wrapper logo__link" href="index.html">
           <img class="logo__mobile-cat" src="img/logo-mobile-cat.svg" width="34" height="38"
             alt="Логотип Кэт энерджи текстовый">
           <picture class="logo__catenergy-picture">
@@ -134,9 +138,10 @@
                 </label>
                 <input class="form-info__input form-info__input--text" type="email" name="email"
                   placeholder="kuklachev@gmail.com" required id="email" />
-                  <svg class="form-info__icon form-info__icon--email" width="19" height="14" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#icon-email"></use>
-                  </svg>
+                <svg class="form-info__icon form-info__icon--email" width="19" height="14"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-email"></use>
+                </svg>
               </li>
               <li class="form__item form__item--info form__item--half">
                 <label class="form-info__label" for="tel">
@@ -144,9 +149,10 @@
                 </label>
                 <input class="form-info__input form-info__input--number" type="tel" name="tel"
                   placeholder="8 (960) 900-60-90" required id="tel" />
-                  <svg class="form-info__icon form-info__icon--phone" width="20" height="21" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#icon-phone"></use>
-                  </svg>
+                <svg class="form-info__icon form-info__icon--phone" width="20" height="21"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
               </li>
             </ul>
           </fieldset>
@@ -193,8 +199,7 @@
               </li>
             </ul>
           </fieldset>
-          <input class="form__submit accent-button" type="submit"
-            value="Отправить заявку">
+          <input class="form__submit accent-button" type="submit" value="Отправить заявку">
           <p class="form__note">
             * — Обязательные поля
           </p>
@@ -223,8 +228,10 @@
             width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy">
           </iframe>
           <picture>
-            <source type="image/webp" srcset="img/location1440.webp 1x, img/location1440@2x.webp 2x" media="(min-width: 1440px)">
-            <source type="image/webp" srcset="img/location768.webp 1x, img/location768@2x.webp 2x" media="(min-width: 768px)">
+            <source type="image/webp" srcset="img/location1440.webp 1x, img/location1440@2x.webp 2x"
+              media="(min-width: 1440px)">
+            <source type="image/webp" srcset="img/location768.webp 1x, img/location768@2x.webp 2x"
+              media="(min-width: 768px)">
             <source type="image/webp" srcset="img/location320.webp 1x, img/location320@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/location1440.png 1x, img/location1440@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/location768.png 1x, img/location768@2x.png 2x">
@@ -241,7 +248,7 @@
           <h2 class="visually-hidden">Наши контакты в интернет</h2>
           <ul class="inet-contacts__list">
             <li class="inet-contacts__item page-footer__logo logo logo--footer">
-              <a class="logo__footer-text logo__link">
+              <a class="logo__footer-text logo__link" href="index.html">
                 <img class="logo__text logo__text--footer" src="img/logo-text.svg" width="128" height="24"
                   alt="Логотип Кэт энерджи текстовый">
               </a>
@@ -250,7 +257,8 @@
               <ul class="social__list">
                 <li class="social__item">
                   <a class="social__link" href="#">
-                    <svg class="social__icon social__icon--vk" width="28" height="22" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="social__icon social__icon--vk" width="28" height="22"
+                      xmlns="http://www.w3.org/2000/svg">
                       <use xlink:href="img/sprite.svg#icon-vk"></use>
                     </svg>
                     <span class="visually-hidden">
@@ -271,7 +279,8 @@
                 </li>
                 <li class="social__item">
                   <a class="social__link" href="#">
-                    <svg class="social__icon social__icon--fb" width="22" height="22" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="social__icon social__icon--fb" width="22" height="22"
+                      xmlns="http://www.w3.org/2000/svg">
                       <use xlink:href="img/sprite.svg#icon-fb"></use>
                     </svg>
                     <span class="visually-hidden">
