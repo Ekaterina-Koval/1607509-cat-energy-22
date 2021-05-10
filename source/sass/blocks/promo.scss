@@ -21,11 +21,13 @@
     &::before {
       content: "";
       height: 696px;
+      width: 50%;
+      object-fit: cover;
       position: absolute;
       top: 0;
       left: 50%;
       z-index: -1;
-      width: 50vw;
+
 
       background-image:
         linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)),
@@ -139,7 +141,6 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 234px;
-    left: -2px;
     width: 709px;
     height: 609px;
     z-index: -1;
