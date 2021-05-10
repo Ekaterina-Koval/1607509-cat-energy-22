@@ -25,7 +25,7 @@
       top: 0;
       left: 50%;
       z-index: -1;
-      width: 100vw;
+      width: 50vw;
 
       background-image:
         linear-gradient(rgba($accent-color, 0.85), rgba($accent-color, 0.85)),
@@ -132,22 +132,23 @@
 }
 
 .promo__image {
-  left: 1%;
-  width: 100%;
+  width: 280px;
   height: 270px;
-  object-fit: contain;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 234px;
     left: -2px;
+    width: 709px;
     height: 609px;
     z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
     top: -26px;
-    left: 116px;
+    left: 37vw;
+    width: 552px;
     height: 499px;
   }
 }
