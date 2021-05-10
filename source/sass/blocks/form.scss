@@ -1,7 +1,6 @@
 .form {
   @include display-flex-wrap;
   justify-content: space-between;
-  outline: none;
 }
 
 .form__wrapper {

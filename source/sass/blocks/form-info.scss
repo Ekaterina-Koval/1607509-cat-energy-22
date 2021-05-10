@@ -5,17 +5,18 @@
 .form-info__input {
   height: 45px;
   width: 50%;
+  outline: none;
   flex-grow: 1;
   border: 1px solid $input-border-light;
   box-sizing: border-box;
   position: relative;
 
   &--text {
-    padding: 24px 12px 18px;
+    padding: 10px 12px;
   }
 
   &--number {
-    padding: 24px 16px 18px;
+    padding: 10px 16px;
   }
 
   &::placeholder {
